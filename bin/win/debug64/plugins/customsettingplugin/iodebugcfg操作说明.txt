@@ -1,0 +1,35 @@
+1. IO分类
+1.1 气缸<cylinder rows="" btnwidth="" btnhight="" >
+
+    所有气缸都放在这个部分里面， 气缸按列排放，
+    rows 表示最大行数， btnwidth 是滑块的宽度， btnhight 是灯的宽度和高度，也是滑块的参考高度
+    
+    <io name="" positive="" negative=""/>
+    子项：表示一个气缸和对应的前后限位
+    name 气缸的名字， positive 气缸出位， negative 气缸原位
+    如果没有前后限位可以为空
+
+1.2 通用输入<general_input rows="" btnwidth="" btnhight="" >
+    所有输入都放在这个部分里面， 输入按列排放，
+    rows 表示最大行数， btnwidth 是文字说明的最小宽度， btnhight 是灯的宽度和高度，也是文字的最小高度
+
+    <io name="" />
+    子项：表示一个输入
+    name 输入的名字
+
+1.3 通用输出<general_output rows="" btnwidth="" btnhight="" >
+    所有输出都放在这个部分里面， 输出按列排放，
+    rows 表示最大行数， btnwidth 是文字说明的最小宽度， btnhight 是灯的宽度和高度，也是文字的最小高度
+
+    <io name="" />
+    子项：表示一个输出
+    name 输入的名字
+
+2. 功能码 
+    影响界面IO的排版 标志 name="func"
+
+2.1 标题<io name="func" type="title" desc="标题内容" />
+    
+2.2 空行<io name="func" type="emptyline" />
+
+2.3 换行<io name="func" type="newline" />

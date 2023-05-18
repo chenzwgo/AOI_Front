@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>videoscope</class>
+ <widget class="QWidget" name="videoscope">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>951</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="19">
+    <widget class="QPushButton" name="pushButton_continues">
+     <property name="text">
+      <string>实时取像</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="20">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>触发频率</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>平均值</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="9">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>方差</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="10">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_variance">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="maximum">
+      <double>255.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4" colspan="3">
+    <widget class="QComboBox" name="comboBox_channel"/>
+   </item>
+   <item row="0" column="7">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>处理类型</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="8" colspan="3">
+    <widget class="QComboBox" name="comboBox_pro_type">
+     <item>
+      <property name="text">
+       <string>原始图像</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>静态处理</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>动态处理</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>滤波</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="17">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="0" colspan="22">
+    <widget class="QStackedWidget" name="stackedWidget_videoscope"/>
+   </item>
+   <item row="1" column="15">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>518</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="21">
+    <widget class="QPushButton" name="pushButton_clear">
+     <property name="text">
+      <string>清除记录</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="20">
+    <widget class="QPushButton" name="pushButton_hold">
+     <property name="text">
+      <string>记录当前行</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="21">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_rate">
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="maximum">
+      <double>99999.990000000005239</double>
+     </property>
+     <property name="value">
+      <double>100.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="19">
+    <widget class="StationMove" name="stationMove">
+     <property name="staionName" stdset="0">
+      <string>target</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="11">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>上限</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="14">
+    <widget class="QSpinBox" name="spinBox_max_limit">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="displayIntegerBase">
+      <number>10</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="12">
+    <widget class="QSpinBox" name="spinBox_min_limit">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="13">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>下限</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>通道</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>工位</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboBox_image"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_mean">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="maximum">
+      <double>255.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>最小值</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QSpinBox" name="spinBox_min">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>最大值</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="7">
+    <widget class="QSpinBox" name="spinBox_max">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="maximum">
+      <number>255</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StationMove</class>
+   <extends>QPushButton</extends>
+   <header>stationmove.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

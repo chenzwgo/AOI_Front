@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<motordoc>
+    <card cardname="card">
+        <extendio index="0">
+            <io name="di_estop" index="0" cardiotype="1" sense="1" description="急停" />
+            <io name="di_out_end_sig" index="2" cardiotype="1" sense="0" description="出料检测" />
+            <io name="di_snap_sig_0" index="4" cardiotype="1" sense="0" description="采集位光纤" />
+            <io name="di_xiao_reset" index="8" cardiotype="1" sense="0" description="下料机复位" />
+            <io name="di_xiao_run" index="10" cardiotype="1" sense="0" description="下料机运行" />
+            <io name="di_clear_mode" index="11" cardiotype="1" sense="0" description="清料模式" />
+            <io name="do_out_green" index="0" cardiotype="0" sense="0" description="输出OK给下料机" />
+            <io name="do_out_red" index="1" cardiotype="0" sense="0" description="输出NG给下料机" />
+            <io name="do_out_yellow" index="2" cardiotype="0" sense="0" description="输出RI给下料机" />
+            <io name="do_red" index="6" cardiotype="0" sense="0" description="三色灯-红" />
+            <io name="do_yellow" index="7" cardiotype="0" sense="0" description="三色灯-黃" />
+            <io name="do_green" index="8" cardiotype="0" sense="0" description="三色灯-绿" />
+            <io name="do_ffu00" index="9" cardiotype="0" sense="0" description="断驱动器电源" />
+            <io name="do_elec_lock" index="10" cardiotype="0" sense="0" description="电磁锁" />
+            <io name="do_ffu" index="11" cardiotype="0" sense="0" description="FFU" />
+            <io name="do_xia_stop" index="15" cardiotype="0" sense="0" description="下料机停止" />
+            <io name="qianduan1" index="3" cardiotype="0" sense="0" description="前端并联，默认on" />
+            <io name="2222" index="4" cardiotype="0" sense="0" description="前端并联，默认on" />
+            <io name="3333" index="5" cardiotype="0" sense="0" description="前端并联，默认on" />
+            <io name="4444" index="12" cardiotype="0" sense="0" description="前端并联，默认on" />
+            <io name="5555" index="13" cardiotype="0" sense="0" description="前端并联，默认on" />
+            <io name="555555" index="14" cardiotype="0" sense="1" description="前端并联，默认on" />
+        </extendio>
+    </card>
+</motordoc>

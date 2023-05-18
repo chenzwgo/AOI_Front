@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc type="spec">
+	<item name="x" min="0.05" max="0.06"/>
+	<item name="y" min="0.05" max="0.06"/>
+	<item name="z" min="0.05" max="0.06"/>
+	<item name="u" min="0.05" max="0.06"/>
+</doc>
+

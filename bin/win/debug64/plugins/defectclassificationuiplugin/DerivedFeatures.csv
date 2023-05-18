@@ -1,0 +1,190 @@
+﻿Name,Unit,Default,Description
+AA_IA_Area,,0,Result 0 = Active Area 1 = Ink Area
+AA_IA_Area_Scratch,,0,Result 0 = Scratch completely inside Ink Area 1 = Scratch reaches into AA or is within AA
+AreaConvexHull100,mm²,0,area of convex hull
+CdCentroidRFDD,mm,0,Centroid of RFDD bright and/or dark in CD direction
+CdCentroidRFH,mm,0,Centroid of RFH bright and/or dark in CD direction
+CdCentroidRFL,mm,0,Centroid of RFL bright and/or dark in CD direction
+CdCentroidRR,mm,0,Centroid of RR bright and/or dark in CD direction
+CdCentroidTFB,mm,0,Centroid of TFB bright and/or dark in CD direction
+CdCentroidTRB,mm,0,Centroid of TRB bright and/or dark in CD direction
+CdMaxRFDD,mm,0,CD max coordinate of RFDD
+CdMaxRFH,mm,0,CD max coordinate of RFH
+CdMaxRFL,mm,0,CD max coordinate of RFL
+CdMaxRRDD,mm,0,CD max coordinate of RRDD
+CdMaxTFB,mm,0,CD max coordinate of TFB
+CdMinRFDD,mm,0,CD min coordinate of RFDD
+CdMinRFH,mm,0,CD min coordinate of RFH
+CdMinRFL,mm,0,CD min coordinate of RFL
+CdMinRRDD,mm,0,CD min coordinate
+CdMinTFB,mm,0,CD min coordinate of TFB
+CompactnessDarkRFH,,0,"Contour length^2 over area RFH Dark (squared) length/100 -> pixel length in area, usually normalized contour (circle = 1)"
+CompactnessDarkTFB_Pkj,,0,
+CompactnessFiltRFH,,0,Contour length^2 over area TFB test(squared) length/100 -> pixel length in area
+CompactnessRFDD,,0,Contour length^2 over area RFDD Bright (squared) length/100 -> pixel length in area
+CompactnessRFL,,0,Contour length^2 over area RFL Bright + Dark (squared) length/100 -> pixel length in area
+ContrastGrayAreaDarkBrightRFH,,0,ratio of gray value * area RFH Dark over Bright
+ContrastGrayDarkBrightRFH,,0,ratio of gray value RFH Dark over Bright
+ContrastGrayDarkBrightRFL,,0,ratio of gray value RFL Dark over Bright
+ContrastGrayDarkRFH,,0,contrast of gray value RFH Dark
+ContrastGrayDarkRFL,,0,contrast of gray value RFL Dark
+ContrastRFL,,0,just a tweak since thre is no RFH channel
+DarkBrightRFH,,0,dark and bright in RFH
+DarkBrightRFL,,0,dark and bright in RFL
+DarkBrightTFB,,0,dark and bright in TFB
+EdgeDist,mm,0,"distance to nearest edge (rough estimate). Beauty is, that it works for any channel."
+FillgradeBrightRFDD,,0,Fillgrade of the channel RFDD bright area
+FillgradeBrightRFH,,0,Fillgrade of the channel RFH bright area
+FillgradeBrightRFL,,0,Fillgrade of the channel RFL bright area
+FillgradeBrightTFB,,0,Fillgrade of the channel TFB bright area
+FillgradeConvexRFDD,,0,Fillgrade Convex Hull of RFDD
+FillgradeConvexRFH,,0,Fillgrade Convex Hull of RFH
+FillgradeConvexRFH_EdgeChip,,0,Fillgrade Convex Hull of RFH for Edge Event
+FillgradeConvexRFL,,0,Fillgrade Convex Hull of RFL
+FillgradeDarkRFDD,,0,Fillgrade of the channel RFDD dark area
+FillgradeDarkRFH,,0,Fillgrade of the channel RFH dark area
+FillgradeDarkRFL,,0,Fillgrade of the channel RFL dark area
+FillgradeDarkTFB,,0,Fillgrade of the channel TFB dark area
+FillgradeEdge,,0,"fillgrade for edge since no channel flaw is generated, this will be the right fillgrade for any channel"
+FillgradeEdgeRFH,,0,Fillgrade of Edge events
+FillgradeEdgeRFL,,0,Fillgrade of RFL
+FillgradeEdgeTest,,0,
+FillgradeFiltBrightRFH,,0,Fillgrade of the channel RFH bright area
+FillgradeFiltRFH,,0,Fillgrade of the channel RFH dark plus bright area
+FillgradeRFDD,,0,Fillgrade of the channel RFDD dark plus bright area
+FillgradeRFH,,0,Fillgrade of the channel RFH dark plus bright area
+FillgradeRFL,,0,Fillgrade of the channel RFL dark plus bright area
+FillgradeRRDD,,0,Fillgrade of the channel RRDD dark plus bright area
+FillgradeTFB,,0,Fillgrade of the channel RFB dark plus bright area
+HDFmdDivergenceBrightDarkTFB,,0,"Divergence of bright and dark centroid in md direction relative to spot size in channel TFB. Positive means dark in front of bright, negative means bright in front of dark. Value 1 means: distance in md of dark to bright centroid is same as diameter of circle with area of bright + dark."
+InedgeContourLengthRatio,,0,Fillgrade of Edge events
+IntSumBrightRFDD,,0,Intensity Sum RFDD
+IntSumBrightTFB,,0,Intensity Sum
+IntSumBrightTRB,,0,Intensity Sum
+IntSumDarkRFH,,0,Intensity Sum RFH
+IntSumDarkRFL,,0,Intensity Sum RFL
+Is_ALS1,,0,Result 1 = ALS1 Region 0 = Not ALS1 Region
+Is_ALS2,,0,Result 1 = ALS2 Region 0 = Not ALS1 Region
+Is_ScratchWindowArea,,0,Result 1 = Scratch crosses Window Area or completely inside Window Area 0 = Scratch completely within Ink Area
+Is_WindowArea,,0,Result 1 = Window Area 0 = Ink Area
+Loc,,0,
+Loc_Calc,,0,
+MaxAreaEdgeF100,mm²,0,edge chip area
+MaxAreaF,mm²,0,max area of all Front channels
+MaxAreaF100,mm²,0,max area of all Front channels
+MaxAreaF100_2,mm²,0,"max area of all Front channels Bare max(0.75*(areaPrepDarkRFDD + areaPrepBrightRFDD), 0.8*(areaPrepDarkRRDD + areaPrepBrightRRDD)"
+MaxEdgeDist,mm,0,"The max distance of the defect to nearest edge (rough estimate). Beauty is, that it works for any channel."
+MaxIntSum,,0,Intensity Sum Maximum of all channels
+MaxWL,,0,longer side over shorter side
+MdBoxDeltaBrightToDarkRFH,,0,"md Difference between Bright and Dark Defekt Centroids, positive if dark area center comes first, negative if bright area center comes first."
+MdCentroidBrightRFL,mm,0,Centroid of RFL bright in MD direction
+MdCentroidBrightTFB,mm,0,Centroid of TFB bright in MD direction
+MdCentroidBrightTRB,mm,0,Centroid of TRB bright in MD direction
+MdCentroidRFDD,mm,0,Centroid of RFDD bright and/or dark in MD direction
+MdCentroidRFH,mm,0,Centroid of RFH bright and/or dark in MD direction
+MdCentroidRFL,mm,0,Centroid of RFL bright and/or dark in MD direction
+MdCentroidRR,mm,0,Centroid of RR bright and/or dark in MD direction
+MdCentroidTFB,mm,0,Centroid of TFB bright and/or dark in MD direction
+MdCentroidTRB,mm,0,Centroid of TRB bright and/or dark in MD direction
+MdDeltaBrightDarkCentroidTFB,,0,"md Difference between Bright and Dark Defekt Centroids, positive if dark area center comes first, negative if bright area center comes first."
+MdMaxRFDD,mm,0,MD max coordinate of RFDD
+MdMaxRFH,mm,0,MD max coordinate of RFH
+MdMaxRFL,mm,0,MD max coordinate of RFL
+MdMaxRRDD,mm,0,MD max coordinate
+MdMaxTFB,mm,0,MD max coordinate of TFB
+MdMinRFDD,mm,0,MD min coordinate of RFDD
+MdMinRFH,mm,0,MD min coordinate of RFH
+MdMinRFL,mm,0,MD min coordinate of RFL
+MdMinRRDD,mm,0,MD min coordinate
+MdMinTFB,mm,0,MD min coordinate of TFB
+MinWL,,0,shorter side over longer side
+RatioAreaPrepFiltTFB,,0,Ratio of area Prep over Filt RFDD
+RatioAreaRFH_RFDD,,0,Ratio of area RFH / RRDD
+RatioAreaRFL_RFDD,,0,Ratio of area RFL / RRDD
+RatioBrightDarkRFDD,,0,ratio of area Bright of Dark of RFDD
+RatioBrightDarkRFH,,0,ratio of area Bright of Dark of RFH
+RatioBrightDarkRFL,,0,ratio of area Bright of Dark of RFL
+RatioDarkBrightFiltTFB,,0,ratio of area TFB Bright over Dark
+RatioDarkBrightRFH,,0,ratio of area RFH Bright over Dark
+RatioDarkBrightRFL,,0,ratio of area RFL Bright over Dark
+RatioDarkBrightTFB,,0,ratio of area TFB Bright over Dark
+RatioDarkBrightTRB,,0,ratio of area TRB Bright over Dark
+RatioLW,,0,length over width
+RatioWL,,0,width over length
+ScratchConvexWidthRFDD,mm,0,average width of the scratch in RFDD channel
+ScratchWidthRFDD,mm,0,average width of the scratch in RFDD channel
+ScratchWidthRFL,mm,0,
+ScratchWidthRRDD,mm,0,average width of the scratch in RRDD channel
+SlimnessEdge,,0,Slimness of Edge events
+SlimnessMomentBrightRR,,0,Slimness derived over moments of TFBX (squared)
+SlimnessMomentBrightTFB,,0,Slimness derived over moments of TFB (squared)
+SlimnessMomentDarkRR,,0,Slimness derived over moments of TFBX (squared)
+SlimnessMomentDarkTFB,,0,Slimness derived over moments of TFB (squared)
+SlimnessMomentFiltRFDD,,0,Slimness derived over moments of RFDD (squared)
+SlimnessMomentFiltRFH,,0,Slimness derived over moments of TRB (squared)
+SlimnessMomentFiltTFB,,0,Slimness derived over moments of TFB (squared)
+SlimnessMomentRFDD,,0,Slimness derived over moments of RFDD (squared)
+SlimnessMomentRFH,,0,Slimness derived over moments of RFH (squared)
+SlimnessMomentRFL,,0,Slimness derived over moments of RFL (squared)
+SlimnessMomentRRDD,,0,Slimness derived over moments of RRDD (squared)
+SlimnessMomentTFB,,0,Slimness derived over moments of TFB (squared)
+SlimnessMomentTRB,,0,Slimness derived over moments of TRB (squared)
+SlimnessRFDD,,0,Slimness of RFDD
+SlimnessRFDDx,,0,Slimness of RFDD in x-direction
+SlimnessRFH,,0,Slimness of RFH
+SlimnessRFHx,,0,Slimness of RFH in x-direction
+SlimnessRFL,,0,Slimness of RFL
+SlimnessRFLx,,0,Slimness of RFL in x-direction
+SlimnessRRDD,,0,Slimness of RRDD
+SlimnessRRx,,0,Slimness of RR in x-direction
+SlimnessTFB,,0,Slimness of TFB
+SlimnessTFBx,,0,Slimness of TFB in x-direction
+SlimnessTRB,,0,Slimness of TRB
+areaBox,mm²,0,box area
+areaBoxDarkRFH,mm²,0,box area RFH
+areaBoxDarkRFL,mm²,0,box area RFL
+areaBoxRFH,mm²,0,box area RFH
+areaBoxRFL,mm²,0,box area RFL
+areaConvexHull,mm²,0,area of convex hull
+areaEdgeConvexRFH,mm²,0,edge chip area
+areaEdgeConvexRFL,mm²,0,edge chip area
+areaEdgeConvexTFB,mm²,0,edge chip area
+areaEdgeConvexTRBH,mm²,0,edge chip area
+areaEdgeOuterRFH,mm²,0,edge chip area
+areaEdgeOuterRFL,mm²,0,edge chip area
+areaEdgeOuterTFB,mm²,0,edge chip area
+areaEdgeOuterTRB,mm²,0,edge chip area
+areaEdgeOuterTRBH,mm²,0,edge chip area
+areaFactor,,0,
+areaRFDD,mm²,0,area of RFDD
+areaRFH,mm²,0,area of RFH
+areaRFL,mm²,0,area of RFL
+areaRR,mm²,0,area of RR
+areaRRDD,mm²,0,area of RRDD
+areaTFB,mm²,0,area of TFB
+areaTRB,mm²,0,area of TRB
+compactnessFiltTFB,,0,Contour length^2 over area TFB test(squared) length/100 -> pixel length in area
+compactnessPrepTFB,,0,Contour length^2 over area TFB test(squared) length/100 -> pixel length in area
+contourLengthConvexHull,mm,0,contour length of convex hull
+defaultDerivedFeature,,0,
+ellipseFactor,,0,ellipse area factor isbox area * pi/4 (=0.78) start with a lower value
+lengthRFDD,mm,0,diagonal size of rectangular box
+lengthRFH,mm,0,diagonal size of rectangular box
+lengthRFL,mm,0,diagonal size of rectangular box
+lengthTFB,mm,0,diagonal size of rectangular box
+longBoxSide,mm,0,longer side of box
+shortBoxSide,mm,0,shorter side of box
+sizeBox,mm,0,diagonal size of rectangular box
+sizeFactor,,0,
+sizeFiltBrightTFB,mm,0,digonal size
+sizeFiltDarkTFB,mm,0,digonal size
+sizeRFDD,mm,0,digonal size
+sizeRFH,mm,0,digonal size
+sizeRFL,mm,0,digonal size
+sizeRRDD,mm,0,digonal size
+sizeTFB,mm,0,digonal size
+sizeTRB,mm,0,digonal size
+widthRFDD,mm,0,diagonal size of rectangular box
+widthRFH,mm,0,diagonal size of rectangular box
+widthRFL,mm,0,diagonal size of rectangular box
+widthTFB,mm,0,diagonal size of rectangular box

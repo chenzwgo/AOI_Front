@@ -1,0 +1,4 @@
+[2022-12-19 13:54:33.275] [   error] 模板匹配失败，请重新设置创建匹配模型的参数
+[2022-12-19 13:56:00.412] [   error] crop_part: HALCON error #1301: Wrong value of control parameter 1
+[2022-12-19 13:56:01.635] [   error] crop_part: HALCON error #1301: Wrong value of control parameter 1
+[2022-12-19 13:56:02.457] [   error] crop_part: HALCON error #1301: Wrong value of control parameter 1

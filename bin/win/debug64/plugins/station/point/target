@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pointdoc>
+    <point index="0" name="point_0" x="0.0000" y="0.0000" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="1" />
+    <point index="1" name="point_1" x="-300.0000" y="0.0000" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="2" />
+    <point index="2" name="point_2" x="1000.0000" y="0.0000" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="" />
+</pointdoc>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg width="72.248892" height="72.248892" xmlns="http://www.w3.org/2000/svg">
+ <metadata id="metadata4325">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="g4210">
+   <circle r="17.656109" cy="29.124448" cx="28.811949" id="path4204" stroke-miterlimit="4" stroke-width="5.25778" stroke="#000000" fill-rule="evenodd" fill="#00ff00"/>
+  </g>
+  <g id="g4211">
+   <path id="path4206" d="m42.522781,43.022789l19.118416,19.243408" stroke-miterlimit="4" stroke-width="7.51556" stroke="#000000" fill-rule="evenodd" fill="none"/>
+  </g>
+  <rect id="svg_4" height="17.875001" width="2.75" y="20.455654" x="28.103378" stroke-width="5" stroke="#0f1e0f" fill="#f4efef"/>
+  <path id="svg_6" d="m19.97838,28.70565l18.624998,0l0,1.375l-18.624998,0l0,-1.375z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#0f1e0f" fill="#f4efef"/>
+ </g>
+</svg>

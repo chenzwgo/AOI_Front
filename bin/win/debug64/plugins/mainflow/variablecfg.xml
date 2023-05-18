@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <variable name="bLastMoving" desc="后段流程工作中" type="bool" defaultVal="false" readOnly="0" />
+    <variable name="bSetJobMove" desc="启动滚轮与设相机参数" type="bool" defaultVal="false" readOnly="0" />
+    <variable name="bIsGrap" desc="是否启动采集" type="bool" defaultVal="false" readOnly="0" />
+    <variable name="var_io" desc="io计数" type="int" defaultVal="0" readOnly="0" />
+</root>

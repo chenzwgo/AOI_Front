@@ -1,0 +1,1 @@
+[000:32:500] [0x00003cb4] Error(bjai.cpp:33): model dir not exist! path is ./model/trackpad_v1b

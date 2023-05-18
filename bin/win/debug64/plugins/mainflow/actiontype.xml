@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <group name="move" desc="运动">
+        <action type="move_ptp_abs" uiname="点位运动(绝对点位)" desc="执行点位运动，跑绝对点位，即终点位置为点位位置"/>  
+        <action type="move_ptp_rel" uiname="点位运动(相对点位)" desc="执行点位运动，跑相对点位，即终点位置为当前点+点位位置"/>  
+        <action type="move_line_abs" uiname="直线插补(绝对点位)" desc="执行直线插补运动，跑绝对点位，即终点位置为点位位置"/> 
+        <action type="move_line_rel" uiname="直线插补(相对点位)" desc="执行直线插补运动，跑相对点位，即终点位置为当前点+点位位置"/>
+        <action type="move_arc" uiname="圆弧插补" desc="执行圆弧插补运动"/>
+        <action type="move_interp" uiname="连续插补" desc="执行连续插补运动"/>
+        <action type="move_home" uiname="工站回原" desc="执行工站回原操作"/> 
+        <action type="move_stop" uiname="工站停止" desc="执行工站停止"/> 
+	<action type="move_wait_stop" uiname="等待工站停止" desc="等待工站停止"/> 
+        <action type="move_jog" uiname="jog运动" desc="工站所有轴同时进行jog运动(连续运动)"/> 
+	<action type="move_axis" uiname="单轴运动" desc="工站某个轴单独运动"/>
+	<action type="move_axisstatus" uiname="轴状态" desc="工站某个轴的状态判断"/>
+	<action type="move_point_near" uiname="位置比较" desc="判断工站当前位置是否在某点"/>
+        <action type="move_teach_point" uiname="示教点位" desc="把当前工站位置写入某点(不保存文件)"/>
+    </group>
+    <group name="io" desc="IO">
+        <action type="io_output" uiname="输出IO" desc="写IO" /> 
+        <action type="io_cylinder" uiname="气缸" desc="气缸操作" /> 
+    </group>
+    <group name="variable" desc="写变量">
+    	<action type="variable_write" uiname="写变量" desc="修改变量值" />
+        <action type="parse_string" uiname="解析数据" desc="解析存放在变量中的字符串数据" />
+    </group>
+    <group name="event" desc="事件">
+        <action type="event_set" uiname="触发事件" desc="触发事件" />  
+        <action type="event_wait" uiname="等待事件" desc="等待事件，阻塞" /> 
+    </group>
+    <group name="function" desc="函数">
+        <action type="fun" uiname="函数" desc="执行函数" />  
+    </group>
+    <group name="vision" desc="视觉">
+	<action type="vision_job" uiname="启动视觉" desc="调用执行视觉流程" />
+    </group>
+    <group name="device" desc="设备">
+    	<action type="dev_tcp" uiname="TCP通讯" desc="读写TCP端口" />
+    	<action type="dev_udp" uiname="UDP通讯" desc="读写UDP端口" />
+    	<action type="dev_com" uiname="串口通信" desc="读写串口" />
+    </group>
+    <group name="script" desc="脚本调度">
+    	<action type="script_job" uiname="脚本调度" desc="脚本调度" />
+    </group>
+    <group name="jump" desc="条件跳转">
+    	<action type="jump_action" uiname="条件跳转" desc="可用于暂停/停止/动作之间跳转" />
+        <action type="count"       uiname="循环计数" desc="用于循环执行动作" /> 
+    </group>
+    <group name="wait" desc="条件等待">
+        <action type="wait_condition" uiname="等待条件达成" desc="等待设置的条件达成" />
+    </group>
+    <group name="log" desc="UI Log">
+        <action type="log" uiname="UI LOG输出" desc="在关联的UI上输出LOG信息" />
+    </group>
+    <group name="point" desc="修改点位">
+        <action type="point_modify" uiname="修改点位" desc="修改工站点位信息" />
+    </group>
+    <group name="file" desc="读写文件">
+        <action type="file_ini" uiname="读写INI文件" desc="从INI文件读取信息,写入变量" />
+        <action type="file_csv" uiname="读写CSV文件" desc="从CSV文件读取信息,写入变量" />
+    </group>
+</root>

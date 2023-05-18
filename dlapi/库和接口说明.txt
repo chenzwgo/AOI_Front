@@ -1,0 +1,35 @@
+classification.dll 缺陷检测算法库版本1.0.1.95
+1.优化了点线面形态算法。
+2.修改初始化传入的配置文件路径改成传入产品的目录，便于产品的切换。
+
+//bjParam ->检测需要的参数结构体。
+//config_json ->配置产品路径
+//初始化
+DV_CLASSIFICATION_DLL int InitBJParam(dv::BJInputParam* bjParam,const char* product_dir);
+ 
+
+grading.dll分级算法库版本1.0.0.2
+由上个版本的多通道分级改成单通道分级。
+本次的分级算法库只能分级在视窗区域的类别是划伤的缺陷。其他的缺陷还是博杰分级。
+
+分级接口有变化。
+
+//检测等级
+//失败返回 -1 成功返回等级数
+// attr 缺陷属性结构体
+//  channel_index 通道数， A ->0 ,B-> 1 C -> 2 ...
+GRADING_DLL int grading_detect(dv::DefectAttr* attr,int channel_index);
+
+//ABCDEFG 通道缺陷使用
+for (size_t i = 0;i < 7;i++){
+	for (size_t m = 0; m < defectResult[i].len; m++)
+	{   
+		if (defectResult[i].defectAttr[m].position == 1 && defectResult[i].defectAttr[m].type == 4) {
+			int rank = grading_detect(&defectResult[i].defectAttr[m],i);
+			if (rank != -1) {
+				std::cout << "等级：" << rank << std::endl;
+			}
+		}
+	}
+}
+

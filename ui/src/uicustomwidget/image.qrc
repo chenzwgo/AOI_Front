@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/uicustomwidget">
+        <file>image/fourthOff.png</file>
+        <file>image/fourthOn.png</file>
+        <file>image/icon_anticlockwise.bmp</file>
+        <file>image/icon_back.bmp</file>
+        <file>image/icon_clockwise.bmp</file>
+        <file>image/icon_down.bmp</file>
+        <file>image/icon_front.bmp</file>
+        <file>image/icon_left.bmp</file>
+        <file>image/icon_right.bmp</file>
+        <file>image/icon_up.bmp</file>
+
+        <file>image/stop.png</file>
+    </qresource>
+</RCC>

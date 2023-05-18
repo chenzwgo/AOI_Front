@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <production>
+	<prouser name="p1" password="1"/>
+	<prouser name="p2" password="2"/>
+	<prouser name="p3" password="3"/>
+    </production>
+    <engineering>
+        <enguser name="e1" password="1"/>
+	<enguser name="e2" password="2"/>
+	<enguser name="e3" password="3"/>
+    </engineering>
+    <cpkorgrr>
+	<cpkuser name="c1" password="1"/>
+	<cpkuser name="c2" password="2"/>
+	<cpkuser name="c3" password="3"/>
+    </cpkorgrr>
+</config>

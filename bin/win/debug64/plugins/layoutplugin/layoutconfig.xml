@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc type="layout">
+    <layout mode="mainframe">
+      <!--group name="titlebar" y="0" height="25"-->
+        <group name="titlebar" y="0" height="0">
+    		<plugin name="titlebarplugin" default="false"/>
+    	</group>
+      <!--group name="toolbar" y="26" height="75"-->
+       <group name="toolbar" y="0" height="0">
+    		<plugin name="toolbarplugin" default="false"/>
+    	</group>
+    	<!--UI Plugin's height is useless, since the coordinate is changed when resizing-->
+    	<group name="business" y="101" height="470">
+    		<plugin name="mainui" default="true"/>
+    	</group>
+    </layout>
+</doc>
+

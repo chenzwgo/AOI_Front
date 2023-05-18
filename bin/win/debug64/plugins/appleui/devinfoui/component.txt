@@ -1,0 +1,3 @@
+DENSO V1.3.2, OPT-RING, COGNEX-M34X3, CCGNEX-CCD TU833
+            , OPT-RING,             , CCGNEX-CCD TU833
+            , OPT-RING,             , CCGNEX-CCD TU835a

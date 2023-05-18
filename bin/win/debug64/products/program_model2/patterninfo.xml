@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vstudiodoc version="2">
+    <Pattern strParentID="" strID="BaseBoard" dOriginX="0" dOriginY="0">
+        <BadMark bEnable="false" MarkId="" dX="0" dY="0" bSkipBadMark="false" bBadUseCustomLight="false" iR="0" iG="0" iB="0" />
+        <SurveyHeight bEnable="false" stFindHeightX="0" stFindHeightY="0" dFindHeight="0" />
+        <LocationMark bEnable="false">
+            <vecMarkPointInfos strID="" strDesc="" strMarkType="" dX="0" dY="0" bUseCustomLight="false" LightR="0" LightG="0" LightB="0" />
+            <vecMarkPointInfos strID="" strDesc="" strMarkType="" dX="0" dY="0" bUseCustomLight="false" LightR="0" LightG="0" LightB="0" />
+        </LocationMark>
+    </Pattern>
+    <Pattern strParentID="BaseBoard" strID="3444" dOriginX="0" dOriginY="0">
+        <BadMark bEnable="false" MarkId="" dX="0" dY="0" bSkipBadMark="false" bBadUseCustomLight="false" iR="0" iG="0" iB="0" />
+        <SurveyHeight bEnable="false" stFindHeightX="0" stFindHeightY="0" dFindHeight="0" />
+        <LocationMark bEnable="false">
+            <vecMarkPointInfos strID="" strDesc="" strMarkType="" dX="0" dY="0" bUseCustomLight="false" LightR="0" LightG="0" LightB="0" />
+            <vecMarkPointInfos strID="" strDesc="" strMarkType="" dX="0" dY="0" bUseCustomLight="false" LightR="0" LightG="0" LightB="0" />
+        </LocationMark>
+    </Pattern>
+    <Pattern strParentID="BaseBoard" strID="trtr" dOriginX="0" dOriginY="0">
+        <BadMark bEnable="false" MarkId="" dX="0" dY="0" bSkipBadMark="false" bBadUseCustomLight="false" iR="0" iG="0" iB="0" />
+        <SurveyHeight bEnable="false" stFindHeightX="0" stFindHeightY="0" dFindHeight="0" />
+        <LocationMark bEnable="false">
+            <vecMarkPointInfos strID="" strDesc="" strMarkType="" dX="0" dY="0" bUseCustomLight="false" LightR="0" LightG="0" LightB="0" />
+            <vecMarkPointInfos strID="" strDesc="" strMarkType="" dX="0" dY="0" bUseCustomLight="false" LightR="0" LightG="0" LightB="0" />
+        </LocationMark>
+    </Pattern>
+</vstudiodoc>

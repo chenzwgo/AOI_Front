@@ -1,0 +1,32 @@
+#include "winver.h"
+#include "version_info.h"
+
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGS 0x0L
+ FILEFLAGSMASK 0x3fL
+ FILEOS 0x00040004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "Trulytek"
+            VALUE "FileDescription", FILE_DESCRIPTION
+            VALUE "FileVersion", FILE_VERSION
+            VALUE "LegalCopyright", "Copyright (C) 2016 Trulytek."
+            VALUE "InternalName", FILE_NAME
+            VALUE "OriginalFilename", FILE_NAME
+            VALUE "ProductName", FILE_NAME
+            VALUE "ProductVersion", FILE_VERSION
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END

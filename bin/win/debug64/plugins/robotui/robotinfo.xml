@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Robots>
+    <robot name="3453453" ip="192.168.2.5" prot="444"/>
+    <robot name="123" ip="192.168.2.5" prot="444"/>
+    <robot name="1234" ip="192.168.2.5" prot="444"/>
+</Robots>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toolbar>
+    <Itemlist>
+		<!--  Spacer  -->
+		<Item diaplayname="主页面" objname="toolBar_mainui" icon="./plugins/toolbarplugin/icons/home.png" actionid="toolBar_mainui" group ="group1" shortcut="ctrl+a" default="true"/>
+		<Item diaplayname="分析统计" objname="toolBar_SetUp"      icon="./plugins/toolbarplugin/icons/setup.png" actionid="toolBar_SetUp" group ="group1" default="false"/> 
+		<Item diaplayname="调试页面" objname="toolBar_interface"  icon="./plugins/toolbarplugin/icons/tool.png" actionid="toolBar_customsettingplugin" group ="group1" shortcut="ctrl+b" default="false"/> 
+		<Item diaplayname="配置页面" objname="toolBar_Products"      icon="./plugins/toolbarplugin/icons/recipes.png" actionid="toolBar_Products" group ="group1" default="false"/> 
+		<!--Item diaplayname="图标界面" objname="toolBar_charui" 		icon="" actionid="toolBar_charui" default="false"/-->  
+		<!--Item diaplayname="TTT" objname="toolBar_devinfoui" 		icon="" actionid="toolBar_devinfoui" default="false"/-->  
+		<Item diaplayname="Spacer" objname="Spacer" 		icon="" actionid="Spacer" default="false"/>  			
+		<Item diaplayname="启动" objname="toolBar_on" 		icon="./plugins/toolbarplugin/icons/start.png" actionid="toolBar_start" group ="group2" default="false"/>  	
+		<Item diaplayname="暂停" objname="toolBar_pause" 		icon="./plugins/toolbarplugin/icons/pause.png" actionid="toolBar_pause" group ="group2"  default="false"/>  	
+		<Item diaplayname="停止" objname="toolBar_stop" 		icon="./plugins/toolbarplugin/icons/stop.png" actionid="toolBar_stop" group ="group2"  default="false"/>  	
+		<Item diaplayname="复位" objname="toolBar_reset" 		icon="./plugins/toolbarplugin/icons/reset.png" actionid="toolBar_reset" group ="group2"  default="false"/> 
+		<Item diaplayname="Spacer" objname="Spacer2" 		icon="" actionid="Spacer2" default="false"/>  				
+		<!--Item diaplayname="打开数据文件夹" objname="toolBar_data" 		icon="" actionid="toolBar_open_data_dir" default="false"/-->  
+		<!--Item diaplayname="打开图片文件夹" objname="toolBar_picture" 		icon="" actionid="toolBar_open_picture_dir" default="false"/--> 
+		<Item diaplayname="登录" objname="toolBar_user" 		icon="./plugins/toolbarplugin/icons/group.png" actionid="toolBar_usermanagementui" group ="group1" default="false"/> 
+		<Item diaplayname="帮助" objname="toolBar_Help" 		icon="./plugins/toolbarplugin/icons/help.png" actionid="toolBar_Help" group ="group1" default="false"/>
+    </Itemlist>
+	<mainaction>
+        <!--  showinframe popplugin custom  -->
+        <action id="toolBar_mainui" type="showinframe" receiver="mainui"  signal =""/>
+        <action id="toolBar_about_p" type="popplugin" receiver="aboutui"  signal =""/>	
+        <action id="toolBar_vision" type="showinframe" receiver="visiondepenserui"  signal =""/>			
+        <action id="toolBar_usermanagementui" type="showinframe" receiver="usermanagementui"  signal =""/>		
+        <action id="toolBar_alarm" type="showinframe" receiver="alarmuiplugin"  signal =""/>			
+        <action id="toolBar_Products" type="showinframe" receiver="recipesuiplugin"  signal =""/>	
+        <action id="toolBar_Jobs" type="showinframe" receiver="jobsuiplugin"  signal =""/>	
+        <action id="toolBar_Tools" type="showinframe" receiver="toolsuiplugin"  signal =""/>	
+        <action id="toolBar_SetUp" type="showinframe" receiver="setupuiplugin"  signal =""/>	
+        <action id="toolBar_Status" type="showinframe" receiver="statusuiplugin"  signal =""/>	
+        <action id="toolBar_Help" type="showinframe" receiver="helpuiplugin"  signal =""/>	         	
+        <action id="toolBar_devinfoui" type="showinframe" receiver="devinfouiplugin"  signal =""/>		
+        <action id="toolBar_customsettingplugin" type="showinframe" receiver="customsettingplugin"  signal =""/>
+        <action id="toolBar_start" type="custom" receiver="mainui"  signal ="start"/>		
+        <action id="toolBar_pause" type="custom" receiver="mainui"  signal ="pause"/>	
+        <action id="toolBar_stop" type="custom" receiver="mainui"  signal ="stop"/>	
+        <action id="toolBar_reset" type="custom" receiver="mainui"  signal ="reset"/>
+        <action id="toolBar_open_data_dir" type="custom" receiver="mainui"  signal ="open_data_dir"/>	
+        <action id="toolBar_open_picture_dir" type="custom" receiver="mainui"  signal ="open_picture_dir"/>		
+    </mainaction>
+</toolbar>

@@ -1,0 +1,3 @@
+xxx.png 正常情况
+xxx__mouseover.png 鼠标移动到上方
+xxx_pressed.png  鼠标按下

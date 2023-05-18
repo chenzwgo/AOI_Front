@@ -1,0 +1,13 @@
+[root_models]
+xt8888=xt8888
+
+[production_models]
+coojet=coojet
+test=1
+
+[engineer_models]
+coojet=coojet
+3=3
+
+[debug_models]
+debug=1

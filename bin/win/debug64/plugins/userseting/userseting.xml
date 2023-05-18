@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <cfg name="vision" localip="192.168.111.111" localport="111" serverip="192.168.444.444" serverport="444" />
+    <cfg name="barcode" localip="192.168.222.222" localport="222" serverip="192.168.333.333" serverport="333" />
+    <cfg name="robot" localip="192.168.777.555" localport="777" serverip="192.168.888.666" serverport="888" />
+    <cfg name="light" port="COM4" baudrate="300" parity="0" bytesize="4" stopbits="0" />
+    <cfg name="pressure1" port="COM1" baudrate="600" parity="1" bytesize="5" stopbits="1" pressure="12.000000" stoptime="11272" />
+    <cfg name="pressure2" port="COM2" baudrate="1200" parity="2" bytesize="6" stopbits="2" pressure="1.000000" stoptime="100" />
+    <cfg name="seatoffset" x="11.000000" y="22.000000" z="33.000000" ang="44.000000" />
+    <cfg name="record" total="11" pass="22" fail="33" yieldrate="44.000000" />
+    <cfg name="review" xUp="22.000000" xDown="11.000000" yUp="44.000000" yDown="33.000000" angUp="66.000000" angDown="55.000000" />
+    <cfg name="work" surfacefail="44" reviewfail="33" takeoutfail="22" trayempty="11" doorguard="0" />
+</root>

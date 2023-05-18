@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vstudiodoc version="2.0">
+    <defect name="BLightLeak" des="">
+        <qualification name="NG" enable="1" level7="0" level6="0" level5="9999" level4="9999" level3="9999" level2="9999" level1="9999" />
+        <qualification name="NG2" enable="1" level7="0" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="OK" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="OK2" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean2" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Rechek" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Rechek2" enable="1" level7="0" level6="0" level5="0" level4="0" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Test" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="BrightPos" des="">
+        <qualification name="NG" enable="1" level7="0" level6="0" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="NG2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="OK" enable="0" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="OK2" enable="0" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Test" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="Chips" des="">
+        <qualification name="NG" enable="1" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="NG2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="OK" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="OK2" enable="1" level7="1" level6="1" level5="1" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Test" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="DifferentCorlor" des="">
+        <qualification name="NG" enable="1" level7="0" level6="0" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="NG2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="OK" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="OK2" enable="0" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean" enable="0" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean2" enable="0" level7="0" level6="0" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Rechek2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Test" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="GridNg" des="">
+        <qualification name="NG" enable="1" level7="0" level6="0" level5="99999" level4="99999" level3="99999" level2="99999" level1="9999" />
+        <qualification name="NG2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="OK" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="OK2" enable="0" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean2" enable="0" level7="0" level6="0" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Rechek2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Test" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="SandEdge" des="">
+        <qualification name="NG" enable="1" level7="0" level6="999" level5="999" level4="9999" level3="9999" level2="9999" level1="9999" />
+        <qualification name="NG2" enable="1" level7="0" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="OK" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="OK2" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean" enable="1" level7="0" level6="0" level5="999" level4="999" level3="999" level2="999" level1="999" />
+        <qualification name="ReClean2" enable="1" level7="0" level6="0" level5="9999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek" enable="0" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Rechek2" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Test" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="Scratches" des="">
+        <qualification name="NG" enable="1" level7="0" level6="0" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="NG2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="OK" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="OK2" enable="0" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean" enable="1" level7="0" level6="0" level5="9999" level4="9999" level3="9999" level2="9999" level1="99999" />
+        <qualification name="ReClean2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Rechek2" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Test" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="Smirch" des="">
+        <qualification name="NG" enable="1" level7="0" level6="0" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="ReClean" enable="1" level7="0" level6="0" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="TLightLeak" des="">
+        <qualification name="NG" enable="1" level7="0" level6="0" level5="999" level4="9999" level3="9999" level2="9999" level1="9999" />
+        <qualification name="NG2" enable="1" level7="0" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="OK" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="OK2" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="ReClean" enable="1" level7="0" level6="0" level5="999" level4="999" level3="999" level2="999" level1="999" />
+        <qualification name="ReClean2" enable="1" level7="0" level6="0" level5="9999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="Rechek" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Rechek2" enable="1" level7="0" level6="0" level5="0" level4="0" level3="0" level2="0" level1="0" />
+        <qualification name="Test" enable="0" level7="99999" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+    <defect name="ZW" des="">
+        <qualification name="NG" enable="1" level7="0" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+        <qualification name="ReClean" enable="1" level7="0" level6="99999" level5="99999" level4="99999" level3="99999" level2="99999" level1="99999" />
+    </defect>
+</vstudiodoc>

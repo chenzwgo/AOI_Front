@@ -1,0 +1,58 @@
+工具栏项目
+    主界面/编程界面 新建/打开/保存/另存为  启动/暂停/停止 进板/出板 空跑/点胶切换 相机 点动 称重 探高 拼板设置
+
+工具栏快捷键
+    主界面    Ctrl+H
+    编程界面  Ctrl+P
+    新建      Ctrl+N
+    打开      Ctrl+O
+    保存      Ctrl+S
+    另存为    Ctrl+Alt+S
+    启动      F5
+    停止      F6
+    暂停      F7
+    复位      F8
+    进板     Shift+I  (in)
+    出板     Shift+O  (out)
+    实时显示 Alt+I   (image)
+    轴运动   Alt+J   (jog) 
+    称重     Alt+W   (weight)
+    探高     Alt+H   (height)
+    拼板设置 Alt+B   (board)
+    设备参数 Alt+P   (param)
+
+业务快捷键
+    开阀   Ctrl+Alt+I
+    关阀   Ctrl+Alt+O
+
+运动快捷键
+    X轴向左快速移动 Ctrl + ←
+    X轴向右快速移动 Ctrl + →
+    Y轴向前快速移动 Ctrl + ↑
+    Y轴向后快速移动 Ctrl + ↓
+    Z轴向上快速移动 Ctrl + Alt + ↑
+    Z轴向下快速移动 Ctrl + Alt + ↓
+    X轴向左慢速移动 Ctrl + shift + ←
+    X轴向右慢速移动 Ctrl + shift + →
+    Y轴向前慢速移动 Ctrl + shift + ↑
+    Y轴向后慢速移动 Ctrl + shift + ↓
+    Z轴向上慢速移动 Ctrl + shift + Alt + ↑
+    Z轴向下慢速移动 Ctrl + shift + Alt + ↓
+
+编程器快捷键
+    复制 Ctrl+C
+    剪切 Ctrl+X
+    粘贴 Ctrl+V
+    删除 Del
+    弹出属性 Return(回车)
+    光标上移 ↑
+    光标下移 ↓
+    光标左移 ←
+    光标右移 →
+    切到流程 Alt+1
+    切到函数 Alt+2
+    执行模式 Alt+R
+    编辑模式 Alt+E
+    动作集合 Alt+D
+    错误检查 F7
+    查找     Ctrl+F

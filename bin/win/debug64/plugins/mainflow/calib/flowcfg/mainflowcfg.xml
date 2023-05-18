@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <work name="newWorkFlow" desc="新流程" count="0" bEnable="2" bLoop="0" />
+</root>

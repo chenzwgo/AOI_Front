@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<motordoc>
+    <card cardname="card">
+        <axis axisname="AxisConvery" axisdesc="皮带轴" index="0" motortype="0" nlmton="0" plmton="0" homeon="0" srvon="1" alarmon="1" nlmtlevel="0" plmtlevel="0" homelevel="0" srvonlevel="1" alarmlevel="1" vel="100.000" acc="1000.000" dec="1000.000" smt="0.000" velstart="1.000" velstop="1.000" softnlmts="-1000.000" softplmts="1000.000" softnlmtsenabled="0" softplmtsenalbed="0" homevel="5.000" homeacc="1.000" homedec="1.000" homepos="100.000" homeoffset="0.000" indexpos="50.000" indexoffset="0.000" pulsepermm="3183.000" ddhomestart="" ddhomefinish="" homemode="-1" posmode="1" />
+        <axis axisname="OutLine" axisdesc="出料口" index="1" motortype="1" nlmton="0" plmton="0" homeon="0" srvon="1" alarmon="1" nlmtlevel="0" plmtlevel="0" homelevel="0" srvonlevel="1" alarmlevel="1" vel="100.000" acc="1000.000" dec="1000.000" smt="0.000" velstart="1.000" velstop="1.000" softnlmts="-1000.000" softplmts="1000.000" softnlmtsenabled="0" softplmtsenalbed="0" homevel="5.000" homeacc="1.000" homedec="1.000" homepos="100.000" homeoffset="0.000" indexpos="50.000" indexoffset="0.000" pulsepermm="128.000" ddhomestart="" ddhomefinish="" homemode="-1" posmode="0" />
+    </card>
+</motordoc>

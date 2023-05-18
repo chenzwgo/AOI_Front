@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc type="layout">
+    <layout mode="mainframe">
+    	<group name="toolbar" y="0" height="45">
+    		<plugin name="toolbarplugin" default="true"/>
+    	</group>
+    	<!--UI Plugin's height is useless, since the coordinate is changed when resizing-->
+    	<group name="business" y="45" height="485">
+    		<plugin name="mainui" default="true"/>
+    	</group>
+    </layout>
+</doc>
+

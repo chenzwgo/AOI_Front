@@ -1,0 +1,6 @@
+<?xml version="2.0" encoding="utf-8"?>
+<vstudiodoc version="2">
+    <NetType Type="SocketServer"/>
+    <NetType Type="SocketClient"/>
+    <NetType Type="Com"/>
+</vstudiodoc>

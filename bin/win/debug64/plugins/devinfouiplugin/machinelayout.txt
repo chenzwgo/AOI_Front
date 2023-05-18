@@ -1,0 +1,4 @@
+INPUT,     WORK,             OUTPUT
+-BC SCAN,  -TURRET IMAGE,    
+	,  -POCKET IMAGE,
+	,  -RC PLACE,

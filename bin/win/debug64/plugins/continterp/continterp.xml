@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <work name="aaa" desc="插补1">
+        <param cardName="card1" crd="1" evenTime="3" velMax="15" accMax="10" />
+        <axis  x="1" y="2" z="3" />
+        <Item  type="line" vel="15" acc="12" endVel="" x="15.0" y="18.0" z="25.0"/>
+        <Item  type="arc" vel="5" acc="12" endVel="" x1="15.0" y1="18.0" z1="25.0" x2="15.0" y2="18.0" z2="25.0"/>
+        <Item  type="io" index="1" bopen="0" />
+        <Item  type="delay" time="100" />
+        <Item  type="da" channel="5" value="5.0"/>
+    </work>
+  
+    <work name="bbb" desc="插补2">
+        <param cardName="card1" crd="1" evenTime="3" velMax="15" accMax="10" />
+        <axis  axis1="1" axis2="2" axis3="3" />
+        <Item  type="line" vel="15" acc="12" endVel="" x="15.0" y="18.0" z="25.0"/>
+        <Item  type="arc" vel="5" acc="12" endVel="" x1="15.0" y1="18.0" z1="25.0" x2="15.0" y2="18.0" z2="25.0"/>
+        <Item  type="io" index="1" bopen="0" />
+        <Item  type="delay" time="100" />
+        <Item  type="da" channel="5" da="5.0"/>
+    </work>
+</root>

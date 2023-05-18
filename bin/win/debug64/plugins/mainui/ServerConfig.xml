@@ -1,0 +1,8 @@
+<?xml version="2.0" encoding="utf-8"?>
+<vstudiodoc version="2">
+    <NetType Type="SocketServer">
+        <SocketServer strPort="9999" strIP="192.168.0.23" strID="B">
+            <SpecifiedClient strPort="9999" strIP="192.168.0.12" strID="SendPC" desIP="192.168.0.11" desPort="8888"/>
+        </SocketServer>
+    </NetType>
+</vstudiodoc>

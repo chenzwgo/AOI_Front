@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<motordoc>
+    <motor>
+        <station name="Out" file="Out" des="Out" axiscount="1" x="OutLine" y=" None" z=" None" u=" None" v=" None" w=" None" homePri="0,0,0,0,0,0" />
+        <station name="target" file="target" des="target" axiscount="1" x="AxisConvery" y=" None" z=" None" u=" None" v=" None" w=" None" homePri="0,0,0,0,0,0" />
+    </motor>
+</motordoc>

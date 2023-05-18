@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vstudiodoc version="2.0">
+    <multivar name="BB" des="" expression="Area &gt;0.14 &amp; Area &lt;=0.24" />
+    <multivar name="D1" des="D1" expression="Contrast &lt;=8" />
+    <multivar name="D2" des="" expression="Contrast &gt;8 &amp; Contrast&lt;=15" />
+    <multivar name="D3" des="" expression="Contrast &gt;15 &amp; Contrast&lt;=55" />
+    <multivar name="D4" des="" expression="Contrast &gt;55 &amp; Contrast&lt;=75" />
+    <multivar name="D5" des="" expression="Contrast &gt;75 &amp; Contrast&lt;=105" />
+    <multivar name="D6" des="" expression="Contrast &gt;105&amp; Contrast&lt;=155" />
+    <multivar name="D7" des="" expression="Contrast &gt;155 &amp; Contrast&lt;=255" />
+    <multivar name="D8" des="" expression="Contrast &gt;255" />
+    <multivar name="M1" des="" expression="Area &lt;=0.006" />
+    <multivar name="M10" des="" expression="Area &gt;0.3" />
+    <multivar name="M2" des="" expression="Area &gt;0.006 &amp; Area &lt;=0.012" />
+    <multivar name="M3" des="" expression="Area &gt;0.012 &amp; Area &lt;=0.021" />
+    <multivar name="M4" des="" expression="Area &gt;0.021 &amp; Area &lt;=0.031" />
+    <multivar name="M5" des="" expression="Area &gt;0.031 &amp; Area &lt;=0.041" />
+    <multivar name="M6" des="" expression="Area &gt;0.041 &amp; Area &lt;=0.051" />
+    <multivar name="M7" des="" expression="Area &gt;0.051 &amp; Area &lt;=0.1" />
+    <multivar name="M8" des="" expression="Area &gt;0.1 &amp; Area &lt;=0.15" />
+    <multivar name="M9" des="" expression="Area &gt;0.15 &amp; Area &lt;=0.3" />
+</vstudiodoc>

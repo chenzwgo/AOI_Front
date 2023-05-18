@@ -1,0 +1,14 @@
+﻿<root>
+    <station name="main">
+        <defect name="Normal" alias="OK" enable="0" index="0" severity="0" color="blue" description="正常" />
+        <defect name="Scratches" alias="HS" enable="1" index="1" severity="0" color="blue" description="划伤" />
+        <defect name="Smirch" alias="BB" enable="1" index="2" severity="0" color="blue" description="崩边" />
+        <defect name="Chips" alias="CB" enable="1" index="3" severity="0" color="red" description="差边" />
+        <defect name="TLightLeak" alias="CH" enable="1" index="4" severity="0" color="red" description="擦伤" />
+        <defect name="BLightLeak" alias="YH" enable="1" index="5" severity="0" color="blue" description="压痕" />
+        <defect name="SandEdge" alias="ZY" enable="1" index="6" severity="0" color="blue" description="轮子印" />
+        <defect name="GridNg" alias="CI" enable="1" index="7" severity="0" color="blue" description="刺伤" />
+        <defect name="BrightPos" alias="YM" enable="1" index="8" severity="0" color="green" description="油墨" />
+		<defect name="ZW" alias="ZW" enable="1" index="9" severity="0" color="green" description="脏污" />
+    </station>
+</root>

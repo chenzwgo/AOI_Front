@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GeneralForm</class>
+ <widget class="QWidget" name="GeneralForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1422</width>
+    <height>707</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="7">
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="title">
+      <string>区域缺陷过多警告</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="lineEdit_area_warning_height">
+        <property name="text">
+         <string>512</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_area_warning_width">
+        <property name="text">
+         <string>512</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QSpinBox" name="spinBox_areawarning_cnt0">
+        <property name="maximum">
+         <number>999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="toolTip">
+         <string>单位面积内判断缺陷的个数</string>
+        </property>
+        <property name="text">
+         <string>区域面积设定</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="comboBox_areawarning_defectype0">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>0 全部缺陷</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1 漏光</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2 溢墨</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3 异色</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4 锯齿</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5 脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6 油墨堆积</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7 孔变形</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8 漏印</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9 刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10 崩边</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11 凹凸点</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12 压痕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13 水波纹</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14 模糊脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15 模糊刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16 扫光不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17 深划</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18 mark线不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19 异物</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20 毛发</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21 尘点</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>高度(pix)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="toolTip">
+         <string>连续100片玻璃都出现就报警</string>
+        </property>
+        <property name="text">
+         <string>连续玻璃数量</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>缺陷类型</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QComboBox" name="comboBox_areawarning_defectype2">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>0 全部缺陷</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1 漏光</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2 溢墨</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3 异色</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4 锯齿</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5 脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6 油墨堆积</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7 孔变形</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8 漏印</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9 刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10 崩边</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11 凹凸点</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12 压痕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13 水波纹</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14 模糊脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15 模糊刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16 扫光不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17 深划</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18 mark线不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19 异物</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20 毛发</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21 尘点</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QCheckBox" name="checkBox_area_warning_enable1">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>使能2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QCheckBox" name="checkBox_area_warning_enable0">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>使能1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QCheckBox" name="checkBox_area_warning_enable2">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>使能3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>宽度(pix)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="checkBox_area_warning_enableall">
+        <property name="text">
+         <string>功能使能开关</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="2">
+       <widget class="QSpinBox" name="spinBox_areawarning_cnt4">
+        <property name="maximum">
+         <number>999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QComboBox" name="comboBox_areawarning_defectype1">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>0 全部缺陷</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1 漏光</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2 溢墨</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3 异色</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4 锯齿</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5 脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6 油墨堆积</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7 孔变形</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8 漏印</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9 刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10 崩边</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11 凹凸点</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12 压痕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13 水波纹</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14 模糊脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15 模糊刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16 扫光不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17 深划</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18 mark线不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19 异物</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20 毛发</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21 尘点</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>个数</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QCheckBox" name="checkBox_area_warning_enable3">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>使能4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="2">
+       <spacer name="verticalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>开关</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QSpinBox" name="spinBox_areawarning_cnt1">
+        <property name="maximum">
+         <number>999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QCheckBox" name="checkBox_area_warning_enable4">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>使能5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QComboBox" name="comboBox_areawarning_defectype3">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>0 全部缺陷</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1 漏光</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2 溢墨</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3 异色</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4 锯齿</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5 脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6 油墨堆积</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7 孔变形</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8 漏印</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9 刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10 崩边</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11 凹凸点</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12 压痕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13 水波纹</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14 模糊脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15 模糊刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16 扫光不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17 深划</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18 mark线不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19 异物</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20 毛发</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21 尘点</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="QSpinBox" name="spinBox_areawarning_cnt3">
+        <property name="maximum">
+         <number>999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QSpinBox" name="spinBox_areawarning_cnt2">
+        <property name="maximum">
+         <number>999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="spinBox_area_warning_cnt">
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+        <property name="value">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QPushButton" name="pushButton_area_warning_clearCnt">
+        <property name="text">
+         <string>清除历史数据,重新开始计数</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QComboBox" name="comboBox_areawarning_defectype4">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>0 全部缺陷</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1 漏光</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2 溢墨</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3 异色</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4 锯齿</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5 脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6 油墨堆积</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7 孔变形</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8 漏印</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9 刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10 崩边</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11 凹凸点</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12 压痕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13 水波纹</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14 模糊脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15 模糊刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16 扫光不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17 深划</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18 mark线不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19 异物</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20 毛发</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21 尘点</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QComboBox" name="comboBox_areawarning_defectype5">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>0 全部缺陷</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1 漏光</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2 溢墨</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3 异色</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4 锯齿</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5 脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6 油墨堆积</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7 孔变形</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8 漏印</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9 刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10 崩边</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11 凹凸点</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12 压痕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13 水波纹</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14 模糊脏污</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15 模糊刮伤</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16 扫光不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17 深划</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18 mark线不良</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19 异物</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20 毛发</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21 尘点</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="12" column="2">
+       <widget class="QSpinBox" name="spinBox_areawarning_cnt5">
+        <property name="maximum">
+         <number>999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="QCheckBox" name="checkBox_area_warning_enable5">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>使能6</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>产品结果判定使能</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="checkBox_ok">
+        <property name="text">
+         <string>A</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_ok2">
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_ok3">
+        <property name="text">
+         <string>C</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_ng">
+        <property name="text">
+         <string>D-NG</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="title">
+      <string> 脏污标准设置</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="4" column="1">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_SmirchArea0">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>毛发个数上限</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="spinBox_DirtpitsCnt0">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spinBox_SmirchCnt0">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spinBox_HairCnt0">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_HairArea0">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>尘点面积上限</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>毛发面积上限</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>脏污个数上限</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_DirtArea0">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>尘点个数上限</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>脏污面积上限</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <spacer name="verticalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="spinBox_SmirchCnt1">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_7">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>不可接受</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QSpinBox" name="spinBox_HairCnt1">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QSpinBox" name="spinBox_DirtpitsCnt1">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_DirtArea1">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_SmirchArea1">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_HairArea1">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_8">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>警告</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_9">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>可接受</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QSpinBox" name="spinBox_SmirchCnt2">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QSpinBox" name="spinBox_HairCnt2">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QSpinBox" name="spinBox_DirtpitsCnt2">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_SmirchArea2">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_HairArea2">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_DirtArea2">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="maximum">
+         <double>99999.990000000005239</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>脏污等级：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="4" colspan="2">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>等级判定超时设置</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="3" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="checkBox_enable_timeout_abort">
+        <property name="text">
+         <string> 判定超时(ms)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="checkBox_ng_abort">
+        <property name="text">
+         <string> D-NG 产品终止判定</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spinBox_timeout_abort">
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="checkBox_enable_cnt_abort">
+        <property name="text">
+         <string> 判定个数过多终止</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spinBox_cnt_abort">
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>等级判定使能</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="checkBox_level0">
+        <property name="text">
+         <string>  等级0 (表示未知等级)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_level1">
+        <property name="text">
+         <string>  等级1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_level2">
+        <property name="text">
+         <string>  等级2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_level3">
+        <property name="text">
+         <string>  等级3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_level4">
+        <property name="text">
+         <string>  等级4</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_level5">
+        <property name="text">
+         <string>  等级5</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_level6">
+        <property name="text">
+         <string>  等级6</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_level7">
+        <property name="text">
+         <string>  等级7</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="9">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="3" rowspan="2">
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="5">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" rowspan="2">
+    <spacer name="verticalSpacer_7">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="4" rowspan="2">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="2">
+    <widget class="QGroupBox" name="groupBox_DefectEnable">
+     <property name="title">
+      <string>缺陷判定使能</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

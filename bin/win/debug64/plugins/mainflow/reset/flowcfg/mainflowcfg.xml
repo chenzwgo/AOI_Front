@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <work name="newWorkFlow" desc="复位" count="1" bEnable="2" bLoop="0">
+        <step name="newStep" desc="使能清状态设零" count="11" bEnable="1">
+            <action name="fun" desc="" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunSetRun" cParam="0" />
+            </action>
+            <action name="move_stop" desc="" bEnable="1" bBlock="1" type="move_stop" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WorkStop station="target" />
+            </action>
+            <action name="variable_write" desc="" bEnable="1" bBlock="1" type="variable_write" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <variable name="bSetJobMove" operate="=" value="0" />
+            </action>
+            <action name="fun1" desc="写光源配置" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunWriteEleAndSqe" cParam="" />
+            </action>
+            <action name="fun3" desc="复位相机" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunResetCam" cParam="" />
+            </action>
+            <action name="fun4" desc="清光源计数" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunResetLight" cParam="" />
+            </action>
+            <action name="fun5" desc="设置相机参数" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunSetCamerCfg" cParam="" />
+            </action>
+            <action name="fun6" desc="复位产品计数" bEnable="0" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunResetPrOut" cParam="" />
+            </action>
+            <action name="fun8" desc="光源充电" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunAutoTriggerByLines" cParam="20000" />
+            </action>
+            <action name="fun7" desc="算法完成" bEnable="0" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunDeepLearnEnv" cParam="" />
+            </action>
+            <action name="fun9" desc="清光源计数" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunResetLight" cParam="" />
+            </action>
+        </step>
+    </work>
+</root>

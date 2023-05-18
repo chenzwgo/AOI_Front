@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <Obj LOGOUT="0" DESC="主界面" PLUGIN="mainui" DEBUG="0" OBJ="HomeView" PRODUCTION="0" ENGINEER="0">
+        <Obj LOGOUT="0" DESC="设置缺陷配置" PLUGIN="" DEBUG="0" OBJ="pushButton_setDefectcfg" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="切换产品" PLUGIN="" DEBUG="0" OBJ="toolButton_change_product" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="重测" PLUGIN="" DEBUG="0" OBJ="toolButton_reCheck" PRODUCTION="0" ENGINEER="0"/>
+    </Obj>
+    <Obj LOGOUT="0" DESC="界面" PLUGIN="toolbarplugin" DEBUG="0" OBJ="MainToolBarUIPlugin_CustomToolBar" PRODUCTION="0" ENGINEER="0">
+        <Obj LOGOUT="0" DESC="配置页面" PLUGIN="" DEBUG="0" OBJ="toolBar_Products" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="分析统计" PLUGIN="" DEBUG="0" OBJ="toolBar_SetUp" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="主界面" PLUGIN="" DEBUG="0" OBJ="toolBar_a_mainui" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="调试页面" PLUGIN="" DEBUG="0" OBJ="toolBar_interface" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="启动" PLUGIN="" DEBUG="0" OBJ="toolBar_on" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="暂停" PLUGIN="" DEBUG="0" OBJ="toolBar_pause" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="复位" PLUGIN="" DEBUG="0" OBJ="toolBar_reset" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="停止" PLUGIN="" DEBUG="0" OBJ="toolBar_stop" PRODUCTION="0" ENGINEER="0"/>
+    </Obj>
+    <Obj LOGOUT="0" DESC="调试页面" PLUGIN="customsettingplugin" DEBUG="0" OBJ="obj_customsetting" PRODUCTION="0" ENGINEER="0">
+        <Obj LOGOUT="0" DESC="图像工具" PLUGIN="" DEBUG="0" OBJ="obj_camtool" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="相机设置" PLUGIN="" DEBUG="0" OBJ="obj_set_cameracfg" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="轴IO调试" PLUGIN="" DEBUG="0" OBJ="obj_set_card_debug" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="卡轴配置" PLUGIN="" DEBUG="1" OBJ="obj_set_cardcfg" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="光源调试" PLUGIN="" DEBUG="1" OBJ="obj_set_light_ctr" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="流程配置" PLUGIN="" DEBUG="1" OBJ="obj_set_mainflowui" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="参数设置" PLUGIN="" DEBUG="0" OBJ="obj_set_pamaner" PRODUCTION="0" ENGINEER="0"/>
+        <Obj LOGOUT="0" DESC="工站点位" PLUGIN="" DEBUG="0" OBJ="obj_set_station" PRODUCTION="0" ENGINEER="0"/>
+    </Obj>
+</config>

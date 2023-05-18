@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vstudiodoc type="robotpointsconfig">
+    <points>
+        <point name="pt_take_head" description="取料起点" type="0" X="192.480" Y="-57.803" Z="-3.374" U="-15.554" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_take_back" description="取料终点" type="0" X="195.481" Y="-72.231" Z="-10.809" U="-25.963" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_paste_head" description="贴料起点" type="0" X="192.480" Y="-57.803" Z="-3.374" U="-15.554" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_1" description="过渡点位[1]" type="1" X="192.480" Y="137.727" Z="-3.374" U="-15.555" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_2" description="过渡点位[2]" type="1" X="43.546" Y="137.727" Z="-3.374" U="-15.556" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_6" description="过渡点位[6]" type="1" X="-99.199" Y="258.300" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_14" description="过渡点位[14]" type="1" X="-99.199" Y="258.300" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_20" description="过渡点位[20]" type="1" X="-238.738" Y="247.187" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_21" description="过渡点位[21]" type="1" X="-238.738" Y="247.187" Z="-35.000" U="-15.560" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_46" description="过渡点位[46]" type="1" X="-276.728" Y="238.184" Z="-35.000" U="-25.594" V="0.000" W="0.000" ARM="0" />
+        <point name="pt_paste_back" description="贴料终点" type="0" X="-276.728" Y="238.184" Z="-39.247" U="-25.594" V="0.000" W="0.000" ARM="0" />
+        <point name="pt_throw_head" description="抛料起点" type="0" X="224.319" Y="18.020" Z="-36.658" U="-104.311" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_throw_back" description="抛料终点" type="0" X="224.319" Y="18.020" Z="-36.658" U="-104.311" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_home_head" description="回原起点" type="0" X="-276.728" Y="238.184" Z="-37.874" U="-25.594" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_22" description="过渡点位[22]" type="1" X="-238.738" Y="247.187" Z="-37.874" U="-15.560" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_23" description="过渡点位[23]" type="1" X="-238.738" Y="247.187" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_16" description="过渡点位[16]" type="1" X="-99.199" Y="258.300" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_15" description="过渡点位[15]" type="1" X="-99.199" Y="258.300" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_3" description="过渡点位[3]" type="1" X="43.546" Y="137.727" Z="-3.374" U="-15.556" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_4" description="过渡点位[4]" type="1" X="192.480" Y="137.727" Z="-3.374" U="-15.555" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_home_back" description="回原终点" type="0" X="192.480" Y="-57.803" Z="-3.374" U="-15.554" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_avoid_head" description="换料回避起点" type="0" X="204.181" Y="-54.209" Z="-18.006" U="30.916" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_7" description="过渡点位[7]" type="1" X="204.181" Y="146.791" Z="-18.006" U="30.916" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_avoid_back" description="换料回避终点" type="0" X="-4.547" Y="146.791" Z="-18.006" U="30.915" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_take_head_second" description="二次取料起点" type="0" X="192.480" Y="-57.803" Z="-3.374" U="-15.554" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_take_back_second" description="二次取料终点" type="0" X="211.481" Y="-68.231" Z="-10.809" U="-25.963" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_paste_head_second" description="二次贴料起点" type="0" X="192.480" Y="-57.803" Z="-3.374" U="-15.554" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_8" description="过渡点位[1]" type="1" X="192.480" Y="137.727" Z="-3.374" U="-15.555" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_9" description="过渡点位[2]" type="1" X="43.546" Y="137.727" Z="-3.374" U="-15.556" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_10" description="过渡点位[6]" type="1" X="-99.199" Y="258.300" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_17" description="过渡点位[17]" type="1" X="-99.199" Y="258.300" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_24" description="过渡点位[24]" type="1" X="-243.103" Y="89.400" Z="-3.374" U="-15.581" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_25" description="过渡点位[25]" type="1" X="-243.103" Y="89.400" Z="-37.874" U="-15.581" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_28" description="过渡点位[28]" type="1" X="-272.103" Y="87.399" Z="-37.874" U="-25.679" V="0.000" W="0.000" ARM="0" />
+        <point name="pt_paste_back_second" description="二次贴料终点" type="0" X="-286.828" Y="93.410" Z="-39.247" U="-25.386" V="0.000" W="0.000" ARM="0" />
+        <point name="pt_home_head_second" description="二次回原起点" type="0" X="-287.303" Y="91.799" Z="-37.874" U="-25.679" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_26" description="过渡点位[26]" type="1" X="-243.103" Y="89.400" Z="-37.874" U="-15.581" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_27" description="过渡点位[27]" type="1" X="-243.103" Y="89.400" Z="-3.374" U="-15.581" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_18" description="过渡点位[18]" type="1" X="-99.199" Y="258.300" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="0" />
+        <point name="p_through_19" description="过渡点位[19]" type="1" X="-99.199" Y="258.300" Z="-3.374" U="-15.560" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_11" description="过渡点位[3]" type="1" X="43.546" Y="137.727" Z="-3.374" U="-15.556" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_12" description="过渡点位[4]" type="1" X="192.480" Y="137.727" Z="-3.374" U="-15.555" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_13" description="过渡点位[5]" type="1" X="192.480" Y="137.727" Z="-3.374" U="-15.555" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_home_back_second" description="二次回原终点" type="0" X="192.480" Y="-57.803" Z="-3.374" U="-15.554" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_grip_head" description="第一片料取料起点" type="0" X="194.981" Y="-67.231" Z="-10.809" U="-25.964" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_40" description="过渡点位[40]" type="1" X="227.481" Y="-68.231" Z="-10.809" U="-26.183" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_41" description="过渡点位[41]" type="1" X="260.481" Y="-68.231" Z="-10.809" U="-26.183" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_42" description="过渡点位[42]" type="1" X="295.981" Y="-80.230" Z="-10.809" U="-25.963" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_grip_back" description="第一片料取料终点" type="0" X="329.982" Y="-81.230" Z="-10.809" U="-25.964" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_grip_head_second" description="第二片料取料起点" type="0" X="210.981" Y="-68.231" Z="-10.809" U="-26.183" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_43" description="过渡点位[43]" type="1" X="244.481" Y="-68.231" Z="-10.809" U="-26.183" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_44" description="过渡点位[44]" type="1" X="277.481" Y="-72.231" Z="-10.809" U="-26.183" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_45" description="过渡点位[45]" type="1" X="312.981" Y="-75.232" Z="-10.809" U="-25.964" V="0.000" W="0.000" ARM="1" />
+        <point name="pt_grip_back_second" description="第二片料取料终点" type="0" X="347.982" Y="-77.114" Z="-10.809" U="-25.968" V="0.000" W="0.000" ARM="1" />
+    </points>
+</vstudiodoc>

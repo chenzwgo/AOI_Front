@@ -1,0 +1,157 @@
+[000:00:109] [0x000011a4] Error(json.h:107): get json object failed !!! for multi_workpiece
+[000:00:125] [0x000011a4] Warning(json.h:246): [std::exception] get json object failed !!!
+[000:00:125] [0x000011a4] Warning(json.h:247): get json object failed !!! return default value: 0 for multi_workpiece
+[000:00:141] [0x000011a4] Error(json.h:107): get json object failed !!! for use_mask
+[000:00:141] [0x000011a4] Warning(json.h:246): [std::exception] get json object failed !!!
+[000:00:156] [0x000011a4] Warning(json.h:247): get json object failed !!! return default value: 0 for use_mask
+[000:00:156] [0x000011a4] Error(json.h:107): get json object failed !!! for preprocess_funcs
+[000:00:172] [0x000011a4] Error(json.h:317): get json object failed !!! for preprocess_funcs
+[000:00:172] [0x000011a4] Info(json.h:531): get json object failed !!! for preprocess_funcs
+[000:00:187] [0x000011a4] Error(json.h:107): get json object failed !!! for score_thresh
+[000:00:187] [0x000011a4] Error(json.h:264): get json object failed !!! for score_thresh
+[000:00:203] [0x000011a4] Error(coordinator.cpp:92): [std::exception] get json object failed !!!
+[000:00:078] [0x000036a0] Error(json.h:111): get json object failed !!! for multi_workpiece
+[000:00:078] [0x000036a0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:094] [0x000036a0] Warning(json.h:251): get json object failed !!! return default value: 0 for multi_workpiece
+[000:00:094] [0x000036a0] Error(json.h:111): get json object failed !!! for use_mask
+[000:00:094] [0x000036a0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:109] [0x000036a0] Warning(json.h:251): get json object failed !!! return default value: 0 for use_mask
+[000:00:109] [0x000036a0] Error(json.h:111): get json object failed !!! for preprocess_funcs
+[000:00:125] [0x000036a0] Error(json.h:321): get json object failed !!! for preprocess_funcs
+[000:00:125] [0x000036a0] Info(json.h:593): get json object failed !!! for preprocess_funcs
+[000:00:125] [0x000036a0] Error(json.h:111): get json object failed !!! for variable_input
+[000:00:140] [0x000036a0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:140] [0x000036a0] Warning(json.h:251): get json object failed !!! return default value: 0 for variable_input
+[000:00:140] [0x000036a0] Error(json.h:111): get json object failed !!! for timeout
+[000:00:156] [0x000036a0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:156] [0x000036a0] Warning(json.h:251): get json object failed !!! return default value: 0 for timeout
+[000:00:156] [0x000036a0] Error(json.h:111): get json object failed !!! for warm_up_times
+[000:00:172] [0x000036a0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:172] [0x000036a0] Warning(json.h:251): get json object failed !!! return default value: 1 for warm_up_times
+[000:00:187] [0x000036a0] Error(json.h:111): get json object failed !!! for timeout_map
+[000:00:187] [0x000036a0] Error(json.h:356): get json object failed !!! for timeout_map
+[000:00:203] [0x000036a0] Info(json.h:699): get timeout array failed from config.json. will not use per image timeout.
+[000:03:703] [0x000036a0] Info(detector.cpp:22): init model in basic class finished.
+[000:07:890] [0x000036a0] Info(timer.h:53): [LOG TIME EVENT] finished bjai::Image to cv::Mat: 0 ms
+[000:07:906] [0x000036a0] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished resize img: 16 ms
+[000:07:922] [0x000036a0] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished roi setting: 32 ms
+[000:07:922] [0x000036a0] Info(timer.h:53): [LOG TIME EVENT] finished preprocess image0: 32 ms
+[000:08:000] [0x000036a0] Info(timer.h:53): [LOG TIME EVENT] finished model 0: 110 ms
+[000:08:015] [0x000036a0] Info(timer.h:53): [LOG TIME EVENT] finished image 0: 125 ms
+[000:08:015] [0x000036a0] Info(timer.h:53): [LOG TIME EVENT] total time: 125 ms
+[000:00:078] [0x00003350] Error(json.h:111): get json object failed !!! for multi_workpiece
+[000:00:078] [0x00003350] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:078] [0x00003350] Warning(json.h:251): get json object failed !!! return default value: 0 for multi_workpiece
+[000:00:094] [0x00003350] Error(json.h:111): get json object failed !!! for use_mask
+[000:00:094] [0x00003350] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:110] [0x00003350] Warning(json.h:251): get json object failed !!! return default value: 0 for use_mask
+[000:00:110] [0x00003350] Error(json.h:111): get json object failed !!! for preprocess_funcs
+[000:00:125] [0x00003350] Error(json.h:321): get json object failed !!! for preprocess_funcs
+[000:00:125] [0x00003350] Info(json.h:593): get json object failed !!! for preprocess_funcs
+[000:00:125] [0x00003350] Error(json.h:111): get json object failed !!! for variable_input
+[000:00:141] [0x00003350] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:141] [0x00003350] Warning(json.h:251): get json object failed !!! return default value: 0 for variable_input
+[000:00:157] [0x00003350] Error(json.h:111): get json object failed !!! for timeout
+[000:00:157] [0x00003350] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:172] [0x00003350] Warning(json.h:251): get json object failed !!! return default value: 0 for timeout
+[000:00:172] [0x00003350] Error(json.h:111): get json object failed !!! for warm_up_times
+[000:00:172] [0x00003350] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:188] [0x00003350] Warning(json.h:251): get json object failed !!! return default value: 1 for warm_up_times
+[000:00:188] [0x00003350] Error(json.h:111): get json object failed !!! for timeout_map
+[000:00:203] [0x00003350] Error(json.h:356): get json object failed !!! for timeout_map
+[000:00:203] [0x00003350] Info(json.h:699): get timeout array failed from config.json. will not use per image timeout.
+[000:02:000] [0x00003350] Info(detector.cpp:22): init model in basic class finished.
+[000:04:844] [0x00003350] Info(timer.h:53): [LOG TIME EVENT] finished bjai::Image to cv::Mat: 0 ms
+[000:04:860] [0x00003350] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished resize img: 16 ms
+[000:04:860] [0x00003350] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished roi setting: 16 ms
+[000:04:860] [0x00003350] Info(timer.h:53): [LOG TIME EVENT] finished preprocess image0: 16 ms
+[000:04:953] [0x00003350] Info(timer.h:53): [LOG TIME EVENT] finished model 0: 109 ms
+[000:04:953] [0x00003350] Info(timer.h:53): [LOG TIME EVENT] finished image 0: 109 ms
+[000:04:953] [0x00003350] Info(timer.h:53): [LOG TIME EVENT] total time: 109 ms
+[000:00:063] [0x00002cb0] Error(json.h:111): get json object failed !!! for multi_workpiece
+[000:00:079] [0x00002cb0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:094] [0x00002cb0] Warning(json.h:251): get json object failed !!! return default value: 0 for multi_workpiece
+[000:00:110] [0x00002cb0] Error(json.h:111): get json object failed !!! for use_mask
+[000:00:125] [0x00002cb0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:125] [0x00002cb0] Warning(json.h:251): get json object failed !!! return default value: 0 for use_mask
+[000:00:125] [0x00002cb0] Error(json.h:111): get json object failed !!! for preprocess_funcs
+[000:00:141] [0x00002cb0] Error(json.h:321): get json object failed !!! for preprocess_funcs
+[000:00:157] [0x00002cb0] Info(json.h:593): get json object failed !!! for preprocess_funcs
+[000:00:157] [0x00002cb0] Error(json.h:111): get json object failed !!! for variable_input
+[000:00:172] [0x00002cb0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:172] [0x00002cb0] Warning(json.h:251): get json object failed !!! return default value: 0 for variable_input
+[000:00:172] [0x00002cb0] Error(json.h:111): get json object failed !!! for timeout
+[000:00:188] [0x00002cb0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:204] [0x00002cb0] Warning(json.h:251): get json object failed !!! return default value: 0 for timeout
+[000:00:204] [0x00002cb0] Error(json.h:111): get json object failed !!! for warm_up_times
+[000:00:204] [0x00002cb0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:204] [0x00002cb0] Warning(json.h:251): get json object failed !!! return default value: 1 for warm_up_times
+[000:00:219] [0x00002cb0] Error(json.h:111): get json object failed !!! for timeout_map
+[000:00:235] [0x00002cb0] Error(json.h:356): get json object failed !!! for timeout_map
+[000:00:235] [0x00002cb0] Info(json.h:699): get timeout array failed from config.json. will not use per image timeout.
+[000:02:079] [0x00002cb0] Info(detector.cpp:22): init model in basic class finished.
+[000:04:938] [0x00002cb0] Info(timer.h:53): [LOG TIME EVENT] finished bjai::Image to cv::Mat: 0 ms
+[000:04:938] [0x00002cb0] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished resize img: 0 ms
+[000:04:954] [0x00002cb0] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished roi setting: 16 ms
+[000:04:969] [0x00002cb0] Info(timer.h:53): [LOG TIME EVENT] finished preprocess image0: 31 ms
+[000:05:047] [0x00002cb0] Info(timer.h:53): [LOG TIME EVENT] finished model 0: 109 ms
+[000:05:047] [0x00002cb0] Info(timer.h:53): [LOG TIME EVENT] finished image 0: 109 ms
+[000:05:047] [0x00002cb0] Info(timer.h:53): [LOG TIME EVENT] total time: 109 ms
+[000:00:093] [0x00003334] Error(json.h:111): get json object failed !!! for multi_workpiece
+[000:00:093] [0x00003334] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:109] [0x00003334] Warning(json.h:251): get json object failed !!! return default value: 0 for multi_workpiece
+[000:00:125] [0x00003334] Error(json.h:111): get json object failed !!! for use_mask
+[000:00:125] [0x00003334] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:125] [0x00003334] Warning(json.h:251): get json object failed !!! return default value: 0 for use_mask
+[000:00:140] [0x00003334] Error(json.h:111): get json object failed !!! for preprocess_funcs
+[000:00:140] [0x00003334] Error(json.h:321): get json object failed !!! for preprocess_funcs
+[000:00:156] [0x00003334] Info(json.h:593): get json object failed !!! for preprocess_funcs
+[000:00:172] [0x00003334] Error(json.h:111): get json object failed !!! for variable_input
+[000:00:172] [0x00003334] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:172] [0x00003334] Warning(json.h:251): get json object failed !!! return default value: 0 for variable_input
+[000:00:187] [0x00003334] Error(json.h:111): get json object failed !!! for timeout
+[000:00:203] [0x00003334] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:203] [0x00003334] Warning(json.h:251): get json object failed !!! return default value: 0 for timeout
+[000:00:218] [0x00003334] Error(json.h:111): get json object failed !!! for warm_up_times
+[000:00:218] [0x00003334] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:218] [0x00003334] Warning(json.h:251): get json object failed !!! return default value: 1 for warm_up_times
+[000:00:234] [0x00003334] Error(json.h:111): get json object failed !!! for timeout_map
+[000:00:234] [0x00003334] Error(json.h:356): get json object failed !!! for timeout_map
+[000:00:234] [0x00003334] Info(json.h:699): get timeout array failed from config.json. will not use per image timeout.
+[000:02:031] [0x00003334] Info(detector.cpp:22): init model in basic class finished.
+[000:04:812] [0x00003334] Info(timer.h:53): [LOG TIME EVENT] finished bjai::Image to cv::Mat: 15 ms
+[000:04:812] [0x00003334] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished resize img: 15 ms
+[000:04:812] [0x00003334] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished roi setting: 15 ms
+[000:04:828] [0x00003334] Info(timer.h:53): [LOG TIME EVENT] finished preprocess image0: 31 ms
+[000:04:890] [0x00003334] Info(timer.h:53): [LOG TIME EVENT] finished model 0: 93 ms
+[000:04:906] [0x00003334] Info(timer.h:53): [LOG TIME EVENT] finished image 0: 109 ms
+[000:04:906] [0x00003334] Info(timer.h:53): [LOG TIME EVENT] total time: 109 ms
+[000:00:078] [0x000001e0] Error(json.h:111): get json object failed !!! for multi_workpiece
+[000:00:093] [0x000001e0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:093] [0x000001e0] Warning(json.h:251): get json object failed !!! return default value: 0 for multi_workpiece
+[000:00:093] [0x000001e0] Error(json.h:111): get json object failed !!! for use_mask
+[000:00:109] [0x000001e0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:109] [0x000001e0] Warning(json.h:251): get json object failed !!! return default value: 0 for use_mask
+[000:00:125] [0x000001e0] Error(json.h:111): get json object failed !!! for preprocess_funcs
+[000:00:125] [0x000001e0] Error(json.h:321): get json object failed !!! for preprocess_funcs
+[000:00:125] [0x000001e0] Info(json.h:593): get json object failed !!! for preprocess_funcs
+[000:00:140] [0x000001e0] Error(json.h:111): get json object failed !!! for variable_input
+[000:00:140] [0x000001e0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:156] [0x000001e0] Warning(json.h:251): get json object failed !!! return default value: 0 for variable_input
+[000:00:171] [0x000001e0] Error(json.h:111): get json object failed !!! for timeout
+[000:00:171] [0x000001e0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:187] [0x000001e0] Warning(json.h:251): get json object failed !!! return default value: 0 for timeout
+[000:00:187] [0x000001e0] Error(json.h:111): get json object failed !!! for warm_up_times
+[000:00:203] [0x000001e0] Warning(json.h:250): [std::exception] Unknown exception
+[000:00:203] [0x000001e0] Warning(json.h:251): get json object failed !!! return default value: 1 for warm_up_times
+[000:00:218] [0x000001e0] Error(json.h:111): get json object failed !!! for timeout_map
+[000:00:218] [0x000001e0] Error(json.h:356): get json object failed !!! for timeout_map
+[000:00:218] [0x000001e0] Info(json.h:699): get timeout array failed from config.json. will not use per image timeout.
+[000:01:984] [0x000001e0] Info(detector.cpp:22): init model in basic class finished.
+[000:04:734] [0x000001e0] Info(timer.h:53): [LOG TIME EVENT] finished bjai::Image to cv::Mat: 0 ms
+[000:04:734] [0x000001e0] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished resize img: 0 ms
+[000:04:750] [0x000001e0] Info(timer.h:53): [LOG TIME EVENT] preprocessor finished roi setting: 16 ms
+[000:04:750] [0x000001e0] Info(timer.h:53): [LOG TIME EVENT] finished preprocess image0: 16 ms
+[000:04:828] [0x000001e0] Info(timer.h:53): [LOG TIME EVENT] finished model 0: 94 ms
+[000:04:828] [0x000001e0] Info(timer.h:53): [LOG TIME EVENT] finished image 0: 94 ms
+[000:04:843] [0x000001e0] Info(timer.h:53): [LOG TIME EVENT] total time: 109 ms

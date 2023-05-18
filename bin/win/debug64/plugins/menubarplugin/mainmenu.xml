@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menuconfig>
+    <mainmenu>
+        <menu  name="文件"  icon="./plugins/menubarplugin/Flying_Mode.png" actionid="" haschild="true">
+            <menu  name="配置备份" icon="./plugins/menubarplugin/Flying_Mode.png" actionid="congfigbuckup" haschild="false"/>
+	     <menu  name="新建..."   icon="" objname="menu_file_a_new" actionid="file_new" haschild="false"/>
+	     <menu  name="打开..."   icon="" objname="menu_file_b_open" actionid="file_open" haschild="false"/>
+        </menu>
+        <menu  name="设置"  icon="./plugins/menubarplugin/Flying_Mode.png" actionid="" haschild="true">
+            <menu  name="用户设置"  actionid="usersetting" haschild="false"/> 
+            <menu  name="切换语言" icon="./plugins/menubarplugin/Flying_Mode.png"   actionid="" haschild="true">
+                <menu  name="english" icon="./plugins/menubarplugin/Flying_Mode.png"  actionid="english" haschild="false"/> 
+                <menu  name="中文"  actionid="chinese" haschild="false"/> 
+            </menu> 
+        </menu>   
+        <menu  name="视觉管理"  actionid="" haschild="true">
+            <menu  name="光源控制"  actionid="Lighter" haschild="false"/>
+        </menu>
+        <menu  name="运动管理"  actionid="" haschild="true">
+            <menu  name="机器人配置"  actionid="robot" haschild="false"/>              
+            <menu  name="控制卡配置"  actionid="cardconfig" haschild="false"/>     
+            <menu  name="控制卡调试"  actionid="cardinfo" haschild="false"/>
+            <menu  name="工站配置"  actionid="axisstation" haschild="false"/> 
+            <menu  name="流程配置"  actionid="mainflowconfig" haschild="false"/>
+			<menu  name="脚本配置PY"  actionid="scriptide" haschild="false"/>
+			<menu  name="脚本配置BAS"  actionid="xtbasicide" haschild="false"/>
+        </menu>
+        <menu  name="调试助手"  actionid="" haschild="true">
+            <menu  name="串口/网口助手"  actionid="comnetass" haschild="false"/>
+        </menu>   
+        <menu  name="帮助"  actionid="" haschild="true">
+            <menu  name="关于"  actionid="about" haschild="false"/> 			
+        </menu>    
+    </mainmenu>
+    
+    <mainaction>
+        <!--  showinframe popplugin custom  -->
+        <action id="exit" type="custom" receiver="self"  signal ="close"/>
+		<action id="file_open" type="custom" receiver="fileuiplugin"  signal ="file_open"/>
+		<action id="file_modify" type="custom" receiver="fileuiplugin"  signal ="file_modify"/>
+        
+        <action id="syssetting" type="popplugin" receiver="syssettingui"  signal =""/>
+        <action id="usersetting" type="popplugin" receiver="usersettingui"  signal =""/>
+        <action id="english" type="custom" receiver="self"  signal ="english"/>
+        <action id="chinese" type="custom" receiver="self"  signal ="chinese"/>
+        
+        <action id="Camera" type="popplugin" receiver="cameraui"  signal =""/>
+        <action id="Lighter" type="popplugin" receiver="lightui"  signal = "test"/>
+        
+        <action id="robot" type="popplugin" receiver="robotui" signal=""/>      
+        <action id="axisstation" type="popplugin" receiver="stationui" signal=""/>
+        <action id="cardconfig" type="popplugin" receiver="motionui"  signal =""/>
+        <action id="cardinfo" type="popplugin" receiver="cardui"  signal =""/>
+        <action id="mainflowconfig" type="popplugin" receiver="mainflowui"  signal =""/>
+        <action id="operatorui" type="popplugin" receiver="operatorui"  signal =""/>
+
+        <action id="scriptide" type="popplugin" receiver="scriptide"  signal =""/>
+		<action id="xtbasicide" type="popplugin" receiver="xtbasicide"  signal =""/>
+        <action id="scanuiwidget" type="popplugin" receiver="scanuiwidget"  signal =""/>
+        
+        <action id="comnetass" type="popplugin" receiver="communicationui"  signal =""/>
+        
+        <action id="about" type="popplugin" receiver="aboutui"  signal =""/>
+		<action id="ioinformation" type="popplugin" receiver="showioinformation"  signal =""/>
+		
+		<action id="appleui" type="popplugin" receiver="appleui"  signal =""/>
+				
+    </mainaction>
+</menuconfig>

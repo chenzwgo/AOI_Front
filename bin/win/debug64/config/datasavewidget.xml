@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dataformat>
+    <displaytimeformat>hh-mm-ss</displaytimeformat>
+    <dataitems>
+        <item name = "SN"/>
+        <item name = "MATERIAL"/>
+    </dataitems>
+    <savafile>       
+        <enable>true</enable>
+        <filedirpath>./datadir</filedirpath>
+        <overdue>30</overdue>
+    </savafile>
+</dataformat>

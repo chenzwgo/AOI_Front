@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CDefectRecord</class>
+ <widget class="QWidget" name="CDefectRecord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>实际缺陷类型</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_defect_list"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>实际缺陷等级</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinBox_defect_level">
+       <property name="maximum">
+        <number>7</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="tableWidget_defect_param">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <row>
+      <property name="text">
+       <string>属性</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>通道名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>缺陷级别</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>缺陷类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>面积</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>对比度</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>分类分数</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>检测分数</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>宽度</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>高度</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>A</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="8">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="9">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="10">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QScrollArea" name="scrollArea_image">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>751</width>
+        <height>246</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="CVisionimagetoolDlg" name="widget_A" native="true"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="CVisionimagetoolDlg" name="widget_B" native="true"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="CVisionimagetoolDlg" name="widget_C" native="true"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="CVisionimagetoolDlg" name="widget_D" native="true"/>
+       </item>
+       <item row="0" column="4">
+        <widget class="CVisionimagetoolDlg" name="widget_E" native="true"/>
+       </item>
+       <item row="0" column="5">
+        <widget class="CVisionimagetoolDlg" name="widget_F" native="true"/>
+       </item>
+       <item row="0" column="6">
+        <widget class="CVisionimagetoolDlg" name="widget_G" native="true"/>
+       </item>
+       <item row="0" column="7">
+        <widget class="CVisionimagetoolDlg" name="widget_H" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_save">
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CVisionimagetoolDlg</class>
+   <extends>QWidget</extends>
+   <header>./uitoolbox/visionimagetooldlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

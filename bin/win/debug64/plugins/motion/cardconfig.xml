@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<motordoc>
+    <card name="card" index="0" type="cardgg" axiscount="2" extandcount="0" dec="运动卡">
+        <ioinfo index="0" incount="16" outcount="16" />
+    </card>
+</motordoc>

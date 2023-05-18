@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vstudiodoc version="2.0">
+    <camera>
+        <item sn="Xtium-CL_PX4_2" name="camU1" channel="3" width="8192" height="9728" snapheight="9728" realheight="1" exposure="30" gain="5" freq="2800" blocksize="512" trigger="1" path="./plugins/cameraplugin/PX4_1.ccf" isinvert="0" />
+    </camera>
+    <camera>
+        <item sn="Xtium-CL_PX4_1" name="camU2" channel="1" width="8192" height="9728" snapheight="9728" realheight="1" exposure="30" gain="5" freq="10000" blocksize="512" trigger="1" path="./plugins/cameraplugin/PX4_1.ccf" isinvert="0" />
+    </camera>
+</vstudiodoc>

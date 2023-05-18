@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <variable name="varDispenseing" desc="点胶中" type="bool" defaultVal="false" readOnly="1" />
+    <variable name="varPurgeing" desc="清胶中" type="bool" defaultVal="false" readOnly="1" />
+    <variable name="varCycleCount" desc="点胶次数" type="int" defaultVal="0" readOnly="1" />
+</root>

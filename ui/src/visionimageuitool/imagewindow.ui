@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageWindow</class>
+ <widget class="QMainWindow" name="ImageWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>925</width>
+    <height>793</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_property">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0,0,0,0,1">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_type">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>类型</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_shapeType">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_beginPoint">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>起点</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_beginPoint">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_endPoint">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>终点</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_endPoint">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_center">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>中心</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_center">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_radius">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_10">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>半径</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_radius">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="maximum">
+             <double>99999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_length">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>总长</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_len">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="maximum">
+             <double>99999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_Angle">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_11">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>角度</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_angle">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="maximum">
+             <double>99999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_height">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_12">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>长</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_height">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="maximum">
+             <double>99999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_width">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>宽</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_width">
+            <property name="focusPolicy">
+             <enum>Qt::ClickFocus</enum>
+            </property>
+            <property name="maximum">
+             <double>99999.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_size">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>尺寸</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_width">
+         <property name="focusPolicy">
+          <enum>Qt::ClickFocus</enum>
+         </property>
+         <property name="maximum">
+          <number>99999</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>X</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_height">
+         <property name="focusPolicy">
+          <enum>Qt::ClickFocus</enum>
+         </property>
+         <property name="maximum">
+          <number>99999</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButton_modifySize">
+         <property name="toolTip">
+          <string>修改尺寸</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/image/icons/scale.svg</normaloff>:/image/icons/scale.svg</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_arrow">
+         <property name="focusPolicy">
+          <enum>Qt::ClickFocus</enum>
+         </property>
+         <property name="text">
+          <string>显示箭头</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_grid">
+         <property name="focusPolicy">
+          <enum>Qt::ClickFocus</enum>
+         </property>
+         <property name="text">
+          <string>网格</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="GraphWidget" name="graphicsView">
+      <property name="dragMode">
+       <enum>QGraphicsView::ScrollHandDrag</enum>
+      </property>
+      <property name="cacheMode">
+       <set>QGraphicsView::CacheNone</set>
+      </property>
+      <property name="transformationAnchor">
+       <enum>QGraphicsView::AnchorUnderMouse</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar_itemMove">
+   <property name="windowTitle">
+    <string>toolBar_Item移动</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionItemMoveLimitH"/>
+   <addaction name="actionItemMoveLimitV"/>
+   <addaction name="actionItemMoveLimitHV"/>
+   <addaction name="separator"/>
+   <addaction name="actionMoveLeft"/>
+   <addaction name="actionMoveUp"/>
+   <addaction name="actionMoveDown"/>
+   <addaction name="actionMoveRight"/>
+   <addaction name="separator"/>
+   <addaction name="actionMoveLeftPix"/>
+   <addaction name="actionMoveUpPix"/>
+   <addaction name="actionMoveRightPix"/>
+   <addaction name="actionMoveDownPix"/>
+   <addaction name="separator"/>
+   <addaction name="actionSelectNext"/>
+   <addaction name="actionSelectPre"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_imageZoom">
+   <property name="windowTitle">
+    <string>toolBar_图像缩放</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actionOpenImage"/>
+   <addaction name="actionClearImage"/>
+   <addaction name="separator"/>
+   <addaction name="actionSaveImage"/>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+   <addaction name="actionFullView"/>
+   <addaction name="actionOriginalSize"/>
+   <addaction name="actionCenterCross"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_draw">
+   <property name="windowTitle">
+    <string>toolBar_绘制</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSelect"/>
+   <addaction name="actionMovePic"/>
+   <addaction name="actionZoomInRect"/>
+   <addaction name="separator"/>
+   <addaction name="actionLine2point"/>
+   <addaction name="actionPolyline"/>
+   <addaction name="separator"/>
+   <addaction name="actionArcCenter2point"/>
+   <addaction name="actionArc3point"/>
+   <addaction name="separator"/>
+   <addaction name="actionRect"/>
+   <addaction name="actionRectangle"/>
+   <addaction name="separator"/>
+   <addaction name="actionCircle3point"/>
+   <addaction name="actionCircleCenterPoint"/>
+   <addaction name="separator"/>
+   <addaction name="actionErase"/>
+   <addaction name="actionText"/>
+   <addaction name="separator"/>
+   <addaction name="actionClearRoi"/>
+   <addaction name="action_color"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_edit">
+   <property name="windowTitle">
+    <string>toolBar_编辑</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCopyShape"/>
+   <addaction name="actionCutShape"/>
+   <addaction name="actionPasteShape"/>
+   <addaction name="separator"/>
+   <addaction name="actionSelectAll"/>
+   <addaction name="actionDeleteAll"/>
+   <addaction name="actionDeleteSelect"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_undo">
+   <property name="windowTitle">
+    <string>toolBar_撤销</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionUndoStack"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_size">
+   <property name="windowTitle">
+    <string>toolBar_尺寸</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar_property">
+   <property name="windowTitle">
+    <string>toolBar_属性</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar_manual">
+   <property name="windowTitle">
+    <string>toolBar_...</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/zoom_in.svg</normaloff>:/image/icons/zoom_in.svg</iconset>
+   </property>
+   <property name="text">
+    <string>zoomIn</string>
+   </property>
+   <property name="toolTip">
+    <string>放大(+)</string>
+   </property>
+   <property name="shortcut">
+    <string>+</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/zoom_out.svg</normaloff>:/image/icons/zoom_out.svg</iconset>
+   </property>
+   <property name="text">
+    <string>zoomOut</string>
+   </property>
+   <property name="toolTip">
+    <string>缩小(-)</string>
+   </property>
+   <property name="shortcut">
+    <string>-</string>
+   </property>
+  </action>
+  <action name="actionOriginalSize">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/center_to_page.svg</normaloff>:/image/icons/center_to_page.svg</iconset>
+   </property>
+   <property name="text">
+    <string>OriginalSize</string>
+   </property>
+   <property name="toolTip">
+    <string>原始大小(.)</string>
+   </property>
+   <property name="shortcut">
+    <string>.</string>
+   </property>
+  </action>
+  <action name="actionZoomInRect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/zoom_window.svg</normaloff>:/image/icons/zoom_window.svg</iconset>
+   </property>
+   <property name="text">
+    <string>zoomInRect</string>
+   </property>
+   <property name="toolTip">
+    <string>局部放大</string>
+   </property>
+  </action>
+  <action name="actionMovePic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/zoom_pan.svg</normaloff>:/image/icons/zoom_pan.svg</iconset>
+   </property>
+   <property name="text">
+    <string>movePic</string>
+   </property>
+   <property name="toolTip">
+    <string>图像平移(鼠标中键)</string>
+   </property>
+  </action>
+  <action name="actionOpenImage">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/open.svg</normaloff>:/image/icons/open.svg</iconset>
+   </property>
+   <property name="text">
+    <string>openImage</string>
+   </property>
+   <property name="toolTip">
+    <string>打开图片</string>
+   </property>
+  </action>
+  <action name="actionItemMoveLimitH">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/restr_hor.svg</normaloff>:/image/icons/restr_hor.svg</iconset>
+   </property>
+   <property name="text">
+    <string>itemMoveLimitH</string>
+   </property>
+   <property name="toolTip">
+    <string>仅限于水平方向移动</string>
+   </property>
+  </action>
+  <action name="actionItemMoveLimitV">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/restr_ver.svg</normaloff>:/image/icons/restr_ver.svg</iconset>
+   </property>
+   <property name="text">
+    <string>itemMoveLimitV</string>
+   </property>
+   <property name="toolTip">
+    <string>仅限于垂直方向移动</string>
+   </property>
+  </action>
+  <action name="actionItemMoveLimitHV">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/restr_ortho.svg</normaloff>:/image/icons/restr_ortho.svg</iconset>
+   </property>
+   <property name="text">
+    <string>itemMoveLimitHV</string>
+   </property>
+   <property name="toolTip">
+    <string>仅限于水平或垂直方向移动</string>
+   </property>
+  </action>
+  <action name="actionLine2point">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/line_2p.svg</normaloff>:/image/icons/line_2p.svg</iconset>
+   </property>
+   <property name="text">
+    <string>line2point</string>
+   </property>
+   <property name="toolTip">
+    <string>直线(2点)</string>
+   </property>
+   <property name="shortcut">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="actionArc3point">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/arc_3_points.svg</normaloff>:/image/icons/arc_3_points.svg</iconset>
+   </property>
+   <property name="text">
+    <string>arc3point</string>
+   </property>
+   <property name="toolTip">
+    <string>圆弧(3点)</string>
+   </property>
+   <property name="shortcut">
+    <string>4</string>
+   </property>
+  </action>
+  <action name="actionArcCenter2point">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/arc_center_point_angle.svg</normaloff>:/image/icons/arc_center_point_angle.svg</iconset>
+   </property>
+   <property name="text">
+    <string>arcCenter2point</string>
+   </property>
+   <property name="toolTip">
+    <string>圆弧(圆心,2点)</string>
+   </property>
+   <property name="shortcut">
+    <string>3</string>
+   </property>
+  </action>
+  <action name="actionCircle3point">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/circle_3_points.svg</normaloff>:/image/icons/circle_3_points.svg</iconset>
+   </property>
+   <property name="text">
+    <string>circle3point</string>
+   </property>
+   <property name="toolTip">
+    <string>圆(3点)</string>
+   </property>
+   <property name="shortcut">
+    <string>6</string>
+   </property>
+  </action>
+  <action name="actionCircleCenterPoint">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/circle_center_point.svg</normaloff>:/image/icons/circle_center_point.svg</iconset>
+   </property>
+   <property name="text">
+    <string>circleCenterPoint</string>
+   </property>
+   <property name="toolTip">
+    <string>圆(圆心,点)</string>
+   </property>
+   <property name="shortcut">
+    <string>7</string>
+   </property>
+  </action>
+  <action name="actionCircleCenterRadius">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/circle_center_radius.svg</normaloff>:/image/icons/circle_center_radius.svg</iconset>
+   </property>
+   <property name="text">
+    <string>circleCenterRadius</string>
+   </property>
+   <property name="toolTip">
+    <string>圆(圆心,半径)</string>
+   </property>
+  </action>
+  <action name="actionPolyline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/polyline.png</normaloff>:/image/icons/polyline.png</iconset>
+   </property>
+   <property name="text">
+    <string>polyline</string>
+   </property>
+   <property name="toolTip">
+    <string>多线段</string>
+   </property>
+   <property name="shortcut">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="actionFullView">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/fit_to_page.svg</normaloff>:/image/icons/fit_to_page.svg</iconset>
+   </property>
+   <property name="text">
+    <string>fullView</string>
+   </property>
+   <property name="toolTip">
+    <string>铺满(Space)</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionSelect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/cursor.svg</normaloff>:/image/icons/cursor.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+   <property name="toolTip">
+    <string>选择(Esc,右键)</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionDeleteSelect">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/delete.svg</normaloff>:/image/icons/delete.svg</iconset>
+   </property>
+   <property name="text">
+    <string>deleteSelect</string>
+   </property>
+   <property name="toolTip">
+    <string>删除选择项</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionDeleteAll">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/hatch.svg</normaloff>:/image/icons/hatch.svg</iconset>
+   </property>
+   <property name="text">
+    <string>deleteAll</string>
+   </property>
+   <property name="toolTip">
+    <string>清空</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Del</string>
+   </property>
+  </action>
+  <action name="actionCopyShape">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/copy.svg</normaloff>:/image/icons/copy.svg</iconset>
+   </property>
+   <property name="text">
+    <string>copy</string>
+   </property>
+   <property name="toolTip">
+    <string>复制</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionCutShape">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/cut.svg</normaloff>:/image/icons/cut.svg</iconset>
+   </property>
+   <property name="text">
+    <string>cut</string>
+   </property>
+   <property name="toolTip">
+    <string>剪切</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionPasteShape">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/paste.svg</normaloff>:/image/icons/paste.svg</iconset>
+   </property>
+   <property name="text">
+    <string>paste</string>
+   </property>
+   <property name="toolTip">
+    <string>粘贴</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/new.svg</normaloff>:/image/icons/new.svg</iconset>
+   </property>
+   <property name="text">
+    <string>new</string>
+   </property>
+   <property name="toolTip">
+    <string>新建</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionRect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/line_rectangle.svg</normaloff>:/image/icons/line_rectangle.svg</iconset>
+   </property>
+   <property name="text">
+    <string>rect</string>
+   </property>
+   <property name="toolTip">
+    <string>矩形</string>
+   </property>
+   <property name="shortcut">
+    <string>5</string>
+   </property>
+  </action>
+  <action name="actionCurve">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/line_freehand.svg</normaloff>:/image/icons/line_freehand.svg</iconset>
+   </property>
+   <property name="text">
+    <string>curve</string>
+   </property>
+   <property name="toolTip">
+    <string>曲线</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/select_all.svg</normaloff>:/image/icons/select_all.svg</iconset>
+   </property>
+   <property name="text">
+    <string>selectAll</string>
+   </property>
+   <property name="toolTip">
+    <string>全选</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionMoveDown">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/movedown.png</normaloff>:/image/icons/movedown.png</iconset>
+   </property>
+   <property name="text">
+    <string>moveDown</string>
+   </property>
+   <property name="toolTip">
+    <string>向下移动</string>
+   </property>
+   <property name="shortcut">
+    <string>Down</string>
+   </property>
+  </action>
+  <action name="actionMoveUp">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/moveup.png</normaloff>:/image/icons/moveup.png</iconset>
+   </property>
+   <property name="text">
+    <string>moveUp</string>
+   </property>
+   <property name="toolTip">
+    <string>向上移动</string>
+   </property>
+   <property name="shortcut">
+    <string>Up</string>
+   </property>
+  </action>
+  <action name="actionMoveRight">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/moveright.png</normaloff>:/image/icons/moveright.png</iconset>
+   </property>
+   <property name="text">
+    <string>moveRight</string>
+   </property>
+   <property name="toolTip">
+    <string>向右移动</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="actionMoveLeft">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/moveleft.png</normaloff>:/image/icons/moveleft.png</iconset>
+   </property>
+   <property name="text">
+    <string>moveLeft</string>
+   </property>
+   <property name="toolTip">
+    <string>向左移动</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="actionMoveUpPix">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/moveuppix.png</normaloff>:/image/icons/moveuppix.png</iconset>
+   </property>
+   <property name="text">
+    <string>moveUpPix</string>
+   </property>
+   <property name="toolTip">
+    <string>向上移动一个像数</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Up</string>
+   </property>
+  </action>
+  <action name="actionMoveDownPix">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/movedownpix.png</normaloff>:/image/icons/movedownpix.png</iconset>
+   </property>
+   <property name="text">
+    <string>moveDownPix</string>
+   </property>
+   <property name="toolTip">
+    <string>向下移动一个像数</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Down</string>
+   </property>
+  </action>
+  <action name="actionMoveLeftPix">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/moveleftpix.png</normaloff>:/image/icons/moveleftpix.png</iconset>
+   </property>
+   <property name="text">
+    <string>moveLeftPix</string>
+   </property>
+   <property name="toolTip">
+    <string>向左移动一个像数</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="actionMoveRightPix">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/moverightpix.png</normaloff>:/image/icons/moverightpix.png</iconset>
+   </property>
+   <property name="text">
+    <string>moveRightPix</string>
+   </property>
+   <property name="toolTip">
+    <string>向右移动一个像数</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+  <action name="actionClearImage">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/close.svg</normaloff>:/image/icons/close.svg</iconset>
+   </property>
+   <property name="text">
+    <string>clearImage</string>
+   </property>
+   <property name="toolTip">
+    <string>清空图片</string>
+   </property>
+  </action>
+  <action name="actionSelectNext">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/down.svg</normaloff>:/image/icons/down.svg</iconset>
+   </property>
+   <property name="text">
+    <string>selectNext</string>
+   </property>
+   <property name="toolTip">
+    <string>选中下一个</string>
+   </property>
+  </action>
+  <action name="actionSelectPre">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/up.svg</normaloff>:/image/icons/up.svg</iconset>
+   </property>
+   <property name="text">
+    <string>selectPre</string>
+   </property>
+   <property name="toolTip">
+    <string>选择上一个</string>
+   </property>
+  </action>
+  <action name="actionUndoStack">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/downmost.svg</normaloff>:/image/icons/downmost.svg</iconset>
+   </property>
+   <property name="text">
+    <string>undoStack</string>
+   </property>
+   <property name="toolTip">
+    <string>撤销队列</string>
+   </property>
+  </action>
+  <action name="actionErase">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/black_n_white_mode.svg</normaloff>:/image/icons/black_n_white_mode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>erase</string>
+   </property>
+   <property name="toolTip">
+    <string>橡皮擦</string>
+   </property>
+  </action>
+  <action name="actionCenterCross">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/restr_ortho.svg</normaloff>:/image/icons/restr_ortho.svg</iconset>
+   </property>
+   <property name="text">
+    <string>centerCross</string>
+   </property>
+   <property name="toolTip">
+    <string>显示图像中心十字架</string>
+   </property>
+  </action>
+  <action name="actionClearRoi">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/quit.svg</normaloff>:/image/icons/quit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>clearRoi</string>
+   </property>
+   <property name="toolTip">
+    <string>清除所有ROI</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Del</string>
+   </property>
+  </action>
+  <action name="actionSaveImage">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/save.svg</normaloff>:/image/icons/save.svg</iconset>
+   </property>
+   <property name="text">
+    <string>saveImage</string>
+   </property>
+   <property name="toolTip">
+    <string>图像保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_color">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/construction_layer.svg</normaloff>:/image/icons/construction_layer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>selectcolor</string>
+   </property>
+   <property name="toolTip">
+    <string>选择颜色</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/explode.svg</normaloff>:/image/icons/explode.svg</iconset>
+   </property>
+   <property name="text">
+    <string>rectangle</string>
+   </property>
+   <property name="toolTip">
+    <string>不可旋转矩形</string>
+   </property>
+  </action>
+  <action name="actionText">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/image/icons/text.svg</normaloff>:/image/icons/text.svg</iconset>
+   </property>
+   <property name="text">
+    <string>text</string>
+   </property>
+   <property name="toolTip">
+    <string>文本</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>graphwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

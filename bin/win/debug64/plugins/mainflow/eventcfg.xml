@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <event name="StartEve2" desc="通知触发相机流程已经开始采集" />
+    <event name="StartMonitor" desc="通知开始监控IO" />
+    <event name="StartTrigger" desc="通知相机进入采集流程" />
+    <event name="startMoveEve" desc="开始采集事件" />
+    <event name="stratEve" desc="相机开始工作" />
+</root>

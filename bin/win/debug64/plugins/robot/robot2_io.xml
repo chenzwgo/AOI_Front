@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <input>
+    <item name="第1轴Ready"/>
+    <item name="第2轴Ready"/>
+    <item name="第3轴Ready"/>
+    <item name="第4轴Ready"/>
+    <item name="第5轴Ready"/>
+    <item name="第6轴Ready"/>
+    <item name="SERVO"/>
+    <item name="null"/>
+    <item name="第1轴Alarm"/>
+    <item name="第2轴Alarm"/>
+    <item name="第3轴Alarm"/>
+    <item name="第4轴Alarm"/>
+    <item name="第5轴Alarm"/>
+    <item name="第6轴Alarm"/>
+    <item name="null"/>
+    <item name="null"/>
+    <item name="SENSOR1"/>
+    <item name="SENSOR2"/>
+    <item name="SENSOR3"/>
+    <item name="SENSOR4"/>
+    <item name="SENSOR5"/>
+    <item name="SENSOR6"/>
+    <item name="SENSOR7"/>
+    <item name="SENSOR8"/>
+    <item name="null"/>
+    <item name="AI_01"/>
+    <item name="AI_02"/>
+    <item name="AI_03"/>
+    <item name="AI_04"/>
+    <item name="AI_05"/>
+    <item name="AI_06"/>
+    <item name="AI_07"/>
+    <item name="AI_08"/>
+    <item name="AI_09"/>
+    <item name="AI_10"/>
+    <item name="AI_11"/>
+    <item name="AI_12"/>
+    <item name="AI_13"/>
+    <item name="AI_14"/>
+    <item name="AI_15"/>
+    <item name="AI_16"/>
+  </input>
+  <output>
+    <item name="SOFT_ON"/>
+    <item name="AUT_M"/>
+    <item name="SYS_RDY"/>
+    <item name="SOFT_OFF"/>
+    <item name="PWR_ON"/>
+    <item name="CLEAR"/>
+    <item name="null"/>
+    <item name="null"/>
+    <item name="电磁阀1"/>
+    <item name="电磁阀2"/>
+    <item name="电磁阀3"/>
+    <item name="电磁阀4"/>
+    <item name="null"/>
+    <item name="null"/>
+    <item name="null"/>
+    <item name="null"/>
+    <item name="AO_01"/>
+    <item name="AO_02"/>
+    <item name="AO_03"/>
+    <item name="AO_04"/>
+    <item name="AO_05"/>
+    <item name="AO_06"/>
+    <item name="AO_07"/>
+    <item name="AO_08"/>
+    <item name="AO_09"/>
+    <item name="AO_10"/>
+    <item name="AO_11"/>
+    <item name="AO_12"/>
+    <item name="AO_13"/>
+    <item name="AO_14"/>
+    <item name="AO_15"/>
+    <item name="AO_16"/>
+  </output>  
+</root>

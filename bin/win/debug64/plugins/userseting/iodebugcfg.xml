@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<cylinder rows="20" btnwidth="36" btnhight="24" >
+		<io name="func" type="title" desc="气缸分区1"/>
+		<!-- excard - 0  -->
+    <!-- 撕膜气缸电磁阀  -->
+    <io name="do_tear_film" positive="di_tear_film_cy_p" negative="di_tear_film_cy_n"/>
+    <!-- 入料位阻挡气缸电磁阀  -->
+    <io name="do_import_stop_cy" positive="di_import_stop_cy_p" negative="di_import_stop_cy_n"/>
+    <!-- 保压保护气缸电磁阀  -->
+    <io name="do_pressure_holde_cy" positive="di_pressure_holde_cy_p" negative="di_pressure_holde_cy_n"/>
+    <!-- 保压阻挡气缸电磁阀  -->
+    <io name="do_pressure_stop_cy" positive="di_pressure_stop_cy_n" negative="di_pressure_stop_cy_p"/>
+    <!-- 保压顶升气缸电磁阀  -->
+    <io name="do_pressure_jeck_cy" positive="di_pressure_jeck_cy_p" negative="di_pressure_jeck_cy_n"/>
+    <!-- 保压夹紧气缸1电磁阀  -->
+    <io name="do_pressure_clamp_cy1" positive="di_pressure_clamp_cy1_p" negative="di_pressure_clamp_cy1_n"/>
+    <!-- 保压夹紧气缸2电磁阀  -->
+    <io name="do_pressure_clamp_cy2" positive="di_pressure_clamp_cy2_p" negative="di_pressure_clamp_cy2_n"/>
+    <!-- 出料位顶升气缸电磁阀  -->
+    <io name="do_export_jeck_cy_bit" positive="" negative=""/>
+    <!-- 出料位阻挡气缸电磁阀  -->
+    <io name="do_export_stop_cy" positive="di_export_stop_cy_p" negative="di_export_stop_cy_n"/>
+    <io name="func" type="newline"/>
+    <io name="func" type="title" desc="气缸分区2"/>
+    <!-- 出料位夹紧气缸1电磁阀  -->
+    <io name="do_export_clamp_cy1" positive="" negative=""/>
+    <!-- 出料位夹紧气缸2电磁阀  -->
+    <io name="do_export_clamp_cy2" positive="" negative=""/>
+    <io name="func" type="newline"/>
+    <io name="func" type="title" desc="气缸分区3"/>
+    <!-- excard - 1  -->
+    <!-- 出料顶升气缸电磁阀  -->
+    <io name="do_export_jeck_cy" positive="di_export_jeck_up_cy_p" negative="di_export_jeck_up_cy_n"/>
+    <!-- 出料位夹紧气缸1电磁阀  -->
+    <io name="do_export_clamp_cy1_bit" positive="di_export_clamp_cy1_p" negative="di_export_clamp_cy1_n"/>
+    <!-- 出料位夹紧气缸2电磁阀  -->
+    <io name="do_export_clamp_cy2_bit" positive="di_export_clamp_cy2_p" negative="di_export_clamp_cy2_n"/>
+    <!-- 保压上顶气缸电磁阀  -->
+    <io name="do_pressure_up_jeck_cy" positive="di_pressure_up_jeck_cy2_p" negative="di_pressure_up_jeck_cy2_n"/>
+  </cylinder>
+  <general_input rows="20" btnwidth="100" btnhight="24" >
+  	<io name="func" type="title" desc="120"/>
+    <!-- card - 0  -->
+    <!-- 启动按钮  -->
+    <io name="di_start_signal_1" />
+    <!-- 暂停按钮  -->
+    <io name="di_pause_signal" />
+    <!-- 复位按钮  -->
+    <io name="di_reset_signal"/>
+    <!-- 急停开关  -->
+    <io name="di_estop_signal"/>
+    <!-- 平台光纤膜检测感应  -->
+    <io name="di_check_film_optical"/>
+    <!-- 料盘1光纤感应  -->
+    <io name="di_plate1_exit_film"/>
+    <!-- 料盘2光纤感应  -->
+    <io name="di_plate2_exit_film"/>
+    <io name="func" type="newline"/>
+     <!-- 料盘3光纤感应  -->
+    <io name="di_plate3_exit_film"/>
+    <!-- 料盘4光纤感应  -->
+    <io name="di_plate4_exit_film"/>
+    <!-- 取膜吸头光纤感应  -->
+    <io name="di_catch_film_optical"/>   	
+     <!-- 入料位开始进料光纤感应  -->
+    <io name="di_import_input_material"/>
+    <!-- 入料位物料到位光纤感应  -->
+    <io name="di_import_arrive_material"/>
+    <!-- 保压开始进料光纤感应  -->
+    <io name="di_pressure_import_material"/>   	
+    <!-- 保压物料到位光纤感应  -->
+    <io name="di_pressure_arrive_material"/>
+    <!-- 出料位开始进料光纤感应  -->
+    <io name="di_export_input_material"/>
+    <!-- 出料位物料到位光纤感应  -->
+    <io name="di_export_arrive_material"/>
+    <io name="func" type="title" desc="121"/>
+    <!-- excard - 1  -->
+    <!-- 机械手示教模式触发1  -->
+    <io name="di_robot_teach_model1" />
+    <!-- 机械手示教模式触发2  -->
+    <io name="di_robot_teach_model2" />
+    <!-- 前门感应  -->
+    <io name="di_front_gate_open"/>
+    <!-- 后门感应  -->
+    <io name="di_back_gate_open"/>
+    <!-- 平台横移吸嘴负压表  -->
+    <io name="di_catch_film_vaccum"/>
+    <!-- 保压压模负压表  -->
+    <io name="di_pressure_holde_vaccum"/>
+    <!-- 机械手吸嘴负压表  -->
+    <io name="di_robot_attract_vaccum"/>
+    <!-- 总负压表  -->
+    <io name="di_total_vaccum"/>
+    <io name="func" type="title" desc="122"/>
+    <!-- excard - 2  -->
+    <!-- 机械手取模安全位  -->
+    <io name="di_robot_catch_film_safe" description="" />
+    <!-- 机械手贴膜安全位  -->
+    <io name="di_robot_fix_film_safe" description="" />
+    <!-- 机械手暂停信号  -->
+    <io name="di_robot_pause_MBRobotStation" description="" />
+    <!-- 机械手报警信号  -->
+    <io name="di_robot_error_MBRobotStation" description="" />
+    <!-- 机械手原点完成信号  -->
+    <io name="di_robot_home_finish_MBRobotStation" description="" />
+    <!-- 机械手到模取料点上方信号  -->
+    <io name="di_robot_move_catch_film_up" description="" />
+    <!-- 机械手吸模到位信号  -->
+    <io name="di_robot_move_catch_film" description="" />
+    <!-- 机械手到撕模点1信号  -->
+    <io name="di_robot_move_tear_film1" description="" />
+    
+    <io name="func" type="emptyline" desc=""/>
+    
+    <!-- 机械手到撕模点2信号  -->
+    <io name="di_robot_move_tear_film2" description="" />
+    <!-- 机械手到CCD12检测点信号  -->
+    <io name="di_robot_move_ccd12" description="" />
+    <!-- 机械手到CCD34检测点信号  -->
+    <io name="di_robot_move_ccd34" description="" />
+    <!-- 机械手到贴膜点上方信号  -->
+    <io name="di_robot_move_fix_film_up" description="" />
+    <!-- 机械手贴膜到位信号  -->
+    <io name="di_robot_move_fix_film"   description="" />
+    <!-- 机械手抛料完成信号  -->
+    <io name="di_robot_move_finish_throw_film" description="" />
+    <!-- 机械手到安全位信号  -->
+    <io name="di_robot_move_throw_film" description="" />
+    <!-- 机械手贴膜压力测试完成信号  -->
+    <io name="di_robot_move_test_pressure"description="" />
+  </general_input >
+  <general_output rows="20" btnwidth="100" btnhight="24">
+  	<io name="func" type="title" desc="130"/>
+  	<!-- card - 0  -->
+  	<!-- 入料流水线启动  -->
+  	<io name="do_transport_input" />
+  	<!-- 保压流水线启动  -->
+  	<io name="do_transport_pressure" />
+  	<!-- 出料流水线启动  -->
+  	<io name="do_transport_export" />
+  	<!-- 取料膜升降Z轴刹车  -->
+  	<io name="do_catch_film_break" />
+  	<!-- 保压升降Z轴刹车  -->
+  	<io name="do_pressure_break" />
+  	<!-- 工作照明灯  -->
+  	<io name="do_work_light" />
+  	<!-- 绿灯  -->
+  	<io name="do_green_light" />
+  	<!-- 红灯  -->
+  	<io name="do_red_light" />
+  	<!-- 黄灯  -->
+  	<io name="do_yellow_light" />
+  	<!-- 报警灯  -->
+  	<io name="do_warning_light" />
+  	<!-- BarcodeOK输出  -->
+  	<io name="do_barcode_ok" />
+  	<!-- BarcodeNG输出  -->
+  	<io name="do_barcode_ng" />
+  	<!-- HSGOK输出  -->
+  	<io name="do_hsg_ok" />
+  	<!-- HSGNG输出  -->
+  	<io name="do_hsg_ng" />
+  	<io name="func" type="title" desc="131"/>
+  	<!-- excard - 0  -->
+   	<!-- 平台吸模真空电磁阀  -->
+  	<io name="do_open_plate_vaccum" />
+  	<!-- 平台吸模破真空电磁阀  -->
+  	<io name="do_close_plate_vaccum" />
+  	<!-- 机械手吸嘴真空电磁阀  -->
+  	<io name="do_open_robot_vaccum" />
+  	<!-- 机械手吸嘴破真空电磁阀  -->
+  	<io name="do_close_robot_vaccum" />
+  	<!-- 膜平移Z轴吸嘴真空电磁阀  -->
+  	<io name="do_open_catch_vaccum" />
+  	<io name="func" type="title" desc="132"/>
+  	<!-- excard - 1  -->
+  	<!-- 膜横移吸嘴破真空电磁阀  -->
+  	<io name="do_close_catch_vaccum" />
+  	<!-- 保压真空电磁阀  -->
+  	<io name="do_pressure_open_cacuum" />
+  	<!-- 保压破真空电磁阀  -->
+  	<io name="do_pressure_close_vaccum" />
+  	<!-- 机械手示教模式1输出  -->
+  	<io name="do_robot_teach_model1" />
+  	<!-- 机械手示教模式2输出  -->
+  	<io name="do_robot_teach_model2" />
+  	<!-- 机械手可贴膜1安全输出  -->
+  	<io name="do_robot_fix_film_safe1" />
+  	<!-- 机械手可贴膜2安全输出  -->
+  	<io name="do_robot_fix_film_safe2" />
+  	<!-- 机械手启动输出  -->
+  	<io name="do_robot_start_MBRobotStation" />
+  	<!-- 机械手暂停输出  -->
+  	<io name="do_robot_pause_MBRobotStation" />
+  	<!-- 机械手程序复位输出  -->
+  	<io name="do_robot_restart_MBRobotStation" />
+  	<!-- 机械手控制权输出  -->
+  	<io name="do_robot_control_limit" />
+  	<!-- 机械手吸模真空达到输出  -->
+  	<io name="do_robot_vacuum_finish" />
+  	<io name="func" type="title" desc="133"/>
+   	<!-- excard - 2  --> 	
+  	<!-- 机械手错误复位输出  -->
+    <io name="do_robot_reset_MBRobotStation" />
+    <!-- 机械手原点输出  -->
+    <io name="do_robot_home_MBRobotStation" />
+    <!-- 机械手到取模点上方输出  -->
+    <io name="do_robot_move_catch_film_up" />
+    <!-- 机械手吸模输出  -->
+    <io name="do_robot_move_catch_film" />
+    <!-- 机械手到撕模点1输出  -->  
+    <io name="do_robot_move_tear_film_1" />
+    <!-- 机械手到撕模点2输出  -->
+    <io name="do_robot_move_tear_film_2" />    
+     <!-- 机械手到CCD12点输出  -->
+     <io name="do_robot_move_ccd12" />
+     <!-- 机械手到CCD34点输出  -->
+    <io name="do_robot_move_ccd34" />
+    <!-- 机械手到贴膜点上方输出  -->
+    <io name="do_robot_move_fix_film_up" />
+    <!-- 机械手贴膜到位输出  -->
+    <io name="do_robot_move_fix_film" />
+    <!-- 机械手抛料点输出  -->
+    <io name="do_robot_move_throw_film" />
+    <!-- 机械手到安全位输出  -->
+    <io name="do_robot_move_homepos" />
+    <!-- 机械手贴膜压合测试输出  -->
+    <io name="do_robot_move_test_pressure" />
+  </general_output>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<userinfos>
+    <users>
+        <user name="test" password="123" group="op" default="true" />
+        <user name="admin" password="123" group="admin" />   
+    </users>
+    <groups>
+        <group name="admin"  access="aboutuiplugin,scriptide,robotui,scanuiwidget,lightcontroller,motorproperty,mainui,motorctrlui,syssettingui,usersettingui,cameraui" />
+        <group name="op"  access="aboutuiplugin,mainui" />
+    </groups>
+</userinfos>

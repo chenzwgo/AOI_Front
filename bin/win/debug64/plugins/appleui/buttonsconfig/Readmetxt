@@ -1,0 +1,10 @@
+1.每个对应按钮都有个[xxxButton]的区域，
+  每个区域有两个参数，exepath:调用程序的路径，arg:传入给调用程序的参数列表。
+  程序路径错误或空白时，按钮会自动调用默认的界面。
+
+2.例如:
+[ToolButton]
+exepath=cmd.exe
+arg=/k ipconfig
+
+表示:点击ToolButton调用“cmd.exe”，传入“/k ipconfig”参数给“cmd.exe”执行ipconfig命令。

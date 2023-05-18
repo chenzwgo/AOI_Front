@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vstudiodoc version="2.0">
+    <attribute category="" />
+	    <type name="Scratches" des="划伤">
+        <region type="0">
+            <level name="1" Enable="1">
+                <filter name="D1&amp;M1" Enable="1" des="1" />
+                <filter name="D1&amp;M2" Enable="1" des="2" />
+                <filter name="D1&amp;M3" Enable="1" des="3" />
+                <filter name="D1&amp;M4" Enable="1" des="4" />
+                <filter name="D1&amp;M5" Enable="1" des="5" />
+                <filter name="D1&amp;M6" Enable="1" des="6" />
+                <filter name="D1&amp;M7" Enable="1" des="7" />
+                <filter name="D2&amp;M1" Enable="1" des="8" />
+                <filter name="D2&amp;M2" Enable="1" des="9" />
+                <filter name="D3&amp;M1" Enable="1" des="10" />
+                <filter name="D4&amp;M1" Enable="1" des="11" />
+            </level>
+            <level name="2" Enable="1">
+                <filter name="D1&amp;M7" Enable="1" des="1" />
+                <filter name="D2&amp;M3" Enable="1" des="2" />
+                <filter name="D2&amp;M4" Enable="1" des="3" />
+                <filter name="D3&amp;M2" Enable="1" des="4" />
+                <filter name="D3&amp;M3" Enable="1" des="5" />
+                <filter name="D3&amp;M4" Enable="1" des="6" />
+                <filter name="D4&amp;M2" Enable="0" des="7" />
+                <filter name="D4&amp;M3" Enable="0" des="8" />
+            </level>
+            <level name="3" Enable="1">
+                <filter name="D1&amp;M8" Enable="1" des="1" />
+                <filter name="D2&amp;M5" Enable="1" des="2" />
+                <filter name="D3&amp;M5" Enable="1" des="3" />
+                <filter name="D4&amp;M4" Enable="1" des="4" />
+                <filter name="D1&amp;M9" Enable="1" des="1" />
+                <filter name="D1&amp;M10" Enable="1" des="5" />
+                <filter name="D2&amp;M6" Enable="1" des="2" />
+                <filter name="D2&amp;M7" Enable="1" des="7" />
+                <filter name="D3&amp;M6" Enable="1" des="3" />
+                <filter name="D4&amp;M2" Enable="1" des="4" />
+                <filter name="D4&amp;M3" Enable="1" des="8" />
+                <filter name="D4&amp;M5" Enable="1" des="9" />
+                <filter name="D5&amp;M2" Enable="1" des="10" />
+                <filter name="D5&amp;M1" Enable="1" des="5" />
+                <filter name="D6&amp;M2" Enable="0" des="12" />
+                <filter name="D6&amp;M1" Enable="1" des="6" />
+                <filter name="D7&amp;M1" Enable="1" des="7" />
+                <filter name="D8&amp;M1" Enable="1" des="8" />
+            </level>
+            <level name="4" Enable="1">
+                <filter name="D2&amp;M7" Enable="0" des="2" />
+                <filter name="D2&amp;M8" Enable="1" des="2" />
+                <filter name="D2&amp;M9" Enable="1" des="3" />
+                <filter name="D3&amp;M7" Enable="1" des="3" />
+                <filter name="D4&amp;M6" Enable="1" des="4" />
+                <filter name="D5&amp;M3" Enable="1" des="5" />
+                <filter name="D5&amp;M4" Enable="1" des="6" />
+                <filter name="D5&amp;M5" Enable="1" des="7" />
+                <filter name="D5&amp;M6" Enable="1" des="13" />
+                <filter name="D6&amp;M2" Enable="1" des="7" />
+                <filter name="D6&amp;M3" Enable="1" des="8" />
+                <filter name="D6&amp;M4" Enable="0" des="9" />
+                <filter name="" Enable="1" des="17" />
+                <filter name="D7&amp;M2" Enable="1" des="9" />
+                <filter name="D7&amp;M3" Enable="0" des="16" />
+                <filter name="D7&amp;M4" Enable="0" des="17" />
+                <filter name="D8&amp;M2" Enable="0" des="10" />
+                <filter name="D2&amp;M8" Enable="1" des="1" />
+                <filter name="D3&amp;M8" Enable="1" des="2" />
+                <filter name="D4&amp;M6" Enable="1" des="2" />
+                <filter name="D4&amp;M7" Enable="1" des="3" />
+                <filter name="D5&amp;M4" Enable="1" des="6" />
+                <filter name="D5&amp;M5" Enable="1" des="5" />
+                <filter name="D5&amp;M6" Enable="1" des="6" />
+                <filter name="D5&amp;M7" Enable="1" des="7" />
+                <filter name="D6&amp;M4" Enable="1" des="7" />
+                <filter name="D6&amp;M5" Enable="1" des="8" />
+                <filter name="D6&amp;M6" Enable="1" des="9" />
+                <filter name="D7&amp;M3" Enable="1" des="10" />
+                <filter name="D7&amp;M4" Enable="1" des="11" />
+                <filter name="D7&amp;M5" Enable="0" des="12" />
+                <filter name="D8&amp;M1" Enable="1" des="39" />
+                <filter name="D8&amp;M2" Enable="1" des="13" />
+                <filter name="D8&amp;M3" Enable="1" des="13" />
+                <filter name="Area&gt;0.065" Enable="0" des="14" />
+            </level>
+            <level name="5" Enable="1">
+                <filter name="D2&amp;M9" Enable="0" des="1" />
+                <filter name="D2&amp;M10" Enable="1" des="2" />
+                <filter name="D3&amp;M9" Enable="1" des="3" />
+                <filter name="D3&amp;M10" Enable="1" des="4" />
+                <filter name="D4&amp;M8" Enable="1" des="5" />
+                <filter name="D4&amp;M9" Enable="1" des="5" />
+                <filter name="D4&amp;M10" Enable="1" des="6" />
+                <filter name="D5&amp;M7" Enable="0" des="7" />
+                <filter name="D5&amp;M8" Enable="1" des="8" />
+                <filter name="D5&amp;M9" Enable="1" des="9" />
+                <filter name="D5&amp;M10" Enable="1" des="10" />
+                <filter name="D6&amp;M7" Enable="1" des="11" />
+                <filter name="D6&amp;M8" Enable="1" des="12" />
+                <filter name="D6&amp;M9" Enable="1" des="13" />
+                <filter name="D6&amp;M10" Enable="1" des="14" />
+                <filter name="D7&amp;M3" Enable="0" des="14" />
+                <filter name="D7&amp;M4" Enable="0" des="14" />
+                <filter name="D7&amp;M5" Enable="1" des="14" />
+                <filter name="D7&amp;M6" Enable="1" des="15" />
+                <filter name="D7&amp;M7" Enable="1" des="16" />
+                <filter name="D7&amp;M8" Enable="1" des="17" />
+                <filter name="D7&amp;M9" Enable="1" des="18" />
+                <filter name="D7&amp;M10" Enable="1" des="19" />
+                <filter name="D8&amp;M3" Enable="1" des="22" />
+                <filter name="D8&amp;M4" Enable="1" des="19" />
+                <filter name="D8&amp;M5" Enable="1" des="20" />
+                <filter name="D8&amp;M6" Enable="1" des="21" />
+                <filter name="D8&amp;M7" Enable="1" des="22" />
+                <filter name="D8&amp;M8" Enable="1" des="23" />
+                <filter name="D8&amp;M9" Enable="1" des="24" />
+                <filter name="Svm&gt;1" Enable="0" des="29" />
+                <filter name="D8&amp;M10" Enable="1" des="25" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="D2&amp;M9" Enable="0" des="1" />
+            </level>
+            <level name="7" Enable="0">
+                <filter name="D2&amp;M9" Enable="0" des="1" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="D1&amp;M1" Enable="1" des="1" />
+                <filter name="D1&amp;M2" Enable="1" des="2" />
+                <filter name="D1&amp;M3" Enable="1" des="3" />
+                <filter name="D1&amp;M4" Enable="1" des="4" />
+                <filter name="D1&amp;M5" Enable="1" des="5" />
+                <filter name="D1&amp;M6" Enable="1" des="6" />
+                <filter name="D2&amp;M1" Enable="1" des="8" />
+                <filter name="D2&amp;M2" Enable="1" des="9" />
+                <filter name="D3&amp;M1" Enable="1" des="10" />
+                <filter name="D4&amp;M1" Enable="1" des="11" />
+            </level>
+            <level name="2" Enable="1">
+                <filter name="D1&amp;M7" Enable="1" des="1" />
+                <filter name="D2&amp;M3" Enable="1" des="2" />
+                <filter name="D2&amp;M4" Enable="1" des="3" />
+                <filter name="D3&amp;M2" Enable="1" des="4" />
+                <filter name="D3&amp;M3" Enable="0" des="5" />
+                <filter name="D3&amp;M4" Enable="0" des="6" />
+                <filter name="D4&amp;M2" Enable="0" des="7" />
+                <filter name="D4&amp;M3" Enable="0" des="8" />
+            </level>
+            <level name="3" Enable="1">
+                <filter name="D1&amp;M8" Enable="1" des="1" />
+                <filter name="D1&amp;M9" Enable="1" des="1" />
+                <filter name="D1&amp;M10" Enable="1" des="2" />
+                <filter name="D2&amp;M5" Enable="1" des="2" />
+                <filter name="D2&amp;M6" Enable="1" des="3" />
+                <filter name="D2&amp;M7" Enable="1" des="5" />
+                <filter name="D3&amp;M3" Enable="1" des="3" />
+                <filter name="D3&amp;M4" Enable="1" des="4" />
+                <filter name="D3&amp;M5" Enable="1" des="6" />
+                <filter name="D4&amp;M2" Enable="1" des="7" />
+                <filter name="D5&amp;M1" Enable="1" des="5" />
+                <filter name="D5&amp;M2" Enable="1" des="11" />
+                <filter name="D6&amp;M1" Enable="1" des="6" />
+                <filter name="D7&amp;M1" Enable="1" des="7" />
+                <filter name="D8&amp;M1" Enable="1" des="8" />
+            </level>
+            <level name="4" Enable="1">
+                <filter name="D2&amp;M8" Enable="1" des="2" />
+                <filter name="D2&amp;M9" Enable="1" des="3" />
+                <filter name="D3&amp;M6" Enable="1" des="3" />
+                <filter name="D3&amp;M7" Enable="1" des="5" />
+                <filter name="D3&amp;M8" Enable="1" des="6" />
+                <filter name="D4&amp;M3" Enable="1" des="7" />
+                <filter name="D4&amp;M4" Enable="1" des="8" />
+                <filter name="D4&amp;M5" Enable="1" des="9" />
+                <filter name="D4&amp;M6" Enable="1" des="10" />
+                <filter name="D5&amp;M3" Enable="1" des="5" />
+                <filter name="D5&amp;M4" Enable="1" des="6" />
+                <filter name="D5&amp;M5" Enable="1" des="13" />
+                <filter name="D6&amp;M2" Enable="1" des="7" />
+                <filter name="D6&amp;M3" Enable="1" des="8" />
+                <filter name="D7&amp;M2" Enable="1" des="9" />
+                <filter name="D7&amp;M3" Enable="1" des="17" />
+                <filter name="D8&amp;M2" Enable="1" des="18" />
+                <filter name="D8&amp;M3" Enable="1" des="14" />
+            </level>
+            <level name="5" Enable="1">
+                <filter name="D2&amp;M10" Enable="1" des="2" />
+                <filter name="D3&amp;M9" Enable="1" des="5" />
+                <filter name="D3&amp;M10" Enable="1" des="6" />
+                <filter name="D4&amp;M7" Enable="1" des="7" />
+                <filter name="D4&amp;M8" Enable="1" des="8" />
+                <filter name="D4&amp;M9" Enable="1" des="9" />
+                <filter name="D4&amp;M10" Enable="1" des="10" />
+                <filter name="D5&amp;M6" Enable="1" des="12" />
+                <filter name="D5&amp;M7" Enable="1" des="7" />
+                <filter name="D5&amp;M8" Enable="1" des="8" />
+                <filter name="D5&amp;M9" Enable="1" des="9" />
+                <filter name="D5&amp;M10" Enable="1" des="10" />
+                <filter name="D6&amp;M4" Enable="1" des="17" />
+                <filter name="D6&amp;M5" Enable="1" des="18" />
+                <filter name="D6&amp;M6" Enable="1" des="19" />
+                <filter name="D6&amp;M7" Enable="1" des="11" />
+                <filter name="D6&amp;M8" Enable="1" des="12" />
+                <filter name="D6&amp;M9" Enable="1" des="13" />
+                <filter name="D6&amp;M10" Enable="1" des="14" />
+                <filter name="D7&amp;M4" Enable="1" des="14" />
+                <filter name="D7&amp;M5" Enable="1" des="14" />
+                <filter name="D7&amp;M6" Enable="1" des="15" />
+                <filter name="D7&amp;M7" Enable="1" des="16" />
+                <filter name="D7&amp;M8" Enable="1" des="17" />
+                <filter name="D7&amp;M9" Enable="1" des="18" />
+                <filter name="D7&amp;M10" Enable="1" des="19" />
+                <filter name="D8&amp;M4" Enable="1" des="19" />
+                <filter name="D8&amp;M5" Enable="1" des="20" />
+                <filter name="D8&amp;M6" Enable="1" des="21" />
+                <filter name="D8&amp;M7" Enable="1" des="22" />
+                <filter name="D8&amp;M8" Enable="1" des="23" />
+                <filter name="D8&amp;M9" Enable="1" des="24" />
+                <filter name="Svm&gt;1" Enable="0" des="29" />
+                <filter name="D8&amp;M10" Enable="1" des="25" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="D8&amp;M10" Enable="1" des="25" />
+            </level>
+            <level name="7" Enable="0">
+                <filter name="D8&amp;M10" Enable="1" des="25" />
+            </level>
+        </region>
+    </type>
+	<type name="ZW" des="脏污">
+        <region type="0">
+            <level name="1" Enable="1">
+                <filter name="D1&amp;M1" Enable="1" des="1" />
+                <filter name="D1&amp;M2" Enable="1" des="2" />
+                <filter name="D1&amp;M3" Enable="1" des="3" />
+                <filter name="D1&amp;M4" Enable="1" des="4" />
+                <filter name="D1&amp;M5" Enable="1" des="5" />
+                <filter name="D1&amp;M6" Enable="1" des="6" />
+                <filter name="D1&amp;M7" Enable="1" des="7" />
+                <filter name="D2&amp;M1" Enable="1" des="8" />
+                <filter name="D2&amp;M2" Enable="1" des="9" />
+                <filter name="D3&amp;M1" Enable="1" des="10" />
+                <filter name="D4&amp;M1" Enable="1" des="11" />
+            </level>
+            <level name="2" Enable="1">
+                <filter name="D1&amp;M7" Enable="1" des="1" />
+                <filter name="D2&amp;M3" Enable="1" des="2" />
+                <filter name="D2&amp;M4" Enable="1" des="3" />
+                <filter name="D3&amp;M2" Enable="1" des="4" />
+                <filter name="D3&amp;M3" Enable="1" des="5" />
+                <filter name="D3&amp;M4" Enable="1" des="6" />
+                <filter name="D4&amp;M2" Enable="0" des="7" />
+                <filter name="D4&amp;M3" Enable="0" des="8" />
+            </level>
+            <level name="3" Enable="1">
+                <filter name="D1&amp;M8" Enable="1" des="1" />
+                <filter name="D2&amp;M5" Enable="1" des="2" />
+                <filter name="D3&amp;M5" Enable="1" des="3" />
+                <filter name="D4&amp;M4" Enable="1" des="4" />
+                <filter name="D1&amp;M9" Enable="1" des="1" />
+                <filter name="D1&amp;M10" Enable="1" des="5" />
+                <filter name="D2&amp;M6" Enable="1" des="2" />
+                <filter name="D2&amp;M7" Enable="1" des="7" />
+                <filter name="D3&amp;M6" Enable="1" des="3" />
+                <filter name="D4&amp;M2" Enable="1" des="4" />
+                <filter name="D4&amp;M3" Enable="1" des="8" />
+                <filter name="D4&amp;M5" Enable="1" des="9" />
+                <filter name="D5&amp;M2" Enable="1" des="10" />
+                <filter name="D5&amp;M1" Enable="1" des="5" />
+                <filter name="D6&amp;M2" Enable="0" des="12" />
+                <filter name="D6&amp;M1" Enable="1" des="6" />
+                <filter name="D7&amp;M1" Enable="1" des="7" />
+                <filter name="D8&amp;M1" Enable="1" des="8" />
+            </level>
+            <level name="4" Enable="1">
+                <filter name="D2&amp;M7" Enable="0" des="2" />
+                <filter name="D2&amp;M8" Enable="1" des="2" />
+                <filter name="D2&amp;M9" Enable="1" des="3" />
+                <filter name="D3&amp;M7" Enable="1" des="3" />
+                <filter name="D4&amp;M6" Enable="1" des="4" />
+                <filter name="D5&amp;M3" Enable="1" des="5" />
+                <filter name="D5&amp;M4" Enable="1" des="6" />
+                <filter name="D5&amp;M5" Enable="1" des="7" />
+                <filter name="D5&amp;M6" Enable="1" des="13" />
+                <filter name="D6&amp;M2" Enable="1" des="7" />
+                <filter name="D6&amp;M3" Enable="1" des="8" />
+                <filter name="D6&amp;M4" Enable="0" des="9" />
+                <filter name="" Enable="1" des="17" />
+                <filter name="D7&amp;M2" Enable="1" des="9" />
+                <filter name="D7&amp;M3" Enable="0" des="16" />
+                <filter name="D7&amp;M4" Enable="0" des="17" />
+                <filter name="D8&amp;M2" Enable="0" des="10" />
+                <filter name="D2&amp;M8" Enable="1" des="1" />
+                <filter name="D3&amp;M8" Enable="1" des="2" />
+                <filter name="D4&amp;M6" Enable="1" des="2" />
+                <filter name="D4&amp;M7" Enable="1" des="3" />
+                <filter name="D5&amp;M4" Enable="1" des="6" />
+                <filter name="D5&amp;M5" Enable="1" des="5" />
+                <filter name="D5&amp;M6" Enable="1" des="6" />
+                <filter name="D5&amp;M7" Enable="1" des="7" />
+                <filter name="D6&amp;M4" Enable="1" des="7" />
+                <filter name="D6&amp;M5" Enable="1" des="8" />
+                <filter name="D6&amp;M6" Enable="1" des="9" />
+                <filter name="D7&amp;M3" Enable="1" des="10" />
+                <filter name="D7&amp;M4" Enable="1" des="11" />
+                <filter name="D7&amp;M5" Enable="0" des="12" />
+                <filter name="D8&amp;M1" Enable="1" des="39" />
+                <filter name="D8&amp;M2" Enable="1" des="13" />
+                <filter name="D8&amp;M3" Enable="1" des="13" />
+                <filter name="Area&gt;0.065" Enable="0" des="14" />
+            </level>
+            <level name="5" Enable="1">
+                <filter name="D2&amp;M9" Enable="0" des="1" />
+                <filter name="D2&amp;M10" Enable="1" des="2" />
+                <filter name="D3&amp;M9" Enable="1" des="3" />
+                <filter name="D3&amp;M10" Enable="1" des="4" />
+                <filter name="D4&amp;M8" Enable="1" des="5" />
+                <filter name="D4&amp;M9" Enable="1" des="5" />
+                <filter name="D4&amp;M10" Enable="1" des="6" />
+                <filter name="D5&amp;M7" Enable="0" des="7" />
+                <filter name="D5&amp;M8" Enable="1" des="8" />
+                <filter name="D5&amp;M9" Enable="1" des="9" />
+                <filter name="D5&amp;M10" Enable="1" des="10" />
+                <filter name="D6&amp;M7" Enable="1" des="11" />
+                <filter name="D6&amp;M8" Enable="1" des="12" />
+                <filter name="D6&amp;M9" Enable="1" des="13" />
+                <filter name="D6&amp;M10" Enable="1" des="14" />
+                <filter name="D7&amp;M3" Enable="0" des="14" />
+                <filter name="D7&amp;M4" Enable="0" des="14" />
+                <filter name="D7&amp;M5" Enable="1" des="14" />
+                <filter name="D7&amp;M6" Enable="1" des="15" />
+                <filter name="D7&amp;M7" Enable="1" des="16" />
+                <filter name="D7&amp;M8" Enable="1" des="17" />
+                <filter name="D7&amp;M9" Enable="1" des="18" />
+                <filter name="D7&amp;M10" Enable="1" des="19" />
+                <filter name="D8&amp;M3" Enable="1" des="22" />
+                <filter name="D8&amp;M4" Enable="1" des="19" />
+                <filter name="D8&amp;M5" Enable="1" des="20" />
+                <filter name="D8&amp;M6" Enable="1" des="21" />
+                <filter name="D8&amp;M7" Enable="1" des="22" />
+                <filter name="D8&amp;M8" Enable="1" des="23" />
+                <filter name="D8&amp;M9" Enable="1" des="24" />
+                <filter name="Svm&gt;1" Enable="0" des="29" />
+                <filter name="D8&amp;M10" Enable="1" des="25" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="D2&amp;M9" Enable="0" des="1" />
+            </level>
+            <level name="7" Enable="0">
+                <filter name="D2&amp;M9" Enable="0" des="1" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="D1&amp;M1" Enable="1" des="1" />
+                <filter name="D1&amp;M2" Enable="1" des="2" />
+                <filter name="D1&amp;M3" Enable="1" des="3" />
+                <filter name="D1&amp;M4" Enable="1" des="4" />
+                <filter name="D1&amp;M5" Enable="1" des="5" />
+                <filter name="D1&amp;M6" Enable="1" des="6" />
+                <filter name="D2&amp;M1" Enable="1" des="8" />
+                <filter name="D2&amp;M2" Enable="1" des="9" />
+                <filter name="D3&amp;M1" Enable="1" des="10" />
+                <filter name="D4&amp;M1" Enable="1" des="11" />
+            </level>
+            <level name="2" Enable="1">
+                <filter name="D1&amp;M7" Enable="1" des="1" />
+                <filter name="D2&amp;M3" Enable="1" des="2" />
+                <filter name="D2&amp;M4" Enable="1" des="3" />
+                <filter name="D3&amp;M2" Enable="1" des="4" />
+                <filter name="D3&amp;M3" Enable="0" des="5" />
+                <filter name="D3&amp;M4" Enable="0" des="6" />
+                <filter name="D4&amp;M2" Enable="0" des="7" />
+                <filter name="D4&amp;M3" Enable="0" des="8" />
+            </level>
+            <level name="3" Enable="1">
+                <filter name="D1&amp;M8" Enable="1" des="1" />
+                <filter name="D1&amp;M9" Enable="1" des="1" />
+                <filter name="D1&amp;M10" Enable="1" des="2" />
+                <filter name="D2&amp;M5" Enable="1" des="2" />
+                <filter name="D2&amp;M6" Enable="1" des="3" />
+                <filter name="D2&amp;M7" Enable="1" des="5" />
+                <filter name="D3&amp;M3" Enable="1" des="3" />
+                <filter name="D3&amp;M4" Enable="1" des="4" />
+                <filter name="D3&amp;M5" Enable="1" des="6" />
+                <filter name="D4&amp;M2" Enable="1" des="7" />
+                <filter name="D5&amp;M1" Enable="1" des="5" />
+                <filter name="D5&amp;M2" Enable="1" des="11" />
+                <filter name="D6&amp;M1" Enable="1" des="6" />
+                <filter name="D7&amp;M1" Enable="1" des="7" />
+                <filter name="D8&amp;M1" Enable="1" des="8" />
+            </level>
+            <level name="4" Enable="1">
+                <filter name="D2&amp;M8" Enable="1" des="2" />
+                <filter name="D2&amp;M9" Enable="1" des="3" />
+                <filter name="D3&amp;M6" Enable="1" des="3" />
+                <filter name="D3&amp;M7" Enable="1" des="5" />
+                <filter name="D3&amp;M8" Enable="1" des="6" />
+                <filter name="D4&amp;M3" Enable="1" des="7" />
+                <filter name="D4&amp;M4" Enable="1" des="8" />
+                <filter name="D4&amp;M5" Enable="1" des="9" />
+                <filter name="D4&amp;M6" Enable="1" des="10" />
+                <filter name="D5&amp;M3" Enable="1" des="5" />
+                <filter name="D5&amp;M4" Enable="1" des="6" />
+                <filter name="D5&amp;M5" Enable="1" des="13" />
+                <filter name="D6&amp;M2" Enable="1" des="7" />
+                <filter name="D6&amp;M3" Enable="1" des="8" />
+                <filter name="D7&amp;M2" Enable="1" des="9" />
+                <filter name="D7&amp;M3" Enable="1" des="17" />
+                <filter name="D8&amp;M2" Enable="1" des="18" />
+                <filter name="D8&amp;M3" Enable="1" des="14" />
+            </level>
+            <level name="5" Enable="1">
+                <filter name="D2&amp;M10" Enable="1" des="2" />
+                <filter name="D3&amp;M9" Enable="1" des="5" />
+                <filter name="D3&amp;M10" Enable="1" des="6" />
+                <filter name="D4&amp;M7" Enable="1" des="7" />
+                <filter name="D4&amp;M8" Enable="1" des="8" />
+                <filter name="D4&amp;M9" Enable="1" des="9" />
+                <filter name="D4&amp;M10" Enable="1" des="10" />
+                <filter name="D5&amp;M6" Enable="1" des="12" />
+                <filter name="D5&amp;M7" Enable="1" des="7" />
+                <filter name="D5&amp;M8" Enable="1" des="8" />
+                <filter name="D5&amp;M9" Enable="1" des="9" />
+                <filter name="D5&amp;M10" Enable="1" des="10" />
+                <filter name="D6&amp;M4" Enable="1" des="17" />
+                <filter name="D6&amp;M5" Enable="1" des="18" />
+                <filter name="D6&amp;M6" Enable="1" des="19" />
+                <filter name="D6&amp;M7" Enable="1" des="11" />
+                <filter name="D6&amp;M8" Enable="1" des="12" />
+                <filter name="D6&amp;M9" Enable="1" des="13" />
+                <filter name="D6&amp;M10" Enable="1" des="14" />
+                <filter name="D7&amp;M4" Enable="1" des="14" />
+                <filter name="D7&amp;M5" Enable="1" des="14" />
+                <filter name="D7&amp;M6" Enable="1" des="15" />
+                <filter name="D7&amp;M7" Enable="1" des="16" />
+                <filter name="D7&amp;M8" Enable="1" des="17" />
+                <filter name="D7&amp;M9" Enable="1" des="18" />
+                <filter name="D7&amp;M10" Enable="1" des="19" />
+                <filter name="D8&amp;M4" Enable="1" des="19" />
+                <filter name="D8&amp;M5" Enable="1" des="20" />
+                <filter name="D8&amp;M6" Enable="1" des="21" />
+                <filter name="D8&amp;M7" Enable="1" des="22" />
+                <filter name="D8&amp;M8" Enable="1" des="23" />
+                <filter name="D8&amp;M9" Enable="1" des="24" />
+                <filter name="Svm&gt;1" Enable="0" des="29" />
+                <filter name="D8&amp;M10" Enable="1" des="25" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="D8&amp;M10" Enable="1" des="25" />
+            </level>
+            <level name="7" Enable="0">
+                <filter name="D8&amp;M10" Enable="1" des="25" />
+            </level>
+        </region>
+    </type>
+    <type name="Smirch" des="崩边">
+    <region type="0">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+    </type>
+    <type name="Chips" des="差边">
+        <region type="0">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+    </type>
+	<type name="TLightLeak" des="擦伤">
+        <region type="0">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+    </type>
+	<type name="BLightLeak" des="压痕">
+        <region type="0">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+    </type>
+	<type name="SandEdge" des="轮子印">
+        <region type="0">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+    </type>
+	<type name="GridNg" des="刺伤">
+        <region type="0">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+    </type>
+	<type name="BrightPos" des="油墨">
+        <region type="0">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+        <region type="1">
+            <level name="1" Enable="1">
+                <filter name="Area&lt;=0.015" Enable="1" des="" />
+            </level>
+            <level name="2" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="3" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="4" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="5" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="6" Enable="0">
+                <filter name="Area&gt;20" Enable="1" des="" />
+            </level>
+            <level name="7" Enable="1">
+                <filter name="Area&gt;0.015" Enable="1" des="" />
+            </level>
+        </region>
+    </type>
+</vstudiodoc>

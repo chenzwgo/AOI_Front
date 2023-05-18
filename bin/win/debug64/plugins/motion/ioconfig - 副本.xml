@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<motordoc>
+    <card cardname="card">
+        <extendio index="0">
+            <io name="di_snap_sig_3" index="4" cardiotype="1" sense="0" description="备用" />
+            <io name="di_snap_sig_109" index="5" cardiotype="1" sense="0" description="备用" />
+            <io name="do_shang_stop0" index="14" cardiotype="0" sense="0" description="备用" />
+            <io name="do_xia_stop" index="15" cardiotype="0" sense="0" description="下料机停止" />
+            <io name="wu" index="14" cardiotype="1" sense="0" description="备用" />
+            <io name="di_sn_error" index="15" cardiotype="1" sense="0" description="下料机SN不一致" />
+            <io name="000" index="13" cardiotype="0" sense="0" description="备用" />
+            <io name="di_in_sig0" index="1" cardiotype="1" sense="0" description="备用" />
+            <io name="di_estop" index="0" cardiotype="1" sense="1" description="急停" />
+            <io name="di_snap_sig_1" index="2" cardiotype="1" sense="0" description="采集位光纤" />
+            <io name="di_out_end_sig" index="3" cardiotype="1" sense="0" description="出料检测" />
+            <io name="do_out_green" index="0" cardiotype="0" sense="0" description="输出OK给下料机" />
+            <io name="do_out_red" index="1" cardiotype="0" sense="1" description="输出NG给下料机" />
+            <io name="do_out_yellow" index="2" cardiotype="0" sense="0" description="输出RI给下料机" />
+            <io name="do_red" index="3" cardiotype="0" sense="0" description="三色灯-红" />
+            <io name="do_yellow" index="4" cardiotype="0" sense="0" description="三色灯-黃" />
+            <io name="do_green" index="5" cardiotype="0" sense="0" description="三色灯-绿" />
+            <io name="do_bee_alarm" index="6" cardiotype="0" sense="0" description="蜂鸣器" />
+            <io name="do_yellow00" index="7" cardiotype="0" sense="0" description="相机电源" />
+            <io name="do_elec_lock" index="8" cardiotype="0" sense="0" description="电磁锁" />
+            <io name="do_ffu00" index="11" cardiotype="0" sense="0" description="断驱动器电源" />
+            <io name="000d" index="12" cardiotype="0" sense="0" description="备用" />
+            <io name="13" index="13" cardiotype="1" sense="0" description="备用" />
+            <io name="di_clear_mode" index="11" cardiotype="1" sense="0" description="清料模式" />
+            <io name="di_penma_sig" index="12" cardiotype="1" sense="0" description="备用" />
+            <io name="di_snap_sig_10" index="6" cardiotype="1" sense="0" description="备用" />
+            <io name="do_ffu" index="9" cardiotype="0" sense="0" description="FFU" />
+            <io name="do_elec_lock0" index="10" cardiotype="0" sense="0" description="备用" />
+            <io name="00" index="7" cardiotype="1" sense="0" description="备用" />
+            <io name="di_clean_run" index="8" cardiotype="1" sense="0" description="备用" />
+            <io name="di_shang_run" index="9" cardiotype="1" sense="0" description="备用" />
+            <io name="di_xiao_run" index="10" cardiotype="1" sense="0" description="下料机运行" />
+        </extendio>
+    </card>
+</motordoc>

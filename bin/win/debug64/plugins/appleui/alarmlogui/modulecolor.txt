@@ -1,0 +1,9 @@
+Press,#99e600
+Vision,#99cc00
+Motion,#8d5a93
+Cylinder,#8d5a00
+Vacuum,#225a93
+FiberSensor,#225a33
+PDCA,#22f000
+BarCode,#786a23
+Other,#00ff00

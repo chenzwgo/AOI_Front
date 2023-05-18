@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<motordoc>
+    <card cardname="card">
+        <extendio index="0">
+            <io name="di_back4" index="4" cardiotype="1" sense="0" description="备用" />
+            <io name="di_back5" index="5" cardiotype="1" sense="0" description="备用" />
+            <io name="do_start_axis_move" index="14" cardiotype="0" sense="1" description="通知后段夹爪启动" />
+            <io name="do_chang" index="15" cardiotype="0" sense="1" description="通知夹爪动作" />
+            <io name="di_out_end_sig" index="14" cardiotype="1" sense="0" description="后段出料感应" />
+            <io name="di_chang_sig" index="15" cardiotype="1" sense="0" description="Plc到位感应" />
+            <io name="do_change_hio" index="13" cardiotype="0" sense="1" description="切换相机通道" />
+            <io name="di_door" index="1" cardiotype="1" sense="0" description="门状态" />
+            <io name="di_estop" index="0" cardiotype="1" sense="1" description="急停" />
+            <io name="di_stop_bak" index="2" cardiotype="1" sense="0" description="停止" />
+            <io name="di_startbak" index="3" cardiotype="1" sense="0" description="启动" />
+            <io name="do_red_light" index="0" cardiotype="0" sense="0" description="红灯" />
+            <io name="do_yellow_light" index="1" cardiotype="0" sense="0" description="黄灯" />
+            <io name="do_greed_light" index="2" cardiotype="0" sense="0" description="绿灯" />
+            <io name="do_elec_lock" index="3" cardiotype="0" sense="0" description="电磁锁（打开时间不能超过20秒）" />
+            <io name="do_alarm" index="4" cardiotype="0" sense="0" description="报警器" />
+            <io name="do_in_tip" index="5" cardiotype="0" sense="0" description="入料指示灯" />
+            <io name="do_out_green" index="6" cardiotype="0" sense="0" description="出料指示灯_绿" />
+            <io name="do_out_yellow" index="7" cardiotype="0" sense="0" description="出料指示灯_黄" />
+            <io name="do_out_red" index="8" cardiotype="0" sense="0" description="出料指示灯_红" />
+            <io name="do_switch" index="11" cardiotype="0" sense="0" description="切屏" />
+            <io name="do_rcamera" index="12" cardiotype="0" sense="1" description="下相机开关" />
+            <io name="in_sig" index="13" cardiotype="1" sense="0" description="入料感应" />
+            <io name="in_ta" index="11" cardiotype="1" sense="0" description="脚塌" />
+            <io name="in_for_ccd" index="12" cardiotype="1" sense="0" description="win到位感应" />
+            <io name="di_reset" index="6" cardiotype="1" sense="0" description="复位" />
+            <io name="do_running" index="9" cardiotype="0" sense="0" description="运行指示灯" />
+            <io name="do_ffu" index="10" cardiotype="0" sense="0" description="FFU" />
+        </extendio>
+    </card>
+</motordoc>

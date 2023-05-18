@@ -1,0 +1,4 @@
+Air Press In:     94.2 PSI 
+Air Press Clamp:  25.2 PSI 
+Air Press Rail:   62.4 PSI
+

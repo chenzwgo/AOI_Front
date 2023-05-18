@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <work name="main" desc="主流程" count="1" bEnable="2" bLoop="0" bHidden="0" bBoard="0">
+        <step name="newStep" desc="子板" count="3" bEnable="2">
+            <action name="fun_callflow" desc="CALL boardin" bEnable="1" bBlock="1" type="fun_callflow" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_CALL_FLOW attribute='{&#x0A;   &quot;cFlowName&quot; : &quot;boardin&quot;,&#x0A;   &quot;cGroupName&quot; : &quot;work&quot;,&#x0A;   &quot;cParam&quot; : &quot;&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="fun_callflow1" desc="CALL work" bEnable="1" bBlock="1" type="fun_callflow" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_CALL_FLOW attribute='{&#x0A;   &quot;cFlowName&quot; : &quot;work&quot;,&#x0A;   &quot;cGroupName&quot; : &quot;work&quot;,&#x0A;   &quot;cParam&quot; : &quot;&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="fun_callflow2" desc="CALL boardout" bEnable="1" bBlock="1" type="fun_callflow" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_CALL_FLOW attribute='{&#x0A;   &quot;cFlowName&quot; : &quot;boardout&quot;,&#x0A;   &quot;cGroupName&quot; : &quot;work&quot;,&#x0A;   &quot;cParam&quot; : &quot;&quot;&#x0A;}&#x0A;' />
+            </action>
+        </step>
+    </work>
+    <work name="boardin" desc="进板" count="1" bEnable="2" bLoop="0" bHidden="0" bBoard="0">
+        <step name="converyIn" desc="进板" count="13" bEnable="2">
+            <action name="jump_action" desc="判断气缸是否顶起" bEnable="1" bBlock="1" type="jump_action" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="End" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="0" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_JUMP attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : {&#x0A;      &quot;di_dut_ar&quot; : true,&#x0A;      &quot;di_lift_cly_p_2&quot; : true&#x0A;   },&#x0A;   &quot;vecVar&quot; : null&#x0A;}&#x0A;' />
+            </action>
+            <action name="jump_action1" desc="判断到位感应是否亮" bEnable="1" bBlock="1" type="jump_action" beforeWait="0" afterWait="0" jumpStepWhenFailed="converyIn" jumpActionWhenFailed="wait_condition" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="0" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_JUMP attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : {&#x0A;      &quot;di_dut_ar&quot; : true&#x0A;   },&#x0A;   &quot;vecVar&quot; : null&#x0A;}&#x0A;' />
+            </action>
+            <action name="move_jog1" desc="皮带1转动" bEnable="1" bBlock="0" type="move_jog" beforeWait="50" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_MOTOR_JOG attribute='{&#x0A;   &quot;bDirection&quot; : true,&#x0A;   &quot;ioName&quot; : &quot;&quot;,&#x0A;   &quot;stationname&quot; : &quot;convery1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="wait_condition1" desc="等待到位感应灭" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="30000">
+                <UiLog bLogStart="1" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="等待进料!" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="1" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_WAIT_CONDITION attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : {&#x0A;      &quot;di_dut_ar&quot; : false&#x0A;   },&#x0A;   &quot;vecVar&quot; : null&#x0A;}&#x0A;' />
+            </action>
+            <action name="move_stop1" desc="皮带1停止" bEnable="1" bBlock="1" type="move_stop" beforeWait="10" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="converyIn" jumpActionWhenSucceed="io_cylinder" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_MOTOR_STOP attribute='{&#x0A;   &quot;stationname&quot; : &quot;convery1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="wait_condition" desc="等待进料感应亮" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="1" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="等待进料!" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="1" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_WAIT_CONDITION attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : {&#x0A;      &quot;di_dut_in&quot; : true&#x0A;   },&#x0A;   &quot;vecVar&quot; : null&#x0A;}&#x0A;' />
+            </action>
+            <action name="io_cylinder" desc="打开阻挡气缸" bEnable="1" bBlock="1" type="io_cylinder" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="5000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_IO_CYLINDER attribute='{&#x0A;   &quot;bOpen&quot; : false,&#x0A;   &quot;cCloseIoName&quot; : &quot;&quot;,&#x0A;   &quot;cOpenIoName&quot; : &quot;do_stop_cly&quot;,&#x0A;   &quot;cOriginIoName&quot; : &quot;&quot;,&#x0A;   &quot;cTerminalIoName&quot; : &quot;di_stop_cly_p&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="io_cylinder4" desc="关闭顶升气缸" bEnable="1" bBlock="1" type="io_cylinder" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="5000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_IO_CYLINDER attribute='{&#x0A;   &quot;bOpen&quot; : false,&#x0A;   &quot;cCloseIoName&quot; : &quot;&quot;,&#x0A;   &quot;cOpenIoName&quot; : &quot;do_lift_cly&quot;,&#x0A;   &quot;cOriginIoName&quot; : &quot;di_lift_cly_n_2&quot;,&#x0A;   &quot;cTerminalIoName&quot; : &quot;&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="move_jog" desc="皮带1转动" bEnable="1" bBlock="1" type="move_jog" beforeWait="50" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_MOTOR_JOG attribute='{&#x0A;   &quot;bDirection&quot; : false,&#x0A;   &quot;ioName&quot; : &quot;di_dut_ar&quot;,&#x0A;   &quot;stationname&quot; : &quot;convery1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="jump_action2" desc="判断到位感应是否亮" bEnable="1" bBlock="1" type="jump_action" beforeWait="200" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="converyIn" jumpActionWhenSucceed="io_cylinder1" actionTimeOut="30000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="到位感应未亮!" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="0" logLevelTimeOut="2" />
+                <WORK_JUMP attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : {&#x0A;      &quot;di_dut_ar&quot; : true&#x0A;   },&#x0A;   &quot;vecVar&quot; : null&#x0A;}&#x0A;' />
+            </action>
+            <action name="move_jog3" desc="皮带1转动" bEnable="1" bBlock="1" type="move_jog" beforeWait="500" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="converyIn" jumpActionWhenSucceed="io_cylinder1" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_MOTOR_JOG attribute='{&#x0A;   &quot;bDirection&quot; : false,&#x0A;   &quot;ioName&quot; : &quot;di_dut_ar&quot;,&#x0A;   &quot;stationname&quot; : &quot;convery1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="move_jog4" desc="皮带1转动" bEnable="1" bBlock="1" type="move_jog" beforeWait="1000" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_MOTOR_JOG attribute='{&#x0A;   &quot;bDirection&quot; : false,&#x0A;   &quot;ioName&quot; : &quot;di_dut_ar&quot;,&#x0A;   &quot;stationname&quot; : &quot;convery1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="io_cylinder1" desc="打开顶升气缸" bEnable="1" bBlock="1" type="io_cylinder" beforeWait="500" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="5000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_IO_CYLINDER attribute='{&#x0A;   &quot;bOpen&quot; : true,&#x0A;   &quot;cCloseIoName&quot; : &quot;&quot;,&#x0A;   &quot;cOpenIoName&quot; : &quot;do_lift_cly&quot;,&#x0A;   &quot;cOriginIoName&quot; : &quot;di_lift_cly_n_2&quot;,&#x0A;   &quot;cTerminalIoName&quot; : &quot;&quot;&#x0A;}&#x0A;' />
+            </action>
+        </step>
+    </work>
+    <work name="boardout" desc="出板" count="1" bEnable="2" bLoop="0" bHidden="0" bBoard="0">
+        <step name="converyOut" desc="出板" count="7" bEnable="2">
+            <action name="io_cylinder2" desc="关闭顶升气缸" bEnable="1" bBlock="1" type="io_cylinder" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="5000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_IO_CYLINDER attribute='{&#x0A;   &quot;bOpen&quot; : false,&#x0A;   &quot;cCloseIoName&quot; : &quot;&quot;,&#x0A;   &quot;cOpenIoName&quot; : &quot;do_lift_cly&quot;,&#x0A;   &quot;cOriginIoName&quot; : &quot;di_lift_cly_n_2&quot;,&#x0A;   &quot;cTerminalIoName&quot; : &quot;&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="io_cylinder5" desc="关闭阻挡气缸" bEnable="1" bBlock="1" type="io_cylinder" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="5000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_IO_CYLINDER attribute='{&#x0A;   &quot;bOpen&quot; : true,&#x0A;   &quot;cCloseIoName&quot; : &quot;&quot;,&#x0A;   &quot;cOpenIoName&quot; : &quot;do_stop_cly&quot;,&#x0A;   &quot;cOriginIoName&quot; : &quot;&quot;,&#x0A;   &quot;cTerminalIoName&quot; : &quot;di_stop_cly_p&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="move_jog2" desc="皮带1转动" bEnable="1" bBlock="0" type="move_jog" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_MOTOR_JOG attribute='{&#x0A;   &quot;bDirection&quot; : false,&#x0A;   &quot;ioName&quot; : &quot;&quot;,&#x0A;   &quot;stationname&quot; : &quot;convery1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="wait_condition2" desc="等待出料感应亮" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="30000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_WAIT_CONDITION attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : {&#x0A;      &quot;di_dut_ar&quot; : false,&#x0A;      &quot;di_dut_out&quot; : true&#x0A;   },&#x0A;   &quot;vecVar&quot; : null&#x0A;}&#x0A;' />
+            </action>
+            <action name="wait_condition3" desc="等待出料感应灭" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="30000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_WAIT_CONDITION attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : {&#x0A;      &quot;di_dut_ar&quot; : false,&#x0A;      &quot;di_dut_out&quot; : false&#x0A;   },&#x0A;   &quot;vecVar&quot; : null&#x0A;}&#x0A;' />
+            </action>
+            <action name="move_stop" desc="皮带1停止" bEnable="1" bBlock="1" type="move_stop" beforeWait="10" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_MOTOR_STOP attribute='{&#x0A;   &quot;stationname&quot; : &quot;convery1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="io_cylinder3" desc="打开阻挡气缸" bEnable="1" bBlock="1" type="io_cylinder" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="5000">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_IO_CYLINDER attribute='{&#x0A;   &quot;bOpen&quot; : false,&#x0A;   &quot;cCloseIoName&quot; : &quot;&quot;,&#x0A;   &quot;cOpenIoName&quot; : &quot;do_stop_cly&quot;,&#x0A;   &quot;cOriginIoName&quot; : &quot;&quot;,&#x0A;   &quot;cTerminalIoName&quot; : &quot;di_stop_cly_p&quot;&#x0A;}&#x0A;' />
+            </action>
+        </step>
+    </work>
+    <work name="work" desc="点胶流程" count="1" bEnable="2" bLoop="0" bHidden="0" bBoard="0">
+        <step name="work" desc="点胶" count="11" bEnable="2">
+            <action name="variable_write2" desc="设置状态为空闲" bEnable="1" bBlock="1" type="variable_write" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_VARIABLE_WRITE attribute='{&#x0A;   &quot;name&quot; : &quot;varDispenseing&quot;,&#x0A;   &quot;operate&quot; : &quot;=&quot;,&#x0A;   &quot;value&quot; : &quot;0&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="wait_condition1" desc="等待物料到位" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="1" bLogStartFailed="1" bLogSucceed="1" bLogFailed="1" bLogTimeOut="1" logMsgStart="等待产品顶起!" logMsgStartFailed="" logMsgSucceed="产品顶起。" logMsgFailed="" logMsgTimeOut="" logLevelStart="1" logLevelStartFailed="4" logLevelSucceed="1" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_WAIT_CONDITION attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : {&#x0A;      &quot;di_dut_ar&quot; : true,&#x0A;      &quot;di_lift_cly_n_2&quot; : false,&#x0A;      &quot;di_lift_cly_p_2&quot; : true&#x0A;   },&#x0A;   &quot;vecVar&quot; : null&#x0A;}&#x0A;' />
+            </action>
+            <action name="wait_condition" desc="检查是否为清胶状态" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_WAIT_CONDITION attribute='{&#x0A;   &quot;logicOper&quot; : &quot;&amp;&amp;&quot;,&#x0A;   &quot;mapIo&quot; : null,&#x0A;   &quot;vecVar&quot; : [&#x0A;      {&#x0A;         &quot;name&quot; : &quot;varPurgeing&quot;,&#x0A;         &quot;operate&quot; : &quot;=&quot;,&#x0A;         &quot;value&quot; : &quot;0&quot;&#x0A;      }&#x0A;   ]&#x0A;}&#x0A;' />
+            </action>
+            <action name="variable_write" desc="设置状态为点胶中" bEnable="1" bBlock="1" type="variable_write" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_VARIABLE_WRITE attribute='{&#x0A;   &quot;name&quot; : &quot;varDispenseing&quot;,&#x0A;   &quot;operate&quot; : &quot;=&quot;,&#x0A;   &quot;value&quot; : &quot;1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="dispense_badmark" desc="检测BadMark" bEnable="1" bBlock="1" type="dispense_badmark" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_DISPENSE_BADMARK attribute='{&#x0A;   &quot;patternName&quot; : &quot;B1&quot;,&#x0A;   &quot;type&quot; : 1&#x0A;}&#x0A;' />
+            </action>
+            <action name="dispense_locationall" desc="定位所有" bEnable="1" bBlock="1" type="dispense_locationall" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="定位失败!" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+            </action>
+            <action name="fun_callflow" desc="CALL exec" bEnable="1" bBlock="1" type="fun_callflow" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_CALL_FLOW attribute='{&#x0A;   &quot;cFlowName&quot; : &quot;exec&quot;,&#x0A;   &quot;cGroupName&quot; : &quot;work&quot;,&#x0A;   &quot;cParam&quot; : &quot;&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="event_set" desc="通知点胶完成" bEnable="1" bBlock="1" type="event_set" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_SET_EVENT attribute='{&#x0A;   &quot;cEventName&quot; : &quot;event_convery&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="variable_write3" desc="点胶次数加1" bEnable="1" bBlock="1" type="variable_write" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_VARIABLE_WRITE attribute='{&#x0A;   &quot;name&quot; : &quot;varCycleCount&quot;,&#x0A;   &quot;operate&quot; : &quot;+=&quot;,&#x0A;   &quot;value&quot; : &quot;1&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="fun" desc="自动清胶" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_FUNCTION attribute='{&#x0A;   &quot;cFunName&quot; : &quot;callFunAutoPurge&quot;,&#x0A;   &quot;cParam&quot; : &quot;varCycleCount&quot;&#x0A;}&#x0A;' />
+            </action>
+            <action name="variable_write1" desc="设置状态为空闲" bEnable="1" bBlock="1" type="variable_write" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_VARIABLE_WRITE attribute='{&#x0A;   &quot;name&quot; : &quot;varDispenseing&quot;,&#x0A;   &quot;operate&quot; : &quot;=&quot;,&#x0A;   &quot;value&quot; : &quot;0&quot;&#x0A;}&#x0A;' />
+            </action>
+        </step>
+    </work>
+    <work name="mainfun" desc="mainfun" count="1" bEnable="2" bLoop="0" bHidden="0" bBoard="0">
+        <step name="newStep" desc="子板" count="1" bEnable="2">
+            <action name="fun_callboard" desc="CALL BaseBoard AT (0.000,0.000)" bEnable="1" bBlock="1" type="fun_callboard" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_CALL_BOARD attribute='{&#x0A;   &quot;bClear&quot; : false,&#x0A;   &quot;bSelectStep&quot; : false,&#x0A;   &quot;beginAction&quot; : -1,&#x0A;   &quot;board&quot; : &quot;BaseBoard&quot;,&#x0A;   &quot;enables&quot; : [&#x0A;      {&#x0A;         &quot;enable&quot; : true&#x0A;      }&#x0A;   ],&#x0A;   &quot;endAction&quot; : -1,&#x0A;   &quot;group&quot; : &quot;work&quot;,&#x0A;   &quot;points&quot; : [&#x0A;      {&#x0A;         &quot;x&quot; : 0.0,&#x0A;         &quot;y&quot; : 0.0&#x0A;      }&#x0A;   ]&#x0A;}&#x0A;' />
+            </action>
+        </step>
+    </work>
+    <work name="BaseBoard" desc="BaseBoard" count="1" bEnable="2" bLoop="0" bHidden="0" bBoard="1">
+        <step name="newStep" desc="子板" count="1" bEnable="2">
+            <action name="fun_callboard2" desc="CALL 3444 AT (100.000,100.000)" bEnable="1" bBlock="1" type="fun_callboard" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_CALL_BOARD attribute='{&#x0A;   &quot;bClear&quot; : false,&#x0A;   &quot;bSelectStep&quot; : false,&#x0A;   &quot;beginAction&quot; : -1,&#x0A;   &quot;board&quot; : &quot;3444&quot;,&#x0A;   &quot;enables&quot; : [&#x0A;      {&#x0A;         &quot;enable&quot; : true&#x0A;      }&#x0A;   ],&#x0A;   &quot;endAction&quot; : -1,&#x0A;   &quot;group&quot; : &quot;work&quot;,&#x0A;   &quot;points&quot; : [&#x0A;      {&#x0A;         &quot;x&quot; : 100.0,&#x0A;         &quot;y&quot; : 100.0&#x0A;      }&#x0A;   ]&#x0A;}&#x0A;' />
+            </action>
+        </step>
+    </work>
+    <work name="3444" desc="3444" count="1" bEnable="2" bLoop="0" bHidden="0" bBoard="1">
+        <step name="newStep" desc="子板" count="1" bEnable="2">
+            <action name="fun_callboard1" desc="CALL trtr AT (0.000,0.000),...,(0.000,0.000)" bEnable="1" bBlock="1" type="fun_callboard" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_CALL_BOARD attribute='{&#x0A;   &quot;bClear&quot; : false,&#x0A;   &quot;bSelectStep&quot; : false,&#x0A;   &quot;beginAction&quot; : -1,&#x0A;   &quot;board&quot; : &quot;trtr&quot;,&#x0A;   &quot;enables&quot; : [&#x0A;      {&#x0A;         &quot;enable&quot; : true&#x0A;      },&#x0A;      {&#x0A;         &quot;enable&quot; : true&#x0A;      },&#x0A;      {&#x0A;         &quot;enable&quot; : true&#x0A;      },&#x0A;      {&#x0A;         &quot;enable&quot; : true&#x0A;      },&#x0A;      {&#x0A;         &quot;enable&quot; : true&#x0A;      }&#x0A;   ],&#x0A;   &quot;endAction&quot; : -1,&#x0A;   &quot;group&quot; : &quot;work&quot;,&#x0A;   &quot;points&quot; : [&#x0A;      {&#x0A;         &quot;x&quot; : 0.0,&#x0A;         &quot;y&quot; : 0.0&#x0A;      },&#x0A;      {&#x0A;         &quot;x&quot; : 5.0,&#x0A;         &quot;y&quot; : 10.0&#x0A;      },&#x0A;      {&#x0A;         &quot;x&quot; : 20.0,&#x0A;         &quot;y&quot; : 0.0&#x0A;      },&#x0A;      {&#x0A;         &quot;x&quot; : 0.0,&#x0A;         &quot;y&quot; : 0.0&#x0A;      },&#x0A;      {&#x0A;         &quot;x&quot; : 0.0,&#x0A;         &quot;y&quot; : 0.0&#x0A;      }&#x0A;   ]&#x0A;}&#x0A;' />
+            </action>
+        </step>
+    </work>
+    <work name="trtr" desc="trtr" count="1" bEnable="2" bLoop="0" bHidden="0" bBoard="1">
+        <step name="newStep" desc="子板" count="2" bEnable="2">
+            <action name="dispense_circle" desc="CIRCLE, 1,start:(10.000,10.000),mid:(20.000,0.000),end:(30.000,10.000)" bEnable="1" bBlock="1" type="dispense_circle" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_DISPENSE_CIRCLE attribute='{&#x0A;   &quot;arcType&quot; : 0,&#x0A;   &quot;bClocked&quot; : true,&#x0A;   &quot;bWeight&quot; : true,&#x0A;   &quot;pointBegin._x&quot; : 10.0,&#x0A;   &quot;pointBegin._y&quot; : 10.0,&#x0A;   &quot;pointCenter._x&quot; : 0.0,&#x0A;   &quot;pointCenter._y&quot; : 0.0,&#x0A;   &quot;pointEnd._x&quot; : 30.0,&#x0A;   &quot;pointEnd._y&quot; : 10.0,&#x0A;   &quot;pointMid._x&quot; : 20.0,&#x0A;   &quot;pointMid._y&quot; : 0.0,&#x0A;   &quot;type&quot; : 0,&#x0A;   &quot;weight&quot; : 0.10&#x0A;}&#x0A;' />
+            </action>
+            <action name="dispense_polyline" desc="POLYLINE, 1,start:(0.000,0.000),...,end:(10.000,10.000)" bEnable="1" bBlock="1" type="dispense_polyline" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WORK_DISPENSE_POLYLINE attribute='{&#x0A;   &quot;bSmooth&quot; : false,&#x0A;   &quot;bWeight&quot; : true,&#x0A;   &quot;poins&quot; : [&#x0A;      {&#x0A;         &quot;x&quot; : 0.0,&#x0A;         &quot;y&quot; : 0.0&#x0A;      },&#x0A;      {&#x0A;         &quot;x&quot; : 10.0,&#x0A;         &quot;y&quot; : 10.0&#x0A;      }&#x0A;   ],&#x0A;   &quot;type&quot; : 0,&#x0A;   &quot;weight&quot; : 0.10&#x0A;}&#x0A;' />
+            </action>
+        </step>
+    </work>
+</root>

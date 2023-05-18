@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configfilesinfo>
+	<config enable="1">
+		<fileID>1</fileID>
+		<path>./plugins/robotui/robotaaa/points</path>
+		<discription>机器人A点位文件 </discription>
+	</config>
+	<config enable="1">
+		<fileID>2</fileID>
+		<path>./plugins/robotui/robotbbb/points/aaa.xml</path>
+		<discription>机器人B点位文件 </discription>
+	</config>
+	<config enable="1">
+		<fileID>3</fileID>
+		<path>./plugins/robotui/robotccc/points/aaa.xml</path>
+		<discription>机器人C点位文件 </discription>
+	</config>
+</configfilesinfo>
+
+
+
+
+

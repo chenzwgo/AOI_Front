@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vstudiodoc type="robotpointsconfig">
+    <points>
+        <point name="p_move_start" description="动作起始位" type="0" X="224.319" Y="18.020" Z="-36.658" U="-104.311" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_1" description="过渡点位[1]" type="1" X="144.319" Y="98.020" Z="-36.658" U="-104.311" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_2" description="过渡点位[2]" type="1" X="44.319" Y="158.020" Z="-36.658" U="-104.311" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_3" description="过渡点位[3]" type="1" X="-75.681" Y="178.020" Z="-36.658" U="-104.311" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_4" description="过渡点位[4]" type="1" X="-215.681" Y="178.020" Z="-36.658" U="-104.311" V="0.000" W="0.000" ARM="1" />
+        <point name="p_through_5" description="过渡点位[5]" type="1" X="-215.681" Y="178.020" Z="-36.658" U="-154.311" V="0.000" W="0.000" ARM="1" />
+        <point name="p_material_photo" description="取料拍照位" type="0" X="194.319" Y="100.020" Z="-36.658" U="-84.311" V="0.000" W="0.000" ARM="1" />
+        <point name="p_press_photo" description="贴合拍照位" type="0" X="164.319" Y="98.020" Z="-36.658" U="-104.311" V="0.000" W="0.000" ARM="1" />
+    </points>
+</vstudiodoc>

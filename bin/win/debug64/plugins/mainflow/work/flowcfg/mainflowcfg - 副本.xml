@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <work name="newWorkFlow_1" desc="前段滚轮" count="2" bEnable="2" bLoop="1">
+        <step name="newStep1" desc="启动" count="2" bEnable="2">
+            <action name="wait_condition" desc="判断是否有产品，若没有则启动" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workIO ioName="di_Front_sig" bOpen="0" />
+            </action>
+            <action name="move_jog" desc="启动滚轮" bEnable="1" bBlock="1" type="move_jog" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workJog station="FrontConvey" direction="1" />
+            </action>
+        </step>
+        <step name="newStep" desc="停止" count="2" bEnable="2">
+            <action name="wait_condition1" desc="判断是否产品到位" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workIO ioName="di_Front_sig" bOpen="1" />
+            </action>
+            <action name="move_stop" desc="产品到位停止滚轮运动" bEnable="1" bBlock="1" type="move_stop" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WorkStop station="FrontConvey" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow_3" desc="前段产品移动" count="2" bEnable="2" bLoop="0">
+        <step name="newStep" desc="启动" count="5" bEnable="2">
+            <action name="wait_condition" desc="等到位信号" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+            </action>
+            <action name="move_ptp_abs" desc="前段开始位夹紧产品" bEnable="1" bBlock="1" type="move_ptp_abs" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workpoint station="" index="0" mask="63" bSpeed="0" vel="0" acc="0" dec="0" />
+                <pointoffset X="0.000" Y="0.000" Z="0.000" U="0.000" V="0.000" W="0.000" />
+            </action>
+            <action name="fun" desc="前段等间距触发" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="" cParam="" />
+            </action>
+            <action name="fun_front_move" desc="前段连续插补运动(带IO)" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="" cParam="" />
+            </action>
+            <action name="move_wait_stop" desc="等运动完成" bEnable="1" bBlock="1" type="move_wait_stop" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WorkWaitStop station="" />
+            </action>
+        </step>
+        <step name="newStep1" desc="返回" count="1" bEnable="2">
+            <action name="move_ptp_abs1" desc="返回始点" bEnable="1" bBlock="1" type="move_ptp_abs" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workpoint station="" index="0" mask="63" bSpeed="0" vel="0" acc="0" dec="0" />
+                <pointoffset X="0.000" Y="0.000" Z="0.000" U="0.000" V="0.000" W="0.000" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow" desc="前段产品释放" count="1" bEnable="2" bLoop="1">
+        <step name="newStep" desc="释放" count="2" bEnable="2">
+            <action name="wait_condition" desc="等信号" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workIO ioName="di_chang_sig" bOpen="1" />
+            </action>
+            <action name="move_ptp_abs" desc="释放" bEnable="1" bBlock="1" type="move_ptp_abs" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workpoint station="" index="0" mask="63" bSpeed="0" vel="0" acc="0" dec="0" />
+                <pointoffset X="0.000" Y="0.000" Z="0.000" U="0.000" V="0.000" W="0.000" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow_4" desc="后段产品移动" count="2" bEnable="2" bLoop="1">
+        <step name="newStep1" desc="启动" count="5" bEnable="2">
+            <action name="wait_condition" desc="等后段启动信号" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+            </action>
+            <action name="fun" desc="后段等间距触发" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="" cParam="" />
+            </action>
+            <action name="fun1" desc="连续插补运动" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="" cParam="" />
+            </action>
+            <action name="move_ptp_abs" desc="后夹爪释放" bEnable="1" bBlock="1" type="move_ptp_abs" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workpoint station="" index="0" mask="63" bSpeed="0" vel="0" acc="0" dec="0" />
+                <pointoffset X="0.000" Y="0.000" Z="0.000" U="0.000" V="0.000" W="0.000" />
+            </action>
+            <action name="move_wait_stop" desc="等运动完成" bEnable="1" bBlock="1" type="move_wait_stop" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WorkWaitStop station="" />
+            </action>
+        </step>
+        <step name="newStep2" desc="返回" count="1" bEnable="2">
+            <action name="move_ptp_abs1" desc="后段返回启动点" bEnable="0" bBlock="1" type="move_ptp_abs" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workpoint station="" index="0" mask="63" bSpeed="0" vel="0" acc="0" dec="0" />
+                <pointoffset X="0.000" Y="0.000" Z="0.000" U="0.000" V="0.000" W="0.000" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow_5" desc="后段产品夹紧" count="1" bEnable="2" bLoop="1">
+        <step name="newStep" desc="夹紧" count="2" bEnable="2">
+            <action name="wait_condition" desc="等信号" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workIO ioName="di_chang_sig" bOpen="1" />
+            </action>
+            <action name="move_ptp_abs" desc="夹紧" bEnable="1" bBlock="1" type="move_ptp_abs" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workpoint station="" index="0" mask="63" bSpeed="0" vel="0" acc="0" dec="0" />
+                <pointoffset X="0.000" Y="0.000" Z="0.000" U="0.000" V="0.000" W="0.000" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow_2" desc="后段滚轮" count="2" bEnable="2" bLoop="1">
+        <step name="newStep2" desc="启动" count="2" bEnable="2">
+            <action name="wait_condition" desc="判断是否有产品" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workIO ioName="di_Rear_sig" bOpen="0" />
+            </action>
+            <action name="move_jog" desc="启动滚轮" bEnable="1" bBlock="1" type="move_jog" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workJog station="RearConvey" direction="1" />
+            </action>
+        </step>
+        <step name="newStep" desc="停止" count="2" bEnable="2">
+            <action name="wait_condition1" desc="判断是否产品到位" bEnable="1" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workIO ioName="di_Rear_sig" bOpen="1" />
+            </action>
+            <action name="move_stop" desc="产品到位停止滚轮运动" bEnable="1" bBlock="1" type="move_stop" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <WorkStop station="RearConvey" />
+            </action>
+        </step>
+    </work>
+</root>

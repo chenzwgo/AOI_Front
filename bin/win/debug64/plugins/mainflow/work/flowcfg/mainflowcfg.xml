@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <work name="newWorkFlow_11" desc="流水线正向流动" count="1" bEnable="2" bLoop="0">
+        <step name="newStep" desc="新步骤" count="1" bEnable="2">
+            <action name="fun1" desc="启动流水线" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunMoveJobForCheck" cParam="1" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow_14" desc="后端更新OK——NG结果" count="1" bEnable="0" bLoop="1">
+        <step name="newStep" desc="后端结果显示界面" count="7" bEnable="1">
+            <action name="wait_condition" desc="等产品流到后端信号位置" bEnable="0" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workIO ioName="di_out_end_sig" bOpen="1" />
+            </action>
+            <action name="fun1" desc="等待产品到出料位" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunPrOutSig" cParam="" />
+            </action>
+            <action name="fun" desc="UI显示OK,NG" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunShowResData" cParam="4000" />
+            </action>
+            <action name="wait_condition1" desc="等产品在后端信号位置取走" bEnable="0" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workIO ioName="di_out_end_sig" bOpen="0" />
+            </action>
+            <action name="io_output1" desc="关闭绿灯" bEnable="1" bBlock="1" type="io_output" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workIO ioName="do_out_green" bOpen="0" delayReverse="-1" />
+            </action>
+            <action name="io_output2" desc="关闭黄灯" bEnable="1" bBlock="1" type="io_output" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workIO ioName="do_out_yellow" bOpen="0" delayReverse="-1" />
+            </action>
+            <action name="io_output" desc="关闭红灯" bEnable="1" bBlock="1" type="io_output" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workIO ioName="do_out_red" bOpen="0" delayReverse="-1" />
+            </action>
+        </step>
+    </work>
+    <work name="testtrigger" desc="测试光源触发" count="1" bEnable="0" bLoop="0">
+        <step name="newStep" desc="新步骤" count="3" bEnable="2">
+            <action name="fun2" desc="触发" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunAutoTrigger" cParam="" />
+            </action>
+            <action name="fun" desc="停止触发" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunStopAutoTrigger" cParam="" />
+            </action>
+            <action name="fun1" desc="触发10000行" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunAutoTriggerByLines" cParam="" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow_17" desc="流水线" count="1" bEnable="2" bLoop="0">
+        <step name="newStep1" desc="启动" count="1" bEnable="2">
+            <action name="fun1" desc="启动流水线" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunMoveJobForCheck" cParam="1" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow_10" desc="流水线入料指示" count="1" bEnable="2" bLoop="1">
+        <step name="newStep" desc="入料" count="1" bEnable="2">
+            <action name="fun" desc="" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunCheckInProductOnTime" cParam="do_in_tip,in_sig,5000" />
+            </action>
+        </step>
+    </work>
+    <work name="newWorkFlow_18" desc="2k流水线" count="2" bEnable="2" bLoop="0">
+        <step name="newStep1" desc="启动" count="8" bEnable="1">
+            <action name="wait_condition" desc="" bEnable="0" bBlock="1" type="wait_condition" beforeWait="0" afterWait="0" jumpStepWhenFailed="newStep1" jumpActionWhenFailed="event_wait" jumpStepWhenSucceed="newStep1" jumpActionWhenSucceed="jump_action" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workVar name="bIsGrap" operate="=" value="1" />
+            </action>
+            <action name="event_wait" desc="等待启动信号" bEnable="0" bBlock="1" type="event_wait" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workevent name="StartMonitor" varstop="None" />
+            </action>
+            <action name="count" desc="" bEnable="0" bBlock="1" type="count" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="0" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <count index="1" max="0" type="0" />
+            </action>
+            <action name="jump_action" desc="跳转条件" bEnable="1" bBlock="1" type="jump_action" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="newStep" jumpActionWhenSucceed="fun6" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="0" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <logic oper="&amp;&amp;" />
+                <workVar name="bSetJobMove" operate="=" value="1" />
+            </action>
+            <action name="fun1" desc="启动流水线" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunMoveJobForCheck" cParam="1" />
+            </action>
+            <action name="fun" desc="设相机参数" bEnable="0" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="Failed" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunSetCamerCfg" cParam="" />
+            </action>
+            <action name="variable_write" desc="标志启动滚轮" bEnable="1" bBlock="1" type="variable_write" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <variable name="bSetJobMove" operate="=" value="1" />
+            </action>
+            <action name="move_jog" desc="" bEnable="0" bBlock="1" type="move_jog" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <workJog station="target" direction="1" />
+            </action>
+        </step>
+        <step name="newStep" desc="检测" count="2" bEnable="1">
+            <action name="fun6" desc="流水线连续采集流程2K" bEnable="1" bBlock="1" type="fun" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="None" jumpActionWhenSucceed="None" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="1" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <function cFunName="callFunPieceByPiecework_2" cParam="first" />
+            </action>
+            <action name="count1" desc="" bEnable="0" bBlock="1" type="count" beforeWait="0" afterWait="0" jumpStepWhenFailed="None" jumpActionWhenFailed="None" jumpStepWhenSucceed="newStep" jumpActionWhenSucceed="fun6" actionTimeOut="-1">
+                <UiLog bLogStart="0" bLogStartFailed="1" bLogSucceed="0" bLogFailed="0" bLogTimeOut="1" logMsgStart="" logMsgStartFailed="" logMsgSucceed="" logMsgFailed="" logMsgTimeOut="" logLevelStart="0" logLevelStartFailed="4" logLevelSucceed="0" logLevelFailed="2" logLevelTimeOut="2" />
+                <count index="1" max="1" type="1" />
+            </action>
+        </step>
+    </work>
+</root>

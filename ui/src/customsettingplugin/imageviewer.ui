@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageViewer</class>
+ <widget class="QWidget" name="ImageViewer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>923</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="21">
+    <widget class="CVisionimagetoolDlg" name="widget_show_pic" native="true"/>
+   </item>
+   <item row="0" column="14">
+    <widget class="QComboBox" name="comboBox_pro_type">
+     <item>
+      <property name="text">
+       <string>原始图像</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>静态校准</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>动态校准</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>滤波</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="15">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="13">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>处理类型</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="18">
+    <widget class="QLabel" name="label_path">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>通道</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButton_load_pic">
+     <property name="text">
+      <string>离线加载</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="pushButton_get_online_pic">
+     <property name="text">
+      <string>获取在线图像</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="19">
+    <widget class="QPushButton" name="pushButton_static">
+     <property name="text">
+      <string>静态采图</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QComboBox" name="comboBox_channel"/>
+   </item>
+   <item row="0" column="7">
+    <widget class="QRadioButton" name="radioButton_C">
+     <property name="text">
+      <string>C</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QRadioButton" name="radioButton_A">
+     <property name="text">
+      <string>A</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="12">
+    <widget class="QRadioButton" name="radioButton_H">
+     <property name="text">
+      <string>H</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="8">
+    <widget class="QRadioButton" name="radioButton_D">
+     <property name="text">
+      <string>D</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QRadioButton" name="radioButton_B">
+     <property name="text">
+      <string>B</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="11">
+    <widget class="QRadioButton" name="radioButton_G">
+     <property name="text">
+      <string>G</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="9">
+    <widget class="QRadioButton" name="radioButton_E">
+     <property name="text">
+      <string>E</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+   <item row="0" column="10">
+    <widget class="QRadioButton" name="radioButton_F">
+     <property name="text">
+      <string>F</string>
+     </property>
+     <attribute name="buttonGroup">
+      <string notr="true">buttonGroup</string>
+     </attribute>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CVisionimagetoolDlg</class>
+   <extends>QWidget</extends>
+   <header>uitoolbox/visionimagetooldlg.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

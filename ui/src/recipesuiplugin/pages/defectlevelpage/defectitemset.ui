@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>defectitemset</class>
+ <widget class="QWidget" name="defectitemset">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>858</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="leftMargin">
+    <number>3</number>
+   </property>
+   <property name="topMargin">
+    <number>3</number>
+   </property>
+   <property name="rightMargin">
+    <number>3</number>
+   </property>
+   <property name="bottomMargin">
+    <number>3</number>
+   </property>
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <column>
+      <property name="text">
+       <string>等级</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>条件  (面积(Area), 得分(Score), 对比度(Contrast), 宽度(Width),  高度(Height), 长边(SkeletonLength), 位置X(PosX), 位置Y(PoxY)</string>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;(面积(Area),得分(Score),对比度(Contrast)),宽度(Width), 高度(Height),长边(SkeletonLength),位置X(PosX),位置Y(PoxY)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

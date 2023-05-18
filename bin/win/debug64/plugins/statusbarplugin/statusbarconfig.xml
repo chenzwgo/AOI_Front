@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<statuslbar>
+    <Itemlist>
+        <!-- type= text icon widget  -->
+        <!-- align= left middle right  -->
+        <Item type="text" name="text" content="text content" align="left"/>
+        <!-- Item type="icon" name="icon1" content="Flying_Mode.png" align="right"/ -->
+        <!-- Item type="widget" name="widgetname" content="" align="middle"/ -->
+    </Itemlist>
+</statuslbar>

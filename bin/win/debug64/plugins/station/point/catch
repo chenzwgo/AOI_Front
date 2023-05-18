@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pointdoc>
+    <point index="0" name="point_init" x="0.0000" y="0.0000" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="初始点" />
+    <point index="1" name="point_catchup1" x="-421.8038" y="0.0000" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="进料夹料上方点" />
+    <point index="2" name="point_catchdown1" x="-421.8038" y="12.9417" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="进料夹料下方点" />
+    <point index="3" name="point_catchup2" x="539.6000" y="5.4931" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="出料夹料上方点" />
+    <point index="4" name="point_catchdown2" x="539.6000" y="13.0297" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="出料夹料下方点" />
+    <point index="5" name="point_start" x="-118.3238" y="36.6750" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="拍照起始点" />
+    <point index="6" name="point_end" x="121.8119" y="36.6750" z="0.0000" u="0.0000" v="0.0000" w="0.0000" desc="拍照zhong点" />
+</pointdoc>

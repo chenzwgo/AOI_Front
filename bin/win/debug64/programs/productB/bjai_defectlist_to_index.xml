@@ -1,0 +1,14 @@
+﻿<root>
+    <station name="main">
+        <defect bjai_name="OK" index="0" description="正常" />
+        <defect bjai_name="HS" index="1" description="划伤" />
+        <defect bjai_name="BB" index="2" description="崩边" />
+        <defect bjai_name="CB" index="3" description="差边" />
+        <defect bjai_name="CH" index="4" description="擦伤" />
+        <defect bjai_name="YH" index="5" description="压痕" />
+        <defect bjai_name="ZY" index="6" description="轮子印" />
+        <defect bjai_name="CI" index="7" description="刺伤" />
+        <defect bjai_name="YM" index="8" description="油墨" />
+		<defect bjai_name="ZW" index="9" description="脏污" />
+    </station>
+</root>

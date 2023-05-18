@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/">
+    <file>image/day/selectprotect.png</file>
+    <file>image/night/selectprotect.png</file>
+    <file>image/general/buttoncancel.png</file>
+    <file>image/general/buttonok.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <event name="event_convery" desc="皮带流动事件" />
+    <event name="event_work" desc="点胶事件" />
+</root>
